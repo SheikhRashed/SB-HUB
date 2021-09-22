@@ -710,8 +710,35 @@ header .navbar .form-inline .login__name {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  .breedCrumb__flow {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .breedCrumb__flow li {
   margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+  .breedCrumb__flow li {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .breedCrumb__flow li {
+    text-align: center;
+  }
+}
+
+.breedCrumb__flow li:nth-child(1), .breedCrumb__flow li:nth-last-child(1) {
+  display: block;
+}
+
+.breedCrumb__flow li:nth-last-child(1) {
+  margin-right: 0px;
 }
 
 .breedCrumb__flow li a {
@@ -720,57 +747,14 @@ header .navbar .form-inline .login__name {
   line-height: 24px;
 }
 
+@media (max-width: 767px) {
+  .breedCrumb__flow li a {
+    text-align: center;
+  }
+}
+
 .breedCrumb__flow li a.active {
   color: #0a2240;
-}
-
-@media (max-width: 575px) {
-  .breedCrumb__flow li {
-    margin-right: 10px;
-  }
-  .breedCrumb__flow li a {
-    font-size: 14px;
-  }
-  .breedCrumb__flow li a .space {
-    display: none;
-  }
-}
-
-@media (max-width: 574px) {
-  .breedCrumb__flow li {
-    margin-right: 15px;
-  }
-  .breedCrumb__flow li a {
-    font-size: 12px;
-    line-height: 0px;
-    white-space: nowrap;
-  }
-  .breedCrumb__flow li a.active {
-    display: block;
-    margin-top: 50px;
-    margin-left: -60px;
-    font-weight: bold;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 574px) {
-  .breedCrumb__flow {
-    justify-content: center;
-  }
-  .breedCrumb__flow li {
-    margin-right: 15px;
-  }
-  .breedCrumb__flow li a {
-    font-size: 12px;
-    line-height: 0px;
-    white-space: nowrap;
-  }
-  .breedCrumb__flow li a.active {
-    display: block;
-    margin-top: 50px;
-    margin-left: -195px;
-    font-weight: bold;
-  }
 }
 
 .notes {
