@@ -1890,7 +1890,14 @@ main::-webkit-scrollbar-track {
 }
 
 .article-main__content-write .content-video {
+  width: 100%;
+  height: 385px;
   margin-bottom: 30px;
+}
+
+.article-main__content-write .content-video iframe {
+  width: inherit;
+  height: inherit;
 }
 
 .article-main__content-write .quote-content {
@@ -2452,6 +2459,12 @@ body {
 
 .footer__col-item {
   margin-left: 10px;
+}
+
+.footer__col-item .email a {
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
 }
 
 .footer__col-item li {

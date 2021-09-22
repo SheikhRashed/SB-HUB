@@ -14,6 +14,13 @@
 
   &__col-item {
     margin-left: 10px;
+    .email {
+      a {
+        font-size: 12px;
+        line-height: 16px;
+        color: #fff;
+      }
+    }
     li {
       margin-bottom: 15px;
       a {
