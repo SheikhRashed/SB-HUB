@@ -1,0 +1,78 @@
+.notes {
+    padding-bottom: 0px !important;
+    &__items {
+        position: relative;
+        padding-bottom: 10px;
+        &::-webkit-scrollbar-track {
+            // height: 10px;
+            // background-color: red;
+        }
+    }
+
+    &__item {
+        margin-right: 15px;
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+    &__day {
+        h5 {
+            margin-bottom: 0px;
+            text-transform: capitalize;
+        }
+        h5,
+        span {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        span {
+            color: rgb(167, 167, 167);
+        }
+    }
+    &__img-wrapper {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #dddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content {
+        padding: 30px;
+        padding-bottom: 60px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__card {
+        width: 250px;
+        height: 250px;
+        overflow-y: hidden;
+        .rAbs {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
+.link__wrapper {
+    display: flex;
+    flex-direction: column;
+    a {
+        margin-bottom: 5px;
+    }
+}
+main::-webkit-scrollbar {
+    width: 25px;
+    height: 5px;
+}
+
+main::-webkit-scrollbar-track {
+    border: 2px solid #f4f2f2;
+}

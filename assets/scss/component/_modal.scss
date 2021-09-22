@@ -1,0 +1,213 @@
+.modal__sucess {
+  // background-color: red;
+  .modal {
+    &-header {
+      padding-bottom: 0px;
+      h5 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 30px;
+        color: #0a2240;
+      }
+    }
+    &-body {
+      p {
+        font-size: 14px;
+        line-height: 28px;
+      }
+      .toolbox__render-item {
+        li {
+          display: flex;
+          align-items: center;
+          span {
+            border: 1px solid;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: #0e8a00;
+            border-color: #979797;
+          }
+          a {
+            font-size: 14px;
+            line-height: 40px;
+            color: #858d98;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modalReqTool {
+  // display: none;
+  border-radius: 0;
+  .modal {
+    &-header {
+      padding-bottom: 0px;
+      h5 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 0;
+        font-family: BMedium;
+        color: #0a2240;
+        // text-transform: capitalize;
+      }
+    }
+    &-body {
+      .form-group {
+        label {
+          font-size: 14px;
+          line-height: 40px;
+          color: #4f637c;
+        }
+        input {
+          border-color: #cdcdcd;
+          &:hover {
+            border: 1px solid #cdcdcd;
+          }
+        }
+      }
+    }
+  }
+}
+
+// mannage modal
+.mannage__title {
+  padding: 12px;
+  background: #4f637c;
+  margin-bottom: 15px;
+  h5 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+  }
+}
+.mannage__list {
+  max-height: 250px;
+  overflow-y: auto;
+  margin: 15px 0px;
+  li {
+    border-bottom: 1px solid #979797;
+    padding: 15px;
+    a {
+      font-size: 12px;
+      line-height: 22px;
+      color: #0089ff;
+    }
+    .editicons {
+      color: #000;
+      span {
+        margin: 0px 5px;
+        transition: all 0.2s linear;
+        &:hover {
+          transform: translateY(1px);
+        }
+        i {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.custom__link-wrapper {
+  a {
+    p {
+      color: #000 !important;
+      font-size: 14px;
+      line-height: 21px;
+      padding-top: 0px !important;
+      margin-bottom: 15px !important;
+    }
+  }
+}
+
+.brief {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+// Subscription modal
+.subscription__modal {
+  &-wrapper {
+    h5 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.subscription__checkBoxes {
+  background: #4f637c;
+  padding: 25px 35px;
+  box-sizing: border-box;
+}
+
+.subscription__checkBoxes {
+  h5 {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  ul {
+    li {
+      // justify-content: center;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+      }
+      span {
+        margin-right: 15px;
+        input {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .subscription__modal {
+    &-wrapper {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  .modalReqTool {
+    .modal-dialog {
+      max-width: 45%;
+    }
+  }
+  .modal-dialog {
+    &.subscription__dialog {
+      max-width: 715px;
+      height: 310px;
+    }
+  }
+}
+
+.swal2-header {
+  align-items: flex-start;
+}
+.swal2-content {
+  text-align: left;
+  line-height: 34px;
+  font-size: 14px;
+}

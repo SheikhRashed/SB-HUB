@@ -1,0 +1,91 @@
+body {
+    background-color: #f2f3f4;
+}
+
+.business-Tools {
+    // margin: 90px 0px;
+    margin-bottom: 45px;
+    &__title {
+        font-size: 24px;
+        line-height: 30px;
+        color: #0a2240;
+    }
+    .card-box {
+        margin: 35px 0px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__reco-title {
+        font-size: 16px;
+        line-height: 30px;
+        color: #0a2240;
+    }
+    &__cross {
+        color: rgb(133, 141, 157);
+        cursor: pointer;
+    }
+    &__tool-item {
+        margin: 15px 0px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+            background: #00a1e0;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            padding: 6px 25px;
+            border-radius: 25px;
+            a {
+                color: #fff;
+                span {
+                    padding-left: 15px;
+                    color: rgb(221, 225, 233);
+                }
+            }
+        }
+    }
+    &__sugest {
+        display: flex;
+        justify-content: space-around;
+        h5 {
+            font-size: 16px;
+            line-height: 40px;
+            color: #4f637c;
+            margin-left: 15px;
+            display: inline-block;
+            text-transform: capitalize;
+        }
+    }
+    &__bottom {
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .business-Tools {
+        &__sugest {
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .business-Tools {
+        &__sugest {
+            h5 {
+                line-height: 25px;
+                margin-left: 0px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

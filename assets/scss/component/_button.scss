@@ -1,0 +1,16 @@
+.btn {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    &--primary {
+        background-color: #0033a1;
+        color: #fff;
+        // padding: 8px 35px;
+        width: 300px;
+        height: 40px;
+        &:hover {
+            color: #fff;
+        }
+    }
+}

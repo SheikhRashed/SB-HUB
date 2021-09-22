@@ -1,0 +1,80 @@
+.breedCrumb {
+    background: #f2f3f4;
+    .container {
+        max-width: 1340px;
+    }
+    &__flow {
+        height: 105px;
+        display: flex;
+        align-items: center;
+        li {
+            margin-right: 15px;
+            a {
+                color: #0089ff;
+                font-size: 15px;
+                line-height: 24px;
+                &.active {
+                    color: #0a2240;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .breedCrumb {
+        &__flow {
+            li {
+                margin-right: 10px;
+                a {
+                    font-size: 14px;
+                    .space {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 574px) {
+    .breedCrumb {
+        &__flow {
+            li {
+                margin-right: 15px;
+                a {
+                    font-size: 12px;
+                    line-height: 0px;
+                    white-space: nowrap;
+                    &.active {
+                        display: block;
+                        margin-top: 50px;
+                        margin-left: -60px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 574px) {
+    .breedCrumb {
+        &__flow {
+            justify-content: center;
+            li {
+                margin-right: 15px;
+                a {
+                    font-size: 12px;
+                    line-height: 0px;
+                    white-space: nowrap;
+                    &.active {
+                        display: block;
+                        margin-top: 50px;
+                        margin-left: -195px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

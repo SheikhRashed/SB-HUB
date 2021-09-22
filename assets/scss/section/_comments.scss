@@ -1,0 +1,122 @@
+.comments {
+    position: relative;
+    padding: 30px 0px;
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 50%;
+    //     transform: translate(-50%);
+    //     width: 58%;
+    //     height: 2px;
+    //     background: rgb(121, 120, 120);
+
+    //     @media (max-width: 1200px) {
+    //         width: 95%;
+    //     }
+    // }
+    &__content {
+        padding-top: 30px;
+    }
+    .card-box {
+        margin-bottom: 30px;
+    }
+
+    &__number {
+        font-size: 20px;
+        line-height: 27px;
+        color: #0a2240;
+        font-family: BMedium;
+    }
+    &__pepole-face {
+        text-align: center;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &__holder-name,
+    &__time {
+        font-size: 15px;
+        line-height: 20px;
+        color: #0a2240;
+        font-family: BMedium;
+    }
+    &__textarea {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        textarea {
+            border: 1px solid #858d9d;
+            margin: 15px 0px;
+            margin-top: 0px;
+            height: 85px;
+        }
+    }
+    // buttons
+    &__btn {
+        background: #0089ff;
+        color: #fff;
+        width: 150px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__reply-text {
+        font-size: 15px;
+        line-height: 22px;
+        color: #0a2240;
+        margin-bottom: 0px;
+    }
+
+    // comments interactivity
+    &__interactivity {
+        ul {
+            li {
+                font-family: Bbook;
+                font-size: 15px;
+                line-height: 20px;
+                color: #0a2240;
+                margin-right: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: #f2f3f4;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-right: 10px;
+                    margin-bottom: 5px;
+
+                    i {
+                        color: #0089ff;
+                    }
+                }
+            }
+        }
+    }
+
+    // comments previous
+    &__previous {
+        background: #f2f3f4;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .comments {
+        &__pepole-face {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+    }
+}

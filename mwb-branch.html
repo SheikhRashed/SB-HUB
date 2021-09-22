@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SB-intranet</title>
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="assets/css/all.min.css" />
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <!-- Slick slider -->
+        <link rel="stylesheet" href="assets/css/slick.css" />
+        <!-- Main css -->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/listnav.css" />
+    </head>
+
+    <body>
+        <!-- Header section start -->
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/badge.png" alt="" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <a href="#" class="d-block d-xl-none">
+                                <form class="form-inline mt-0 justify-content-end pl-3">
+                                    <div class="login__Img mr-3">
+                                        <img src="assets/images/pepole/pepole-03.png" alt="pepole-03" />
+                                    </div>
+                                    <div class="login__name">
+                                        <span class="text-white">Wilson,Bongs N</span>
+                                    </div>
+                                </form>
+                            </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">My Workbench </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">My Business tools</a>
+                            </li>
+                            <li class="nav-ite m">
+                                <a class="nav-link" href="#">More for me</a>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search for files, pepole or pages" aria-label="Search" />
+                            <button class="btn my-2 my-sm-0" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <a href="#" class="d-none d-xl-block">
+                        <form class="form-inline">
+                            <div class="login__Img mr-3">
+                                <img src="assets/images/pepole/pepole-03.png" alt="pepole" />
+                            </div>
+                            <div class="login__name">
+                                <span class="text-white">Wilson,Bongs N</span>
+                            </div>
+                        </form>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- Header section end -->
+
+        <main style="position: relative;">
+            <!-- STicky sidebar  -->
+            <ul class="sticky__sidebar">
+                <li class="sticky__item sticky__item-01 dropright">
+                    <a class="dropdown-toggle d-flex" href="#" id="dropright_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="sticky__img-wrapper">
+                            <img src="assets/images/sticky/icn_people-1.png" alt="img" />
+                        </div>
+                        <span>
+                            Employee <br />
+                            services
+                        </span>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropright_1">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                </li>
+
+                <li class="sticky__item sticky__item-02 dropright">
+                    <a class="dropdown-toggle d-flex" href="#" id="dropright_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="sticky__img-wrapper">
+                            <img src="assets/images/sticky/color.png" alt="img" />
+                        </div>
+                        <span>
+                            Employee <br />
+                            support
+                        </span>
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropright_2">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                    </div>
+                </li>
+
+                <li class="sticky__item sticky__item-03">
+                    <a href="#" class="d-flex">
+                        <div class="sticky__img-wrapper">
+                            <img src="assets/images/sticky/internet.png" alt="img" />
+                        </div>
+                        <span>
+                            Internet <br />
+                            banking
+                        </span>
+                    </a>
+                </li>
+
+                <li class="toggle">
+                    <i class="fas fa-cog"></i>
+                </li>
+            </ul>
+            <ul class="sticky__sidebar social">
+                <li class="sticky__item sticky__item-01">
+                    <a href="#" class="d-flex">
+                        <div class="sticky__img-wrapper">
+                            <img src="assets/images/sticky/icn_share-android.png" alt="img" />
+                        </div>
+                    </a>
+                </li>
+                <li class="sticky__item sticky__item-02">
+                    <a href="#" class="d-flex">
+                        <div class="sticky__img-wrapper">
+                            <img src="assets/images/sticky/female.png" alt="img" />
+                        </div>
+                    </a>
+                </li>
+                <li class="sticky__item sticky__item-03">
+                    <a href="#" class="d-flex">
+                        <div class="sticky__img-wrapper">
+                            <img src="assets/images/sticky/bell.png" alt="img" />
+                        </div>
+                    </a>
+                </li>
+                <li class="toggle toggle2">
+                    <i class="fas fa-cog"></i>
+                </li>
+            </ul>
+
+            <!-- notes  section start -->
+            <section class="notes py-4">
+                <div class="container">
+                    <div class="row">
+                        <h5 class="notes__title">Dates to note</h5>
+                    </div>
+                    <div class="notes__items d-flex justify-content-start text-nowrap overflow-auto overflow-auto">
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/orange.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Client conduct training due</h5>
+                                <div class="link__wrapper">
+                                    <a href="#" class="rAbs">
+                                        <span>Manage Leave ></span>
+                                    </a>
+                                    <a href="#" class="rAbs">
+                                        <span>see Details ></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Freedom day</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/lOrange.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <div class="link__wrapper">
+                                    <a href="#" class="rAbs">
+                                        <span>View features ></span>
+                                    </a>
+                                    <a href="#" class="rAbs">
+                                        <span>Acess demo ></span>
+                                    </a>
+                                    <a href="#" class="rAbs">
+                                        <span>Complete Training></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notes__item pl-0">
+                            <div class="card-box notes__card">
+                                <div class="notes__date d-flex">
+                                    <div class="notes__img-wrapper">
+                                        <img src="assets/images/round/blue.svg" alt="blue" />
+                                    </div>
+                                    <div class="notes__day ml-2">
+                                        <h5>Fri</h5>
+                                        <span>24 jan</span>
+                                    </div>
+                                </div>
+                                <h5 class="notes__content">Vacation leave</h5>
+                                <a href="#" class="rAbs">
+                                    <span>Manage Leave ></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- notes  section end -->
+
+            <!-- Quick-View  section start -->
+            <section class="quickView feed">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card-box shadow">
+                                <div class="feed__top-bar">
+                                    <div class="feed__social-img">
+                                        <div class="feed__social-img">
+                                            <img src="assets/images/social-icons/noti.png" alt="noti" />
+                                        </div>
+                                    </div>
+                                    <h5 class="feed__top-bar-title">My notifications</h5>
+                                </div>
+                                <div class="quickView__main-content">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/alert.png" alt="alerts" />
+                                                <span>Your AML training will expire in 3 days</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/error.png" alt="error" />
+                                                <span>Untapped opportunities in the Soft Drinks market in Africa</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/error.png" alt="error" />
+                                                <span>You have been enrolled for Personal Conduct compliance training due on 30 October</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/alarm.png" alt="alarm" />
+                                                <span>Reminder to accept or decline your PBB townhall invitation</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="assets/images/notifications/approaved.png" alt="approved" />
+                                                <span>Leave request approved</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="rAbs">
+                                    <p class="text-right">Manage notifications ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-box shadow">
+                                <div class="feed__top-bar">
+                                    <div class="feed__social-img">
+                                        <div class="feed__social-img">
+                                            <img src="assets/images/social-icons/quick.png" alt="quick" />
+                                        </div>
+                                    </div>
+                                    <h5 class="feed__top-bar-title">My quick access</h5>
+                                </div>
+                                <div class="quickView__main-content">
+                                    <ul>
+                                        <li><a class="cm" href="#"> View Features > </a></li>
+                                        <li>
+                                            <a class="cm" href="#"> Human Capital home page > </a>
+                                        </li>
+                                        <li><a class="cm" href="#"> Complete training > </a></li>
+                                        <li><a class="cm" href="#"> View features > </a></li>
+                                        <li><a class="cm" href="#"> Access demo > </a></li>
+                                        <li><a class="cm" href="#"> Complete training > </a></li>
+                                        <li><a class="cm" href="#"> View features > </a></li>
+                                        <li><a class="cm" href="#"> Access demo > </a></li>
+                                        <li><a class="cm" href="#"> Complete training > </a></li>
+                                        <li><a class="cm" href="#"> Complete training > </a></li>
+                                    </ul>
+                                </div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center pt-3">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" tabindex="-1"></a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="#" class="rAbs">
+                                    <p class="text-right">Manage links ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-box shadow system__status">
+                                <div class="feed__top-bar px-3">
+                                    <div class="feed__social-img">
+                                        <div class="feed__social-img clock">
+                                            <img src="assets/images/icons/clock.png" alt="micro" />
+                                        </div>
+                                    </div>
+                                    <h5 class="feed__top-bar-title">System status</h5>
+                                </div>
+                                <div class="quickView__main-content system__status-slider">
+                                    <div class="quickView__item">
+                                        <div class="quickView__item-top system__status-top">
+                                            <span><img src="assets/images/icons/Meh.png" alt="meh" /></span>
+                                            <h5>Limited ATM Functionality</h5>
+                                        </div>
+                                        <p class="quickView__brief">
+                                            We are experiencing degraded ATM functionality. Customers are unable to deposit cash or retrieve stamped bank statements. Developers attending to the issue.
+                                        </p>
+                                        <div class="quickView__item-bottom system__status-bottom">
+                                            <div class="d-flex align-items-center">
+                                                <span><img src="assets/images/icons/icon-calendar.png" alt="meh" /></span>
+                                                <h5>Issue reported: <span class="date">2 May 2021</span></h5>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span><img src="assets/images/icons/icon-clock.png" alt="meh" /></span>
+                                                <h5>Time of last date: <span class="time">11:15</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quickView__item">
+                                        <div class="quickView__item-top system__status-top">
+                                            <span><img src="assets/images/icons/Meh.png" alt="meh" /></span>
+                                            <h5>Limited ATM Functionality</h5>
+                                        </div>
+                                        <p class="quickView__brief">
+                                            We are experiencing degraded ATM functionality. Customers are unable to deposit cash or retrieve stamped bank statements. Developers attending to the issue.
+                                        </p>
+                                        <div class="quickView__item-bottom system__status-bottom">
+                                            <div class="d-flex align-items-center">
+                                                <span><img src="assets/images/icons/icon-calendar.png" alt="meh" /></span>
+                                                <h5>Issue reported: <span class="date">2 May 2021</span></h5>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span><img src="assets/images/icons/icon-clock.png" alt="meh" /></span>
+                                                <h5>Time of last date: <span class="time">11:15</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quickView__item">
+                                        <div class="quickView__item-top system__status-top">
+                                            <span><img src="assets/images/icons/Meh.png" alt="meh" /></span>
+                                            <h5>Limited ATM Functionality</h5>
+                                        </div>
+                                        <p class="quickView__brief">
+                                            We are experiencing degraded ATM functionality. Customers are unable to deposit cash or retrieve stamped bank statements. Developers attending to the issue.
+                                        </p>
+                                        <div class="quickView__item-bottom system__status-bottom">
+                                            <div class="d-flex align-items-center">
+                                                <span><img src="assets/images/icons/icon-calendar.png" alt="meh" /></span>
+                                                <h5>Issue reported: <span class="date">2 May 2021</span></h5>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <span><img src="assets/images/icons/icon-clock.png" alt="meh" /></span>
+                                                <h5>Time of last date: <span class="time">11:15</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="rAbs">
+                                    <p class="text-right pt-0">Open dashboard ></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Quick-View  section end -->
+
+            <!-- Contact Section start  -->
+            <section class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card-box shadow">
+                                <div class="feed__top-bar justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feed__social-img forms">
+                                            <img src="assets/images/icons/color.png" alt="noti" />
+                                        </div>
+                                        <h5 class="feed__top-bar-title">forms</h5>
+                                    </div>
+                                    <form class="input__wrapper">
+                                        <input type="text" placeholder="Search for forms" />
+                                        <button type="submit">
+                                            <img src="assets//images/icons/icon-search.png" alt="icon-search" />
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="quickView__main-content">
+                                    <div class="row px-4">
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a class="cm" href="#"> Access Demo &gt; </a></li>
+                                                <li><a class="cm" href="#"> View features &gt; </a></li>
+                                                <li><a class="cm" href="#"> Complete training &gt; </a></li>
+                                                <li><a class="cm" href="#"> View features &gt; </a></li>
+                                                <li><a class="cm" href="#"> Access demo &gt; </a></li>
+                                                <li><a class="cm" href="#"> view features &gt; </a></li>
+                                                <li><a class="cm" href="#"> Complete training &gt; </a></li>
+                                                <li><a class="cm" href="#"> Access demo &gt; </a></li>
+                                                <li><a class="cm" href="#"> Complete training &gt; </a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a class="cm" href="#"> Access Demo &gt; </a></li>
+                                                <li><a class="cm" href="#"> View features &gt; </a></li>
+                                                <li><a class="cm" href="#"> Complete training &gt; </a></li>
+                                                <li><a class="cm" href="#"> View features &gt; </a></li>
+                                                <li><a class="cm" href="#"> Access demo &gt; </a></li>
+                                                <li><a class="cm" href="#"> view features &gt; </a></li>
+                                                <li><a class="cm" href="#"> Complete training &gt; </a></li>
+                                                <li><a class="cm" href="#"> Access demo &gt; </a></li>
+                                                <li><a class="cm" href="#"> Complete training &gt; </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="rAbs">
+                                    <p class="text-right">Visit the Forms site ></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card-box shadow">
+                                <div class="feed__top-bar justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <div class="feed__social-img contact">
+                                            <img src="assets/images/icons/call.png" alt="noti" />
+                                        </div>
+                                        <h5 class="feed__top-bar-title">Contact details</h5>
+                                    </div>
+                                    <form class="input__wrapper">
+                                        <input type="text" class="sm__input" placeholder="Homeloans" />
+                                        <button type="submit">
+                                            <img src="assets//images/icons/icon-search.png" alt="icon-call" />
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="quickView__main-content">
+                                    <ul id="alphabet-sm" class="quickView__main-contentItem">
+                                        <!--             -->
+                                        <li>
+                                            <div class="quickView__content">
+                                                <h5>Bank Codes Expert</h5>
+                                                <div class="d-flex align-items-center">
+                                                    <span><img src="assets/images/icons/icn_phone.png" alt="phone" /></span>
+                                                    <p>0860 103 140</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="quickView__content">
+                                                <h5>Banking Ombudsman</h5>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span><img src="assets/images/icons/icn_phone.png" alt="phone" /></span>
+                                                        <p>
+                                                            0860 800 900 / 011 838 0035 <br />
+                                                            +27112994633
+                                                        </p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center ml-3">
+                                                        <span><img src="assets/images/icons/icn_mail.png" alt="" /></span>
+                                                        <p>info@obssa.co.za</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="quickView__content">
+                                                <h5>Banking Ombudsman</h5>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span><img src="assets/images/icons/icn_phone.png" alt="phone" /></span>
+                                                        <p>
+                                                            0860 800 900 / 011 838 0035 <br />
+                                                            +27112994633
+                                                        </p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center ml-3">
+                                                        <span><img src="assets/images/icons/icn_mail.png" alt="" /></span>
+                                                        <p>info@obssa.co.za</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="quickView__content">
+                                                <h5>Banking Ombudsman</h5>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span><img src="assets/images/icons/icn_phone.png" alt="phone" /></span>
+                                                        <p>
+                                                            0860 800 900 / 011 838 0035 <br />
+                                                            +27112994633
+                                                        </p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center ml-3">
+                                                        <span><img src="assets/images/icons/icn_mail.png" alt="" /></span>
+                                                        <p>info@obssa.co.za</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="quickView__content">
+                                                <h5>Dutch Ombudsman</h5>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span><img src="assets/images/icons/icn_phone.png" alt="phone" /></span>
+                                                        <p>
+                                                            0860 800 900 / 011 838 0035 <br />
+                                                            +27112994633
+                                                        </p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center ml-3">
+                                                        <span><img src="assets/images/icons/icn_mail.png" alt="" /></span>
+                                                        <p>info@obssa.co.za</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section  end -->
+
+            <!-- Tabs  section start -->
+            <section class="tabs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 d-flex align-items-end">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscriptionModal">
+                                My Subscription
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal subscription__modal fade" id="subscriptionModal" tabindex="-1" role="dialog" aria-labelledby="subscriptionModalTitle" aria-hidden="true">
+                                <div class="modal-dialog subscription__dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <div class="subscription__modal-wrapper">
+                                                        <h5 class="subscription__Modal-title">My subscriptions</h5>
+                                                        <p class="brief">Choose your favourite news topics and get the latest articles delivered directly to your mailbox.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="subscription__checkBoxes">
+                                                        <h5 class="subscription__modal-subtitle">
+                                                            Select the business topics you would like to receive.
+                                                        </h5>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <ul>
+                                                                    <li class="d-flex">
+                                                                        <span>
+                                                                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                                                                        </span>
+                                                                        <p class="mb-0">Group News</p>
+                                                                    </li>
+                                                                    <li class="d-flex">
+                                                                        <span>
+                                                                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                                                                        </span>
+                                                                        <p class="mb-0">South Africa News</p>
+                                                                    </li>
+                                                                    <li class="d-flex">
+                                                                        <span>
+                                                                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                                                                        </span>
+                                                                        <p class="mb-0">Corporate Functions</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <ul>
+                                                                    <li class="d-flex">
+                                                                        <span>
+                                                                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                                                                        </span>
+                                                                        <p class="mb-0">Growing Africa</p>
+                                                                    </li>
+                                                                    <li class="d-flex">
+                                                                        <span>
+                                                                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                                                                        </span>
+                                                                        <p class="mb-0">Technology</p>
+                                                                    </li>
+                                                                    <li class="d-flex">
+                                                                        <span>
+                                                                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
+                                                                        </span>
+                                                                        <p class="mb-0">Lifestyle</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-5 pt-3">
+                            <div class="card-box shadow p-0 pb-2">
+                                <div class="tabs__slider">
+                                    <div class="tabs__slider-content">
+                                        <img src="assets/images/bg/bg-04.png" alt="bg-04" class="img-fluid w-100" />
+                                    </div>
+                                    <div class="tabs__slider-content">
+                                        <img src="assets/images/bg/bg-04.png" alt="bg-04" class="img-fluid w-100" />
+                                    </div>
+                                    <div class="tabs__slider-content">
+                                        <img src="assets/images/bg/bg-04.png" alt="bg-04" class="img-fluid w-100" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-box shadow mt-4">
+                                <div class="tabs__featured">
+                                    <div class="tabs__titled d-flex align-items-center">
+                                        <div class="tabs__titleImg star">
+                                            <img src="assets/images/icons/star.png" alt="Search" />
+                                        </div>
+                                        <h5 class="mb-0">Featured SBHub content</h5>
+                                    </div>
+                                    <p class="tabs__brief">
+                                        Operations are committed to developing staff iin preparation for the future world of work, aligned to the Group strategy. This will be done through various internationally recognised certifications
+                                        accessible by all staff from their Intranet site. A comprehensive catalogue of programmes can be access below.
+                                    </p>
+
+                                    <ul class="breedcrumb d-flex">
+                                        <li><a href="#">Business lines ></a></li>
+                                        <li><a href="#">Operations ></a></li>
+                                        <li><a href="#">Our programmes ></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tabs  section end -->
+        </main>
+
+        <!-- footer section start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <div class="footer__col">
+                            <h5 class="footer__title">Resources</h5>
+                            <ul class="footer__col-item">
+                                <li><a href="#">GDU</a></li>
+                                <li><a href="#">SB App store</a></li>
+                                <li><a href="#">The Knowledge Center</a></li>
+                                <li><a href="#">0365 Learning Portal</a></li>
+                                <li><a href="#">Stationery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 ml-40">
+                        <div class="footer__col">
+                            <h5 class="footer__title">The Group</h5>
+                            <ul class="footer__col-item">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Strategy</a></li>
+                                <li><a href="#">Footprint</a></li>
+                                <li><a href="#">Values and ethics</a></li>
+                                <li><a href="#">Board of directors</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="footer__col">
+                            <h5 class="footer__title">Commonly used links</h5>
+                            <ul class="footer__col-item">
+                                <li><a href="#">Self Service</a></li>
+                                <li><a href="#">IT Service Desk</a></li>
+                                <li><a href="#">Fraudstop</a></li>
+                                <li><a href="#">Whistleblowing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="footer__col">
+                            <h5 class="footer__title">Contact SB Hub</h5>
+                            <ul class="footer__col-item">
+                                <li><a href="#">Email: SBUB@standardbank.com</a></li>
+                                <form class="footer__input-wrapper">
+                                    <label for="s_field">Yammer #SBHub</label>
+                                    <input type="text" id="s_field" class="footer__col-input" placeholder="Search" />
+                                    <button class="footer__search">
+                                        <i class="fas fa-search" style="color: #fff;"></i>
+                                    </button>
+                                </form>
+                                <ul class="footer__social-icon">
+                                    <li>
+                                        <a href="#"><img src="assets/images/social-icons/facebook-sm.png" alt="facebook" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="assets/images/social-icons/linked.png" alt="linkedIn" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="assets/images/social-icons/youtube-sm.png" alt="youtube" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="assets/images/social-icons/twitter-sm.png" alt="twitter" /></a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+
+        <!-- All js Goes here -->
+        <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-listnav.js"></script>
+        <script src="assets/js/sweetalert.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
