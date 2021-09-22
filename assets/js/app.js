@@ -114,5 +114,8 @@ $('#sendRequest').on('click', function () {
     showConfirmButton: false,
   });
 });
+const venobox = document.querySelector('.venobox');
 
-//Sweetalert delete end
+if (venobox) {
+  $('.venobox').venobox();
+}

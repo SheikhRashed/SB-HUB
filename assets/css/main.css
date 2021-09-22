@@ -1959,6 +1959,99 @@ main::-webkit-scrollbar-track {
   line-height: 19px;
 }
 
+.article-main__sidebar {
+  padding: 20px;
+  background-color: #f2f3f4;
+}
+
+.article-main__sidebar-title {
+  color: #0a2240;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 500;
+  padding: 15px 0px;
+  border-top: 2px solid #ffb822;
+  border-bottom: 2px solid #ffb822;
+}
+
+.article-main__sidebar .related-article__item,
+.article-main__sidebar .related-video__item {
+  padding: 20px 0px;
+  border-bottom: 1px solid #70707034;
+}
+
+.article-main__sidebar .related-article__item:nth-last-child(1),
+.article-main__sidebar .related-video__item:nth-last-child(1) {
+  border-bottom: 0px;
+}
+
+.article-main__sidebar .related-article__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.article-main__sidebar .related-article__item .img {
+  width: 65px;
+  height: 80px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.article-main__sidebar .related-article__item .img img {
+  width: inherit;
+  height: inherit;
+}
+
+.article-main__sidebar .related-article__item .info-category {
+  color: #4f637c;
+  font-size: 10px;
+  line-height: 20px;
+  font-family: BRegular;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.article-main__sidebar .related-article__item .info-title {
+  color: #0a2240;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 0px;
+}
+
+.article-main__sidebar .related-article__item .info a {
+  color: #0089ff;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+}
+
+.article-main__sidebar .related-video__content {
+  width: 100%;
+  height: 145px;
+}
+
+.article-main__sidebar .related-video__content iframe {
+  width: inherit;
+  height: inherit;
+}
+
+.article-main__sidebar .related-video__channel-list {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+}
+
+.article-main__sidebar .related-video__title {
+  color: #0a2240;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
 @media (max-width: 991px) {
   .article__next {
     margin-top: 30px;

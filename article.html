@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <!-- Slick slider -->
         <link rel="stylesheet" href="assets/css/slick.css" />
+        <!-- Venobox -->
+        <link rel="stylesheet" href="assets/css/venobox.min.css" />
         <!-- Main css -->
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
@@ -318,7 +320,63 @@ It took exposure to the one African and female lecturer I had in the entire cour
                        </div>
                      </div>
                      <div class="col-lg-4">
-                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nulla sed eaque quidem animi! Voluptatum qui vero facilis eligendi, quo eaque aperiam, dignissimos necessitatibus illo adipisci totam. Officia, vel quibusdam?
+                       <div class="article-main__sidebar">
+                           <h2 class="article-main__sidebar-title">Related articles</h2>
+                           <div class="related-article">
+                               <div class="related-article__item">
+                                    <div class="img">
+                                        <img src="assets/images/bg/article-01.png" alt="article-img" class="img-fluid">
+                                    </div>
+                                    <div class="info">
+                                        <span class="info-category">TECHNOLOGY</span>
+                                        <h2 class="info-title">The cost of not engineering for agility</h2>
+                                        <a href="#">read article ></a>
+                                    </div>
+                               </div>
+                               <div class="related-article__item">
+                                    <div class="img">
+                                        <img src="assets/images/bg/article-02.png" alt="article-img" class="img-fluid">
+                                    </div>
+                                    <div class="info">
+                                        <span class="info-category">TECHNOLOGY</span>
+                                        <h2 class="info-title">Twitter is adding the ability to limit replies</h2>
+                                        <a href="#">read article ></a>
+                                    </div>
+                               </div>
+                               <div class="related-article__item">
+                                    <div class="img">
+                                        <img src="assets/images/bg/article-01.png" alt="article-img" class="img-fluid">
+                                    </div>
+                                    <div class="info">
+                                        <span class="info-category">TECHNOLOGY</span>
+                                        <h2 class="info-title">Launch of new fleet card with added security</h2>
+                                        <a href="#">read article ></a>
+                                    </div>
+                               </div>
+                           </div>
+                           <h2 class="article-main__sidebar-title">Related Video</h2>
+                           <div class="related-video">
+                                <div class="related-video__item">
+                                    <div class="related-video__content">
+                                        <iframe  src="https://www.youtube.com/embed/J6oDTn_ENto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      </div>
+                                      <h2 class="related-video__title">
+                                        Video title will be displayed here
+                                      </h2>
+                                </div>
+                                <div class="related-video__item">
+                                    <div class="related-video__content">
+                                        <iframe  src="https://www.youtube.com/embed/J6oDTn_ENto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      </div>
+                                      <h2 class="related-video__title">
+                                        Video title will be displayed here
+                                      </h2>
+                                </div>
+                                <a href="#" class="related-video__channel-list">
+                                    view more videos on this channel >
+                                </a>
+                           </div>
+                       </div>
                      </div>
                     </div>
 
@@ -522,10 +580,16 @@ It took exposure to the one African and female lecturer I had in the entire cour
 
         <!-- All js Goes here -->
         <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
-        <script src="assets/js/jquery-listnav.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-listnav.js"></script>
         <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/venobox.min.js"></script>
         <script src="assets/js/app.js"></script>
+        <script>
+            $(document).ready(function(){
+    $('.venobox').venobox(); 
+});
+        </script>
     </body>
 </html>
