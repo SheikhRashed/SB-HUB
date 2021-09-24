@@ -135,6 +135,14 @@
 .article-main {
   padding: 30px 0px;
   background-color: #fff;
+
+  &__audio-play {
+    margin-bottom: 20px;
+    audio {
+      width: 100%;
+    }
+  }
+
   &__content-write {
     .content-text {
       font-size: 15px;

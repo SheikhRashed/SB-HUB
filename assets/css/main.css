@@ -1878,6 +1878,14 @@ main::-webkit-scrollbar-track {
   background-color: #fff;
 }
 
+.article-main__audio-play {
+  margin-bottom: 20px;
+}
+
+.article-main__audio-play audio {
+  width: 100%;
+}
+
 .article-main__content-write .content-text {
   font-size: 15px;
   line-height: 22px;
