@@ -121,7 +121,10 @@ main {
     align-items: center;
     padding: 10px 8px;
     border-radius: 2px;
-
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(0.9);
+    }
     &.sticky__item-02 {
       background-color: #0033a1;
     }

@@ -131,6 +131,11 @@ main {
   align-items: center;
   padding: 10px 8px;
   border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sticky__sidebar li:hover {
+  transform: scale(0.9);
 }
 
 .sticky__sidebar li.sticky__item-02 {
@@ -2117,10 +2122,11 @@ main::-webkit-scrollbar-track {
 }
 
 .comments__textarea textarea {
-  border: 1px solid #858d9d;
+  height: 85px;
   margin: 15px 0px;
   margin-top: 0px;
-  height: 85px;
+  padding: 12px;
+  border: 1px solid #858d9d;
 }
 
 .comments__btn {
