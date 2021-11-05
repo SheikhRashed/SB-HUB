@@ -294,6 +294,12 @@ main {
   border: 1px solid #979797;
 }
 
+@media (max-width: 767px) {
+  .features-card {
+    padding-left: 24px;
+  }
+}
+
 .features-card:hover {
   box-shadow: -2px 67px 34px -50px rgba(0, 0, 0, 0.22);
   -webkit-box-shadow: -2px 67px 34px -50px rgba(0, 0, 0, 0.22);
@@ -699,6 +705,12 @@ main {
 .faq-body {
   background-color: #fff;
   padding: 24px;
+}
+
+.faq-body p {
+  font-size: 12px;
+  color: #4f637c;
+  line-height: 22px;
 }
 
 .quickView .card-box {
@@ -2064,6 +2076,13 @@ header.header--two::after, header.header--two::before {
   }
 }
 
+.support {
+  width: 100%;
+  padding: 50px 0px;
+  position: relative;
+  background-color: #fff;
+}
+
 .article {
   padding: 30px 0px;
 }
@@ -2587,7 +2606,13 @@ header.header--two::after, header.header--two::before {
   background-color: #fff;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 991px) {
+  .features__guideline {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
   .features__guideline {
     padding-left: 20px;
   }
@@ -2883,6 +2908,12 @@ header.header--two::after, header.header--two::before {
 .information-data {
   padding: 12px;
   border: 1px solid #979797;
+}
+
+@media (max-width: 991px) {
+  .information-data {
+    margin-bottom: 24px;
+  }
 }
 
 .information-data li {

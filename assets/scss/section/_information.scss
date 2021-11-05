@@ -6,6 +6,9 @@
   &-data {
     padding: 12px;
     border: 1px solid #979797;
+    @include max(991px) {
+      margin-bottom: 24px;
+    }
     li {
       position: relative;
       padding: 16px 0px;

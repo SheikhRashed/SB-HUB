@@ -10,8 +10,10 @@
   position: relative;
   background-color: #fff;
   transition: all 0.3s linear;
-  // border: 1px solid #707070;
   border: 1px solid #979797;
+  @include max(767px) {
+    padding-left: 24px;
+  }
 
   &:hover {
     box-shadow: -2px 67px 34px -50px rgba(0, 0, 0, 0.22);
