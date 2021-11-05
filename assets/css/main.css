@@ -653,6 +653,52 @@ header.header--two::after, header.header--two::before {
   font-family: Bbook;
 }
 
+.banner--three {
+  z-index: 1;
+  overflow: hidden;
+  padding: 60px 0px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner--three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 64, 0.7);
+}
+
+.banner--three h2,
+.banner--three p {
+  color: #fff;
+}
+
+.banner--three h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 18px;
+  font-family: BMedium;
+  text-transform: capitalize;
+}
+
+.banner--three p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: BRegular;
+}
+
+.banner--three p:nth-last-child(1) {
+  margin: 0;
+}
+
 .bannermwb .bannermwb__item img {
   margin-top: 15px;
 }
