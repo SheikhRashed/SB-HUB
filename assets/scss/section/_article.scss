@@ -97,7 +97,7 @@
           }
           li {
             display: flex;
-            align-items: center;
+            align-items: initial;
             padding-right: 30px;
             &:nth-last-child(1) {
               padding-right: 0px;
