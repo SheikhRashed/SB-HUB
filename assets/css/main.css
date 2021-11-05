@@ -339,6 +339,77 @@ main {
   text-transform: capitalize;
 }
 
+.g-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 575px) {
+  .g-card {
+    flex-direction: column;
+  }
+}
+
+.g-card__image {
+  width: 105px;
+  height: 105px;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-right: 18px;
+  border-radius: 50%;
+  position: relative;
+}
+
+@media (max-width: 575px) {
+  .g-card__image {
+    margin: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+.g-card__image img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.g-card__info h6 {
+  font-size: 16px;
+  color: #4f637c;
+  line-height: 26px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.g-card__info ul li {
+  display: flex;
+}
+
+.g-card__info ul li span {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-right: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #707070be;
+}
+
+.g-card__info ul li p {
+  font-size: 14px;
+  color: #4f637c;
+  line-height: 24px;
+  margin-top: -8px;
+}
+
+.g-card__info ul li p a {
+  font-size: 12px;
+  color: #0089ff;
+  line-height: 21px;
+  text-transform: capitalize;
+}
+
 .modal__sucess .modal-header {
   padding-bottom: 0px;
 }
@@ -809,6 +880,32 @@ header.header--two::after, header.header--two::before {
 @media (max-width: 767px) {
   .features__content {
     grid-template-columns: 1fr;
+  }
+}
+
+.g-started {
+  overflow: hidden;
+  padding: 50px 0px;
+  position: relative;
+  background-color: #fff;
+}
+
+.g-started__title {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 60px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .g-started__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .g-started .g-card {
+    margin-bottom: 24px;
   }
 }
 
