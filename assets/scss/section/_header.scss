@@ -5,18 +5,18 @@ header {
   box-shadow: 0px 4px 30px #00000033;
   padding: 30px 0px;
   position: relative;
-  &::after {
-    content: url('../images/bg/bg-07.png');
-    position: absolute;
-    top: 20px;
-    left: 150px;
-  }
-  &::before {
-    content: url('../images/bg/btimap-2.png');
-    position: absolute;
-    top: 20px;
-    right: 0px;
-  }
+  // &::after {
+  //   content: url('../images/bg/bg-07.png');
+  //   position: absolute;
+  //   top: 20px;
+  //   left: 150px;
+  // }
+  // &::before {
+  //   content: url('../images/bg/btimap-2.png');
+  //   position: absolute;
+  //   top: 20px;
+  //   right: 0px;
+  // }
   .navbar {
     &-collapse {
       // flex-direction: column;
@@ -89,6 +89,15 @@ header {
       .login__name {
         font-size: 13px;
         line-height: 20px;
+      }
+    }
+  }
+
+  &.header {
+    &--two {
+      &::after,
+      &::before {
+        display: none;
       }
     }
   }
