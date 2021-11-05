@@ -1,0 +1,48 @@
+.faqs {
+  padding: 50px 0px;
+}
+.faq {
+  &-item {
+    margin-bottom: 12px;
+  }
+
+  &-header {
+    margin: 0;
+  }
+
+  &-button {
+    width: 100%;
+    display: flex;
+    font-size: 24px;
+    text-align: left;
+    color: #707070;
+    line-height: 34px;
+    padding: 12px 20px;
+    align-items: center;
+    background-color: #fff;
+    text-transform: capitalize;
+    justify-content: space-between;
+    &:not(.collapsed) {
+      border-bottom: 1px solid #ddd;
+      //   border-color: transparent;
+    }
+    &.collapsed {
+      //   border-bottom: 1px solid #ddd;
+
+      .icon {
+        transform: rotate(0deg);
+      }
+    }
+    .icon {
+      color: #0089ff;
+      display: inline-block;
+      transform: rotate(180deg);
+      transition: all 0.3s linear;
+    }
+  }
+
+  &-body {
+    background-color: #fff;
+    padding: 24px;
+  }
+}

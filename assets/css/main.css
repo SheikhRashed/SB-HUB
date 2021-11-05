@@ -610,6 +610,52 @@ main {
   font-size: 14px;
 }
 
+.faqs {
+  padding: 50px 0px;
+}
+
+.faq-item {
+  margin-bottom: 12px;
+}
+
+.faq-header {
+  margin: 0;
+}
+
+.faq-button {
+  width: 100%;
+  display: flex;
+  font-size: 24px;
+  text-align: left;
+  color: #707070;
+  line-height: 34px;
+  padding: 12px 20px;
+  align-items: center;
+  background-color: #fff;
+  text-transform: capitalize;
+  justify-content: space-between;
+}
+
+.faq-button:not(.collapsed) {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-button.collapsed .icon {
+  transform: rotate(0deg);
+}
+
+.faq-button .icon {
+  color: #0089ff;
+  display: inline-block;
+  transform: rotate(180deg);
+  transition: all 0.3s linear;
+}
+
+.faq-body {
+  background-color: #fff;
+  padding: 24px;
+}
+
 header {
   background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 4px 30px #00000033;
@@ -881,6 +927,69 @@ header.header--two::after, header.header--two::before {
   .features__content {
     grid-template-columns: 1fr;
   }
+}
+
+.features__guideline {
+  padding: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  padding-left: 65px;
+  background-color: #fff;
+}
+
+@media (max-width: 575px) {
+  .features__guideline {
+    padding-left: 20px;
+  }
+}
+
+.features__guideline h2 {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.features__guideline ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.features__guideline ul li {
+  display: flex;
+  margin-right: 25px;
+  align-items: center;
+}
+
+.features__guideline ul li:nth-last-child(1) {
+  margin: 0px;
+}
+
+.features__guideline ul li a {
+  font-size: 12px;
+  color: #0089ff;
+  line-height: 22px;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.features__guideline ul li a span {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-right: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #707070be;
+}
+
+.features .article-main__sidebar {
+  background-color: #dddddd;
+}
+
+.features .article-main__sidebar-title {
+  border-color: #0033aa;
 }
 
 .g-started {
@@ -2194,6 +2303,8 @@ main::-webkit-scrollbar-track {
   text-align: center;
   font-weight: 500;
   padding: 15px 0px;
+  font-family: BMedium;
+  text-transform: capitalize;
   border-top: 2px solid #ffb822;
   border-bottom: 2px solid #ffb822;
 }
@@ -2224,6 +2335,10 @@ main::-webkit-scrollbar-track {
 .article-main__sidebar .related-article__item .img img {
   width: inherit;
   height: inherit;
+}
+
+.article-main__sidebar .related-article__item .info {
+  margin-top: -5px;
 }
 
 .article-main__sidebar .related-article__item .info-category {

@@ -226,6 +226,8 @@
       text-align: center;
       font-weight: 500;
       padding: 15px 0px;
+      font-family: BMedium;
+      text-transform: capitalize;
       border-top: 2px solid #ffb822;
       border-bottom: 2px solid #ffb822;
     }
@@ -255,6 +257,7 @@
           }
         }
         .info {
+          margin-top: -5px;
           &-category {
             color: #4f637c;
             font-size: 10px;
