@@ -291,7 +291,7 @@ main {
   position: relative;
   background-color: #fff;
   transition: all 0.3s linear;
-  border: 1px solid #707070;
+  border: 1px solid #979797;
 }
 
 .features-card:hover {
