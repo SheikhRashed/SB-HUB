@@ -219,6 +219,7 @@
   &__sidebar {
     padding: 20px;
     background-color: #f2f3f4;
+
     &-title {
       color: #0a2240;
       font-size: 16px;
@@ -236,28 +237,48 @@
     .related-video__item {
       padding: 20px 0px;
       border-bottom: 1px solid #70707034;
-      &:nth-last-child(1) {
-        border-bottom: 0px;
-      }
+      // &:nth-last-child(1) {
+      //   border-bottom: 0px;
+      // }
     }
 
     .related-article {
+      @include max(991px) {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include max(767px) {
+        gap: 0;
+        grid-template-columns: 1fr;
+      }
       &__item {
         display: flex;
         align-items: flex-start;
+        @include max(767px) {
+          justify-content: space-between;
+        }
 
         .img {
           width: 65px;
           height: 80px;
-          margin-right: 8px;
           flex-shrink: 0;
+          margin-right: 8px;
+          @include max(767px) {
+            width: 20%;
+            height: 100px;
+          }
           img {
-            width: inherit;
-            height: inherit;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
         .info {
           margin-top: -5px;
+          @include max(767px) {
+            width: 80%;
+          }
           &-category {
             color: #4f637c;
             font-size: 10px;
