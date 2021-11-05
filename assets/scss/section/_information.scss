@@ -1,0 +1,283 @@
+.information {
+  //   overflow: hidden;
+  padding: 50px 0px;
+  position: relative;
+  background-color: #fff;
+  &-data {
+    padding: 12px;
+    border: 1px solid #979797;
+    li {
+      position: relative;
+      padding: 16px 0px;
+      border-top: 1px dashed #707070;
+
+      &:hover {
+        &::after,
+        .information-data--dropdown {
+          opacity: 1;
+          user-select: all;
+          pointer-events: all;
+          visibility: visible;
+        }
+      }
+
+      &::after {
+        content: '';
+        top: 50%;
+        opacity: 0;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        user-select: none;
+        position: absolute;
+        pointer-events: none;
+        left: calc(100% + 12px);
+        transform: translateY(-50%);
+        background: url('/assets/images/triangle.png') no-repeat;
+        @include max(991px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(1) {
+        border-top: 0px;
+        padding-top: 4px;
+      }
+      &:nth-last-child(1) {
+        padding-bottom: 4px;
+      }
+      a {
+        width: 100%;
+        font-size: 12px;
+        color: #0089ff;
+        line-height: 21px;
+        display: inline-block;
+        text-transform: capitalize;
+      }
+    }
+    &--dropdown {
+      top: -12px;
+      z-index: 1;
+      opacity: 0;
+      padding: 16px;
+      font-size: 12px;
+      color: #4f637c;
+      min-width: 475px;
+      line-height: 18px;
+      user-select: none;
+      position: absolute;
+      visibility: hidden;
+      pointer-events: none;
+      left: calc(100% + 40px);
+      background-color: #fff;
+      border: 1px solid #b34fc5;
+      transition: all 0.3s ease-in-out;
+      @include max(991px) {
+        left: 0px;
+        top: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+
+  &-modals {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    h2 {
+      top: 0;
+      left: 0;
+      width: 100%;
+      font-size: 14px;
+      color: #4f637c;
+      user-select: none;
+      line-height: 24px;
+      position: absolute;
+      padding: 12px 20px;
+      pointer-events: none;
+      font-family: BMedium;
+      text-transform: capitalize;
+      background-color: rgba(255, 255, 255, 0.3);
+      @include max(575px) {
+        display: none;
+      }
+    }
+    &__imgwrapper {
+      width: inherit;
+      height: inherit;
+    }
+  }
+}
+
+.popup-btn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #afddee;
+  border: 2px solid #76b1ec;
+  img {
+    width: 14px;
+    height: 14px;
+  }
+
+  &--chair {
+    top: 400px;
+    left: 168px;
+    @include min-max(992px, 1199px) {
+      top: 350px;
+      left: 135px;
+    }
+    @include max(767px) {
+      top: 260px;
+      left: 120px;
+    }
+    @include max(575px) {
+      top: 150px;
+      left: 70px;
+    }
+  }
+
+  &--window {
+    top: 45px;
+    left: 112px;
+    @include max(575px) {
+      left: 30px;
+    }
+  }
+
+  &--desk {
+    bottom: 210px;
+    left: 345px;
+    @include min-max(992px, 1199px) {
+      bottom: 170px;
+    }
+    @include max(767px) {
+      bottom: 150px;
+      left: 245px;
+    }
+    @include max(575px) {
+      top: 130px;
+      left: 155px;
+    }
+  }
+  &--monitor {
+    top: 230px;
+    right: 320px;
+    @include min-max(992px, 1199px) {
+      top: 200px;
+      right: 260px;
+    }
+    @include max(767px) {
+      top: 160px;
+      right: 220px;
+    }
+    @include max(575px) {
+      top: 90px;
+      right: 120px;
+    }
+  }
+
+  &--lamp {
+    top: 230px;
+    left: 245px;
+    @include min-max(992px, 1199px) {
+      top: 190px;
+      left: 200px;
+    }
+    @include max(767px) {
+      top: 160px;
+      left: 165px;
+    }
+
+    @include max(575px) {
+      top: 85px;
+      left: 90px;
+    }
+  }
+
+  &--printer {
+    top: 280px;
+    right: 30px;
+    @include min-max(992px, 1199px) {
+      top: 240px;
+    }
+    @include max(767px) {
+      top: 200px;
+    }
+
+    @include max(575px) {
+      top: 110px;
+      right: 5px;
+    }
+  }
+
+  &--cables {
+    top: 410px;
+    right: 30px;
+    @include min-max(992px, 1199px) {
+      top: 340px;
+    }
+    @include max(767px) {
+      top: 260px;
+    }
+
+    @include max(575px) {
+      top: 160px;
+      right: 5px;
+    }
+  }
+
+  &--plug {
+    top: 500px;
+    right: 45px;
+    @include min-max(992px, 1199px) {
+      top: 420px;
+      right: 30px;
+    }
+
+    @include max(575px) {
+      top: 190px;
+      right: 10px;
+    }
+  }
+
+  &--wifi {
+    top: 320px;
+    right: 240px;
+    @include min-max(992px, 1199px) {
+      top: 250px;
+      right: 200px;
+    }
+    @include max(767px) {
+      top: 220px;
+      right: 165px;
+    }
+    @include max(575px) {
+      top: 117px;
+      right: 85px;
+    }
+  }
+
+  &--station {
+    top: 310px;
+    right: 165px;
+    @include min-max(992px, 1199px) {
+      top: 260px;
+      right: 140px;
+    }
+    @include max(767px) {
+      top: 215px;
+      right: 115px;
+    }
+
+    @include max(575px) {
+      top: 120px;
+      right: 60px;
+    }
+  }
+}

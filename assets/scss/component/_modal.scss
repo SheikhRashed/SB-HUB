@@ -147,6 +147,51 @@
   }
 }
 
+// Information modal
+.information-modal {
+  p {
+    margin: 0;
+    font-size: 14px;
+    color: #4f637c;
+    line-height: 21px;
+    margin-bottom: 16px;
+    @include max(991px) {
+      margin-top: 16px;
+    }
+  }
+
+  &__print {
+    ul {
+      padding-left: 30px;
+      li {
+        list-style: disc;
+        margin-bottom: 16px;
+        &:nth-last-child(1) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  .modal {
+    &-header {
+      padding: 16px 24px;
+      align-items: center;
+      .btn-close {
+        color: #fff;
+        padding: 4px 8px;
+        background-color: #0089ff;
+      }
+    }
+    &-title {
+      font-size: 21px;
+      color: #4f637c;
+      line-height: 24px;
+      text-transform: capitalize;
+    }
+  }
+}
+
 .subscription__checkBoxes {
   background: #4f637c;
   padding: 25px 35px;

@@ -237,9 +237,9 @@
     .related-video__item {
       padding: 20px 0px;
       border-bottom: 1px solid #70707034;
-      // &:nth-last-child(1) {
-      //   border-bottom: 0px;
-      // }
+      &:nth-last-child(1) {
+        border-bottom: 0px;
+      }
     }
 
     .related-article {
