@@ -55,3 +55,68 @@
     }
   }
 }
+
+.g-card {
+  display: flex;
+  align-items: flex-start;
+  @include max(575px) {
+    flex-direction: column;
+  }
+  &__image {
+    width: 105px;
+    height: 105px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 18px;
+    border-radius: 50%;
+    position: relative;
+    @include max(575px) {
+      margin: 0px;
+      margin-bottom: 16px;
+    }
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    h6 {
+      font-size: 16px;
+      color: #4f637c;
+      line-height: 26px;
+      margin-bottom: 12px;
+      text-transform: capitalize;
+    }
+
+    ul {
+      li {
+        display: flex;
+        span {
+          width: 8px;
+          height: 8px;
+          flex-shrink: 0;
+          overflow: hidden;
+          margin-right: 15px;
+          border-radius: 50%;
+          display: inline-block;
+          background-color: #707070be;
+        }
+        p {
+          font-size: 14px;
+          color: #4f637c;
+          line-height: 24px;
+          margin-top: -8px;
+
+          a {
+            font-size: 12px;
+            color: #0089ff;
+            line-height: 21px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
