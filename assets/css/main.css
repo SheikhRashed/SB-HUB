@@ -3379,8 +3379,6 @@ header.header--two::after, header.header--two::before {
 .information-modals__imgwrapper {
   width: inherit;
   height: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 body {
