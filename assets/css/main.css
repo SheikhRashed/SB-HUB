@@ -290,7 +290,6 @@ main {
 
 .btn {
   font-size: 14px;
-  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -299,7 +298,7 @@ main {
   background-color: #0033a1;
   color: #fff;
   width: 300px;
-  height: 40px;
+  padding: 9px 15px;
 }
 
 .btn--primary:hover {
@@ -315,7 +314,6 @@ main {
   overflow: hidden;
   height: 100%;
   padding: 24px;
-  padding-left: 68px;
   position: relative;
   background-color: #fff;
   -webkit-transition: all 0.3s linear;
@@ -323,10 +321,8 @@ main {
   border: 1px solid #979797;
 }
 
-@media (max-width: 767px) {
-  .features-card {
-    padding-left: 24px;
-  }
+.features-card .icon {
+  margin-top: -8px;
 }
 
 .features-card:hover {
@@ -2274,6 +2270,46 @@ header.header--two::after, header.header--two::before {
   }
 }
 
+.secondary-navigation {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1463a3), color-stop(60%, #0033a1));
+  background: linear-gradient(180deg, #1463a3 0%, #0033a1 60%);
+}
+
+.secondary-navigation .navbar-nav .nav-item {
+  position: relative;
+}
+
+.secondary-navigation .navbar-nav .nav-item::before {
+  content: '';
+  width: 1px;
+  height: 80%;
+  background-color: #4a75a4;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.secondary-navigation .navbar-nav .nav-item:last-child::before {
+  background-color: transparent;
+}
+
+.secondary-navigation .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 3px 15px;
+  margin: 0 15px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.secondary-navigation .navbar-nav .nav-item .nav-link:hover, .secondary-navigation .navbar-nav .nav-item .nav-link.active {
+  background-color: #4a75a4;
+}
+
 .g-started {
   overflow: hidden;
   padding: 50px 0px;
@@ -2897,7 +2933,6 @@ header.header--two::after, header.header--two::before {
   padding: 20px;
   margin-top: 20px;
   overflow: hidden;
-  padding-left: 65px;
   background-color: #fff;
 }
 
@@ -2907,10 +2942,8 @@ header.header--two::after, header.header--two::before {
   }
 }
 
-@media (max-width: 767px) {
-  .features__guideline {
-    padding-left: 20px;
-  }
+.features__guideline .icon {
+  margin-top: -8px;
 }
 
 .features__guideline h2 {

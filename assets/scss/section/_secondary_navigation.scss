@@ -1,0 +1,36 @@
+.secondary-navigation{
+    background: linear-gradient(180deg, #1463a3 0%, #0033a1 60%);
+
+    .navbar-nav{
+        .nav-item {
+            position: relative;
+            &::before {
+                content: '';
+                width: 1px;
+                height: 80%;
+                background-color: #4a75a4;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:last-child::before {
+                background-color: transparent;
+            }
+            .nav-link {
+                font-size: 14px;
+                color: #fff;
+                background-color: transparent;
+                border-radius: 4px;
+                padding: 3px 15px;
+                margin: 0 15px;
+                transition: all 0.2s linear;
+
+                &:hover,
+                &.active {
+                    background-color: #4a75a4;
+                }
+            }
+        }
+    }
+}

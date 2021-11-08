@@ -16,13 +16,12 @@
     padding: 20px;
     margin-top: 20px;
     overflow: hidden;
-    padding-left: 65px;
     background-color: #fff;
     @include max(991px) {
       margin-bottom: 24px;
     }
-    @include max(767px) {
-      padding-left: 20px;
+    .icon {
+      margin-top: -8px;
     }
     h2 {
       font-size: 16px;

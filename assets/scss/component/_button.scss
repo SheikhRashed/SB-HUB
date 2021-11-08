@@ -1,6 +1,5 @@
 .btn {
     font-size: 14px;
-    line-height: 20px;
     text-align: center;
     text-transform: uppercase;
     &--primary {
@@ -8,7 +7,7 @@
         color: #fff;
         // padding: 8px 35px;
         width: 300px;
-        height: 40px;
+        padding: 9px 15px;
         &:hover {
             color: #fff;
         }
