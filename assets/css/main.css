@@ -3320,7 +3320,7 @@ header.header--two::after, header.header--two::before {
   left: calc(100% + 12px);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: url("/assets/images/triangle.png") no-repeat;
+  background: url("../images/triangle.png") no-repeat;
 }
 
 @media (max-width: 991px) {

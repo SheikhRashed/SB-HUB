@@ -36,7 +36,7 @@
         pointer-events: none;
         left: calc(100% + 12px);
         transform: translateY(-50%);
-        background: url('/assets/images/triangle.png') no-repeat;
+        background: url('../images/triangle.png') no-repeat;
         @include max(991px) {
           display: none;
         }
