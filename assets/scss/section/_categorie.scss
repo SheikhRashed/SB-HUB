@@ -1,0 +1,24 @@
+.contributors-content {
+	padding: 60px 0px;
+	&-link {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 24px;
+		a {
+			color: #0089ff;
+			font-size: 14px;
+			line-height: 21px;
+			text-transform: capitalize;
+			span {
+				display: inline-block;
+			}
+		}
+	}
+
+	.c-card {
+		@include max(991px) {
+			margin-bottom: 24px;
+		}
+	}
+}
