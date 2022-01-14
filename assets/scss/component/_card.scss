@@ -174,13 +174,16 @@
 			margin-bottom: 8px;
 			text-transform: capitalize;
 			display: inline-block;
-			span {
+			.label {
 				display: block;
 				width: 35%;
 				margin: 0px auto;
 				height: 5px;
-				background-color: #ff681d;
+				background-color: #ffb822;
 				transition: all 0.2s linear;
+				&--red {
+					background-color: #ff681d;
+				}
 			}
 		}
 		// designation
