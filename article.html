@@ -1,581 +1,903 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SB-intranet</title>
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="assets/css/all.min.css" />
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <!-- Slick slider -->
-        <link rel="stylesheet" href="assets/css/slick.css" />
-        <!-- Venobox -->
-        <link rel="stylesheet" href="assets/css/venobox.min.css" />
-        <!-- Main css -->
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SB-intranet</title>
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="assets/css/all.min.css" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<!-- Slick slider -->
+		<link rel="stylesheet" href="assets/css/slick.css" />
+		<!-- Venobox -->
+		<link rel="stylesheet" href="assets/css/venobox.min.css" />
+		<!-- Main css -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
 
-    <body>
-        <!-- Header section start -->
-        <header>
-            <nav class="navbar navbar-expand-xl navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/images/badge.png" alt="" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+	<body>
+		<!-- Header section start -->
+		<header>
+			<nav class="navbar navbar-expand-xl navbar-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img src="assets/images/badge.png" alt="" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto">
-                            <li  class="d-block d-xl-none">
-                                <form class="form-inline mt-0 justify-content-end pl-3">
-                                    <div class="login__Img mr-3">
-                                        <img src="assets/images/pepole/pepole-03.png" alt="pepole-03" />
-                                    </div>
-                                    <div class="login__name">
-                                        <span class="text-white">Wilson,Bongs N</span>
-                                    </div>
-                                </form>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">My Workbench </a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">My Business tools</a>
-                            </li>
-                            <li class="nav-ite m">
-                                <a class="nav-link" href="#">More for me</a>
-                            </li>
-                        </ul>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mx-auto">
+							<li class="d-block d-xl-none">
+								<form class="form-inline mt-0 justify-content-end pl-3">
+									<div class="login__Img mr-3">
+										<img
+											src="assets/images/pepole/pepole-03.png"
+											alt="pepole-03"
+										/>
+									</div>
+									<div class="login__name">
+										<span class="text-white">Wilson,Bongs N</span>
+									</div>
+								</form>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">My Workbench </a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="#">My Business tools</a>
+							</li>
+							<li class="nav-ite m">
+								<a class="nav-link" href="#">More for me</a>
+							</li>
+						</ul>
 
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search for files, pepole or pages" aria-label="Search" />
-                            <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
+						<form class="form-inline my-2 my-lg-0">
+							<input
+								class="form-control mr-sm-2"
+								type="search"
+								placeholder="Search for files, pepole or pages"
+								aria-label="Search"
+							/>
+							<button class="btn my-2 my-sm-0" type="submit">
+								<i class="fas fa-search"></i>
+							</button>
+						</form>
+					</div>
 
-                    <a href="#" class="d-none d-xl-block">
-                        <form class="form-inline">
-                            <div class="login__Img mr-3">
-                                <img src="assets/images/pepole/pepole-03.png" alt="pepole" />
-                            </div>
-                            <div class="login__name">
-                                <span class="text-white">Wilson,Bongs N</span>
-                            </div>
-                        </form>
-                    </a>
-                </div>
-            </nav>
-        </header>
-        <!-- Header section end -->
-        <main class="position-relative">
-            <!-- STicky sidebar  -->
-            <ul class="sticky__sidebar">
-                <li class="sticky__item sticky__item-01 dropright">
-                    <a class="dropdown-toggle d-flex" href="#" id="dropright_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/icn_people-1.png" alt="img" />
-                        </div>
-                        <span>
-                            Employee <br />
-                            services
-                        </span>
-                    </a>
+					<a href="#" class="d-none d-xl-block">
+						<form class="form-inline">
+							<div class="login__Img mr-3">
+								<img
+									src="assets/images/pepole/pepole-03.png"
+									alt="pepole"
+								/>
+							</div>
+							<div class="login__name">
+								<span class="text-white">Wilson,Bongs N</span>
+							</div>
+						</form>
+					</a>
+				</div>
+			</nav>
+		</header>
+		<!-- Header section end -->
+		<main class="position-relative">
+			<!-- STicky sidebar  -->
+			<ul class="sticky__sidebar">
+				<li class="sticky__item sticky__item-01 dropright">
+					<a
+						class="dropdown-toggle d-flex"
+						href="#"
+						id="dropright_1"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/icn_people-1.png" alt="img" />
+						</div>
+						<span>
+							Employee <br />
+							services
+						</span>
+					</a>
 
-                    <div class="dropdown-menu" aria-labelledby="dropright_1">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+					<div class="dropdown-menu" aria-labelledby="dropright_1">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+					</div>
+				</li>
 
-                <li class="sticky__item sticky__item-02 dropright">
-                    <a class="dropdown-toggle d-flex" href="#" id="dropright_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/color.png" alt="img" />
-                        </div>
-                        <span>
-                            Employee <br />
-                            support
-                        </span>
-                    </a>
+				<li class="sticky__item sticky__item-02 dropright">
+					<a
+						class="dropdown-toggle d-flex"
+						href="#"
+						id="dropright_2"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/color.png" alt="img" />
+						</div>
+						<span>
+							Employee <br />
+							support
+						</span>
+					</a>
 
-                    <div class="dropdown-menu" aria-labelledby="dropright_2">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+					<div class="dropdown-menu" aria-labelledby="dropright_2">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+					</div>
+				</li>
 
-                <li class="sticky__item sticky__item-03">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/internet.png" alt="img" />
-                        </div>
-                        <span>
-                            Internet <br />
-                            banking
-                        </span>
-                    </a>
-                </li>
+				<li class="sticky__item sticky__item-03">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/internet.png" alt="img" />
+						</div>
+						<span>
+							Internet <br />
+							banking
+						</span>
+					</a>
+				</li>
 
-                <li class="toggle">
-                    <i class="fas fa-cog"></i>
-                </li>
-            </ul>
-            <ul class="sticky__sidebar social">
-                <li class="sticky__item sticky__item-01">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/icn_share-android.png" alt="img" />
-                        </div>
-                    </a>
-                </li>
-                <li class="sticky__item sticky__item-02">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/female.png" alt="img" />
-                        </div>
-                    </a>
-                </li>
-                <li class="sticky__item sticky__item-03">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/bell.png" alt="img" />
-                        </div>
-                    </a>
-                </li>
-                <li class="toggle toggle2">
-                    <i class="fas fa-cog"></i>
-                </li>
-            </ul>
-            <div class="breedCrumb">
-                <div class="container">
-                    <div class="breedCrumb__content">
-                        <ul class="breedCrumb__flow">
-                            <li>
-                                <a href="#"> Corporate Function <span class="space">&nbsp;&nbsp; &nbsp;&nbsp;</span>&gt;</a>
-                            </li>
-                            <li>
-                                <a href="#">Engineering  <span class="space">&nbsp;&nbsp; &nbsp;&nbsp;</span> &gt;</a>
-                            </li>
-                            <li>
-                                <a href="#">Technology <span class="space">&nbsp;&nbsp; &nbsp;&nbsp;</span> &gt;</a>
-                            </li>
-                            <li><a href="#" class="active">How gender bias compromises the tech sector</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+				<li class="toggle">
+					<i class="fas fa-cog"></i>
+				</li>
+			</ul>
+			<ul class="sticky__sidebar social">
+				<li class="sticky__item sticky__item-01">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img
+								src="assets/images/sticky/icn_share-android.png"
+								alt="img"
+							/>
+						</div>
+					</a>
+				</li>
+				<li class="sticky__item sticky__item-02">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/female.png" alt="img" />
+						</div>
+					</a>
+				</li>
+				<li class="sticky__item sticky__item-03">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/bell.png" alt="img" />
+						</div>
+					</a>
+				</li>
+				<li class="toggle toggle2">
+					<i class="fas fa-cog"></i>
+				</li>
+			</ul>
+			<div class="breedCrumb">
+				<div class="container">
+					<div class="breedCrumb__content">
+						<ul class="breedCrumb__flow">
+							<li>
+								<a href="#">
+									Corporate Function
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="18px"
+											height="18px"
+											fill="currentColor"
+											viewBox="0 0 256 256"
+										>
+											<rect
+												width="256"
+												height="256"
+												fill="none"
+											></rect>
+											<polyline
+												points="96 48 176 128 96 208"
+												fill="none"
+												stroke="currentColor"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="16"
+											></polyline>
+										</svg>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									>Engineering
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="18px"
+											height="18px"
+											fill="currentColor"
+											viewBox="0 0 256 256"
+										>
+											<rect
+												width="256"
+												height="256"
+												fill="none"
+											></rect>
+											<polyline
+												points="96 48 176 128 96 208"
+												fill="none"
+												stroke="currentColor"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="16"
+											></polyline>
+										</svg>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									>Technology
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="18px"
+											height="18px"
+											fill="currentColor"
+											viewBox="0 0 256 256"
+										>
+											<rect
+												width="256"
+												height="256"
+												fill="none"
+											></rect>
+											<polyline
+												points="96 48 176 128 96 208"
+												fill="none"
+												stroke="currentColor"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="16"
+											></polyline>
+										</svg>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									>How gender bias compromises the tech sector</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-            <section class="article-banner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 order-2 order-lg-0">
-                            <div class="article-banner__content">
-                                 <span class="tag">Technology</span>
-                                 <h2 class="title">How gender bias compromises the tech sector</h2>
-                                 <p class="subtitle">By: Linda Zwane, Head of Data Management, Eswatini</p>
-                                 <div class="article-info">
-                                     <div class="article-info__item">
-                                         <ul class="date">
-                                             <li>
-                                                 <p>14,2021</p>
-                                             </li>
-                                             <li>
-                                                 <p>5 min read</p>
-                                             </li>
-                                         </ul>
-                                     </div>
-                                     <div class="article-info__item">
-                                         <ul>
-                                             <li>
-                                                 <span class="icon">
-                                                    <svg id="icn_thumb_up" data-name="icn_thumb/up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
-                                                        <defs>
-                                                          <clipPath id="clip-path">
-                                                            <path id="Mask" d="M13.005,16V7h2.5a.5.5,0,0,1,.5.5v8a.5.5,0,0,1-.5.5Zm-8.5,0c-1.256,0-1.42-.224-2.327-1.976L.112,9.51a.577.577,0,0,1-.032-.1A2.958,2.958,0,0,1,.6,6.922,2.39,2.39,0,0,1,2.506,6h4.5V2.5A2.417,2.417,0,0,1,9.5,0,.5.5,0,0,1,9.98.342l2,6a.542.542,0,0,1,.025.158v9a.5.5,0,0,1-.5.5ZM1.385,7.545a1.956,1.956,0,0,0-.341,1.6l2.033,4.444C3.811,15,3.811,15,4.505,15h6.5V6.583L9.156,1.032A1.42,1.42,0,0,0,8.005,2.5v4a.5.5,0,0,1-.5.5h-5A1.408,1.408,0,0,0,1.385,7.545Z" fill="#767676"/>
-                                                          </clipPath>
-                                                        </defs>
-                                                        <rect id="bounding_box" width="24" height="24" fill="none"/>
-                                                        <g  transform="translate(4 4)">
-                                                          <path  data-name="Mask" d="M13.005,16V7h2.5a.5.5,0,0,1,.5.5v8a.5.5,0,0,1-.5.5Zm-8.5,0c-1.256,0-1.42-.224-2.327-1.976L.112,9.51a.577.577,0,0,1-.032-.1A2.958,2.958,0,0,1,.6,6.922,2.39,2.39,0,0,1,2.506,6h4.5V2.5A2.417,2.417,0,0,1,9.5,0,.5.5,0,0,1,9.98.342l2,6a.542.542,0,0,1,.025.158v9a.5.5,0,0,1-.5.5ZM1.385,7.545a1.956,1.956,0,0,0-.341,1.6l2.033,4.444C3.811,15,3.811,15,4.505,15h6.5V6.583L9.156,1.032A1.42,1.42,0,0,0,8.005,2.5v4a.5.5,0,0,1-.5.5h-5A1.408,1.408,0,0,0,1.385,7.545Z" fill="#767676"/>
-                                                          <g  data-name="color" clip-path="url(#clip-path)">
-                                                            <g  data-name="color" transform="translate(-4 -4)">
-                                                              <rect  width="24" height="24" fill="#ffa101"/>
-                                                            </g>
-                                                          </g>
-                                                        </g>
-                                                      </svg>
-                                                    </span>
-                                                    <p>3</p>
-                                             </li>
-                                             <li>
-                                                 <span class="icon">
-                                                    <img src="assets/images/icons/comment.svg" alt="comments"/>
-                                                 </span>
-                                                 <p>2</p>
-                                             </li>
-                                         </ul>
-                                     </div>
-                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 order-1 order-lg-0">
-                            <a href="#" class="article-banner__img-content" >
-                            <img src="./assets/images/bg/article-banner.png" alt="article img" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+			<section class="article-banner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 order-2 order-lg-0">
+							<div class="article-banner__content">
+								<span class="tag">Technology</span>
+								<h2 class="title">
+									How gender bias compromises the tech sector
+								</h2>
+								<p class="subtitle">
+									By: Linda Zwane, Head of Data Management, Eswatini
+								</p>
+								<div class="article-info">
+									<div class="article-info__item">
+										<ul class="date">
+											<li>
+												<p>14,2021</p>
+											</li>
+											<li>
+												<p>5 min read</p>
+											</li>
+										</ul>
+									</div>
+									<div class="article-info__item">
+										<ul>
+											<li>
+												<span class="icon">
+													<svg
+														id="icn_thumb_up"
+														data-name="icn_thumb/up"
+														xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink"
+														width="24"
+														height="24"
+														viewBox="0 0 24 24"
+													>
+														<defs>
+															<clipPath id="clip-path">
+																<path
+																	id="Mask"
+																	d="M13.005,16V7h2.5a.5.5,0,0,1,.5.5v8a.5.5,0,0,1-.5.5Zm-8.5,0c-1.256,0-1.42-.224-2.327-1.976L.112,9.51a.577.577,0,0,1-.032-.1A2.958,2.958,0,0,1,.6,6.922,2.39,2.39,0,0,1,2.506,6h4.5V2.5A2.417,2.417,0,0,1,9.5,0,.5.5,0,0,1,9.98.342l2,6a.542.542,0,0,1,.025.158v9a.5.5,0,0,1-.5.5ZM1.385,7.545a1.956,1.956,0,0,0-.341,1.6l2.033,4.444C3.811,15,3.811,15,4.505,15h6.5V6.583L9.156,1.032A1.42,1.42,0,0,0,8.005,2.5v4a.5.5,0,0,1-.5.5h-5A1.408,1.408,0,0,0,1.385,7.545Z"
+																	fill="#767676"
+																/>
+															</clipPath>
+														</defs>
+														<rect
+															id="bounding_box"
+															width="24"
+															height="24"
+															fill="none"
+														/>
+														<g transform="translate(4 4)">
+															<path
+																data-name="Mask"
+																d="M13.005,16V7h2.5a.5.5,0,0,1,.5.5v8a.5.5,0,0,1-.5.5Zm-8.5,0c-1.256,0-1.42-.224-2.327-1.976L.112,9.51a.577.577,0,0,1-.032-.1A2.958,2.958,0,0,1,.6,6.922,2.39,2.39,0,0,1,2.506,6h4.5V2.5A2.417,2.417,0,0,1,9.5,0,.5.5,0,0,1,9.98.342l2,6a.542.542,0,0,1,.025.158v9a.5.5,0,0,1-.5.5ZM1.385,7.545a1.956,1.956,0,0,0-.341,1.6l2.033,4.444C3.811,15,3.811,15,4.505,15h6.5V6.583L9.156,1.032A1.42,1.42,0,0,0,8.005,2.5v4a.5.5,0,0,1-.5.5h-5A1.408,1.408,0,0,0,1.385,7.545Z"
+																fill="#767676"
+															/>
+															<g
+																data-name="color"
+																clip-path="url(#clip-path)"
+															>
+																<g
+																	data-name="color"
+																	transform="translate(-4 -4)"
+																>
+																	<rect
+																		width="24"
+																		height="24"
+																		fill="#ffa101"
+																	/>
+																</g>
+															</g>
+														</g>
+													</svg>
+												</span>
+												<p>3</p>
+											</li>
+											<li>
+												<span class="icon">
+													<img
+														src="assets/images/icons/comment.svg"
+														alt="comments"
+													/>
+												</span>
+												<p>2</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 order-1 order-lg-0">
+							<a href="#" class="article-banner__img-content">
+								<img
+									src="./assets/images/bg/article-banner.png"
+									alt="article img"
+									class="img-fluid"
+								/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <section class="article-main">
-                <div class="container">
-                    <div class="row">
-                     <div class="col-lg-8">
-                        <div class="article-main__audio-play">
-                            <audio controls class="audiplay" nodownload >
-                                <source src="assets/audio.mp3" type="audio/mp3">
-                            </audio>
-                        </div>
-                       <div class="article-main__content-write">
-                           <p class="content-text">
-                            It is not uncommon to hear criticisms of the tech sector for a significant lack of <a href="#">gender diversity</a> at all levels, but specifically within decision-making positions.
-                           </p>
-                           <p class="content-text">
-                            According to the <a href="#">World Economic</a> Forum's latest <a href="#">Global Gender Gap report</a>, women make up less than 40% of the total workforce in the top tech companies, and when considering only tech-related roles they are even more underrepresented.
-                           </p>
-                           <div class="content-video">
-                            <iframe src="https://www.youtube.com/embed/s9xOC-LA8yw" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                           </div>
-                           <p class="content-text">
-                            But while AI applications hold promise to transform our lives in many aspects, they also present serious risks. A narrow talent pool in AI could perpetuate existing forms of structural gender inequality.
-                           </p>
-                           <div class="quote-content">
-                               <p>
-                                This comes at a time when accelerated advances in tech fields like artificial intelligence are having a profound impact on the economy and society at large. This is only set to deepen due to the acceleration of technological advancements as a result of the impact of the <a href="#">Covid-19</a> pandemic.
-                               </p>
-                           </div>
-                           <p class="content-text">
-                            It should take talent and hard work in an individual to have a successful career in <a href="#">Data and AI</a>, as in any industry. But certainly, in my experience, it has required more of me. From the time I was interested in mathematics as a younger person, it made me different. In university lecture halls, the number of women got leaner as we neared graduation.
-                           </p>
-                           <div class="podcast-content">
-                               <div class="podcast-content__video">
-                                <iframe  src="https://www.youtube.com/embed/s9xOC-LA8yw" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                               </div>
-                               <div class="podcast-content__text">
-                                   <a href="#" class="title">Podcast 4: Can it cut bothways?
-                                    </a>
-                                    <p class="text-info">
-                                        The facts are that an overwhelming majority of VAWC is committed by men against women. VAWC committed by men is usually more destructive and women suffer greater consequences. 
-                                    </p>
-                               </div>
+			<section class="article-main">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="article-main__audio-play">
+								<audio controls class="audiplay" nodownload>
+									<source src="assets/audio.mp3" type="audio/mp3" />
+								</audio>
+							</div>
+							<div class="article-main__content-write">
+								<p class="content-text">
+									It is not uncommon to hear criticisms of the tech
+									sector for a significant lack of
+									<a href="#">gender diversity</a> at all levels, but
+									specifically within decision-making positions.
+								</p>
+								<p class="content-text">
+									According to the
+									<a href="#">World Economic</a> Forum's latest
+									<a href="#">Global Gender Gap report</a>, women make
+									up less than 40% of the total workforce in the top
+									tech companies, and when considering only tech-related
+									roles they are even more underrepresented.
+								</p>
+								<div class="content-video">
+									<iframe
+										src="https://www.youtube.com/embed/s9xOC-LA8yw"
+										title="YouTube video player"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p class="content-text">
+									But while AI applications hold promise to transform
+									our lives in many aspects, they also present serious
+									risks. A narrow talent pool in AI could perpetuate
+									existing forms of structural gender inequality.
+								</p>
+								<div class="quote-content">
+									<p>
+										This comes at a time when accelerated advances in
+										tech fields like artificial intelligence are
+										having a profound impact on the economy and
+										society at large. This is only set to deepen due
+										to the acceleration of technological advancements
+										as a result of the impact of the
+										<a href="#">Covid-19</a> pandemic.
+									</p>
+								</div>
+								<p class="content-text">
+									It should take talent and hard work in an individual
+									to have a successful career in
+									<a href="#">Data and AI</a>, as in any industry. But
+									certainly, in my experience, it has required more of
+									me. From the time I was interested in mathematics as a
+									younger person, it made me different. In university
+									lecture halls, the number of women got leaner as we
+									neared graduation.
+								</p>
+								<div class="podcast-content">
+									<div class="podcast-content__video">
+										<iframe
+											src="https://www.youtube.com/embed/s9xOC-LA8yw"
+											title="YouTube video player"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										></iframe>
+									</div>
+									<div class="podcast-content__text">
+										<a href="#" class="title"
+											>Podcast 4: Can it cut bothways?
+										</a>
+										<p class="text-info">
+											The facts are that an overwhelming majority of
+											VAWC is committed by men against women. VAWC
+											committed by men is usually more destructive
+											and women suffer greater consequences.
+										</p>
+									</div>
+								</div>
+								<p class="content-text">
+									In <a href="#">postgraduate study</a>, there was also
+									the isolation of being the only person of colour in
+									all my chosen classes, over and above the gender
+									divide highlighted by the quoted
+									<a href="#">WEF study.</a>
+								</p>
 
-                           </div>
-                           <p class="content-text">
-                            In <a href="#">postgraduate study</a>, there was also the isolation of being the only person of colour in all my chosen classes, over and above the gender divide highlighted by the quoted <a href="#">WEF study.</a>
-                           </p>
+								<a href="#" class="graph-chart">
+									<img
+										src="assets/images/bg/graph.png"
+										alt="graph-img"
+										class="img-fluid"
+									/>
+								</a>
+								<p class="content-text">
+									The practical impact of this lack of diversity, is
+									that women in university lecture halls either work in
+									groups consisting of largely men or get isolated from
+									the collaborative <a href="#">culture</a> that the
+									coding world sometimes requires.
+								</p>
+								<p class="content-text">
+									It took exposure to the one African and female
+									lecturer I had in the entire course of my
+									undergraduate program to show me it was possible and
+									that there was room in the world for some who looked
+									like me and had similar interests to myself.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="article-main__sidebar">
+								<h2 class="article-main__sidebar-title">
+									Related articles
+								</h2>
+								<div class="related-article">
+									<div class="related-article__item">
+										<div class="img">
+											<img
+												src="assets/images/bg/article-01.png"
+												alt="article-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="info">
+											<span class="info-category">TECHNOLOGY</span>
+											<h2 class="info-title">
+												The cost of not engineering for agility
+											</h2>
+											<a href="#">read article ></a>
+										</div>
+									</div>
+									<div class="related-article__item">
+										<div class="img">
+											<img
+												src="assets/images/bg/article-02.png"
+												alt="article-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="info">
+											<span class="info-category">TECHNOLOGY</span>
+											<h2 class="info-title">
+												Twitter is adding the ability to limit
+												replies
+											</h2>
+											<a href="#">read article ></a>
+										</div>
+									</div>
+									<div class="related-article__item">
+										<div class="img">
+											<img
+												src="assets/images/bg/article-01.png"
+												alt="article-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="info">
+											<span class="info-category">TECHNOLOGY</span>
+											<h2 class="info-title">
+												Launch of new fleet card with added
+												security
+											</h2>
+											<a href="#">read article ></a>
+										</div>
+									</div>
+								</div>
+								<h2 class="article-main__sidebar-title">Related Video</h2>
+								<div class="related-video">
+									<div class="related-video__item">
+										<div class="related-video__content">
+											<iframe
+												src="https://www.youtube.com/embed/J6oDTn_ENto"
+												title="YouTube video player"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+												allowfullscreen
+											></iframe>
+										</div>
+										<h2 class="related-video__title">
+											Video title will be displayed here
+										</h2>
+									</div>
+									<div class="related-video__item">
+										<div class="related-video__content">
+											<iframe
+												src="https://www.youtube.com/embed/J6oDTn_ENto"
+												title="YouTube video player"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+												allowfullscreen
+											></iframe>
+										</div>
+										<h2 class="related-video__title">
+											Video title will be displayed here
+										</h2>
+									</div>
+									<a href="#" class="related-video__channel-list">
+										view more videos on this channel >
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                           <a href="#" class="graph-chart">
-                               <img src="assets/images/bg/graph.png" alt="graph-img" class="img-fluid">
-                           </a>
-                           <p class="content-text">
-                            The practical impact of this lack of diversity, is that women in university lecture halls either work in groups consisting of largely men or get isolated from the collaborative <a href="#">culture</a> that the coding world sometimes requires.
-                           </p>
-                           <p class="content-text">
-                               
-It took exposure to the one African and female lecturer I had in the entire course of my undergraduate program to show me it was possible and that there was room in the world for some who looked like me and had similar interests to myself.
+			<section class="comments">
+				<div class="container">
+					<div class="comments__content border-top">
+						<h5 class="comments__number">
+							<span class="comments_number">2</span> Comments
+						</h5>
+						<div class="comments__field card-box shadow">
+							<div class="row">
+								<div class="col-md-1 px-0">
+									<div class="comments__pepole-face">
+										<a href="#">
+											<img
+												src="assets/images/pepole/pepole-03-lg.png"
+												alt="pepole"
+												class="img-fluid"
+											/>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-11 pl-0">
+									<h5 class="comments__holder-name">
+										Comment as
+										<span class="holder-name">Bongs Wilson</span>
+									</h5>
+									<form class="comments__textarea" action="#">
+										<textarea
+											class="w-100"
+											style="resize: none"
+										></textarea>
+										<button
+											class="comments__btn text-right"
+											type="submit"
+										>
+											Post
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="comments__reply-box card-box shadow">
+							<div class="row">
+								<div class="col-md-1 px-0">
+									<div class="comments__pepole-face">
+										<a href="#">
+											<img
+												src="assets/images/pepole/people-01.png"
+												alt="pepole"
+												class="img-fluid"
+											/>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-11 pl-0">
+									<h5 class="comments__time">
+										<span class="comments__holder-name"
+											>Daniel Johns</span
+										>
+										said
+										<span class="comments__time-day">8 Days</span>
+										ago:
+									</h5>
+									<p class="comments__reply-text">
+										This emphasises the urgent need to take action
+										that incorporates awareness, improved education,
+										transformation, inclusivity and enablement for
+										females.
+									</p>
+								</div>
+							</div>
 
-                           </p>
-                       </div>
-                     </div>
-                     <div class="col-lg-4">
-                       <div class="article-main__sidebar">
-                           <h2 class="article-main__sidebar-title">Related articles</h2>
-                           <div class="related-article">
-                               <div class="related-article__item">
-                                    <div class="img">
-                                        <img src="assets/images/bg/article-01.png" alt="article-img" class="img-fluid">
-                                    </div>
-                                    <div class="info">
-                                        <span class="info-category">TECHNOLOGY</span>
-                                        <h2 class="info-title">The cost of not engineering for agility</h2>
-                                        <a href="#">read article ></a>
-                                    </div>
-                               </div>
-                               <div class="related-article__item">
-                                    <div class="img">
-                                        <img src="assets/images/bg/article-02.png" alt="article-img" class="img-fluid">
-                                    </div>
-                                    <div class="info">
-                                        <span class="info-category">TECHNOLOGY</span>
-                                        <h2 class="info-title">Twitter is adding the ability to limit replies</h2>
-                                        <a href="#">read article ></a>
-                                    </div>
-                               </div>
-                               <div class="related-article__item">
-                                    <div class="img">
-                                        <img src="assets/images/bg/article-01.png" alt="article-img" class="img-fluid">
-                                    </div>
-                                    <div class="info">
-                                        <span class="info-category">TECHNOLOGY</span>
-                                        <h2 class="info-title">Launch of new fleet card with added security</h2>
-                                        <a href="#">read article ></a>
-                                    </div>
-                               </div>
-                           </div>
-                           <h2 class="article-main__sidebar-title">Related Video</h2>
-                           <div class="related-video">
-                                <div class="related-video__item">
-                                    <div class="related-video__content">
-                                        <iframe  src="https://www.youtube.com/embed/J6oDTn_ENto" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                      </div>
-                                      <h2 class="related-video__title">
-                                        Video title will be displayed here
-                                      </h2>
-                                </div>
-                                <div class="related-video__item">
-                                    <div class="related-video__content">
-                                        <iframe  src="https://www.youtube.com/embed/J6oDTn_ENto" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                      </div>
-                                      <h2 class="related-video__title">
-                                        Video title will be displayed here
-                                      </h2>
-                                </div>
-                                <a href="#" class="related-video__channel-list">
-                                    view more videos on this channel >
-                                </a>
-                           </div>
-                       </div>
-                     </div>
-                    </div>
+							<div class="comments__interactivity">
+								<ul class="d-flex justify-content-end">
+									<li>
+										<a href="#">
+											<span>
+												<i class="fas fa-reply"></i>
+											</span>
+											Reply
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>
+												<img
+													src="assets/images/activity/love.png"
+													alt="love"
+												/>
+											</span>
+											Like
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-1"></div>
+							<div class="col-sm-11">
+								<div class="comments__reply-third card-box shadow">
+									<div class="comments__previous">
+										<h5 class="comments__time">
+											<span class="comments__holder-name"
+												>Daniel Johns</span
+											>
+											said
+											<span class="comments__time-day">8 Days</span>
+											ago:
+										</h5>
+										<p class="comments__reply-text">
+											This emphasises the urgent need to take action
+											that incorporates awareness, improved
+											education, transformation, inclusivity and
+											enablement for females.
+										</p>
+									</div>
+									<div class="comments__reply-box">
+										<div class="row">
+											<div class="col-md-1 px-0">
+												<div class="comments__pepole-face">
+													<a href="#">
+														<img
+															src="assets/images/pepole/people-02.png"
+															alt="pepole"
+															class="img-fluid"
+														/>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-11 pl-0">
+												<h5 class="comments__time">
+													<span class="comments__holder-name"
+														>Daniel Johns</span
+													>
+													said
+													<span class="comments__time-day"
+														>8 Days</span
+													>
+													ago:
+												</h5>
+												<p class="comments__reply-text">
+													This emphasises the urgent need to
+													take action that incorporates
+													awareness, improved education,
+													transformation, inclusivity and
+													enablement for females.
+												</p>
+											</div>
+										</div>
 
-                </div>
-            </section>
+										<div class="comments__interactivity">
+											<ul class="d-flex justify-content-end">
+												<li>
+													<a href="#">
+														<span>
+															<i class="fas fa-reply"></i>
+														</span>
+														Reply
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>
+															<img
+																src="assets/images/activity/love.png"
+																alt="love"
+															/>
+														</span>
+														Like
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-            <section class="comments">
-                <div class="container">
-                    <div class="comments__content border-top">
-                        <h5 class="comments__number"><span class="comments_number">2</span> Comments</h5>
-                        <div class="comments__field card-box shadow">
-                            <div class="row">
-                                <div class="col-md-1 px-0">
-                                    <div class="comments__pepole-face">
-                                        <a href="#">
-                                            <img src="assets/images/pepole/pepole-03-lg.png" alt="pepole" class="img-fluid">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-11 pl-0">
-                                    <h5 class="comments__holder-name">Comment as <span class="holder-name">Bongs Wilson</span></h5>
-                                    <form class="comments__textarea" action="#">
-                                        <textarea class="w-100" style="resize: none;"></textarea>
-                                        <button class="comments__btn text-right" type="submit">Post</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comments__reply-box card-box shadow">
-                            <div class="row">
-                                <div class="col-md-1 px-0">
-                                    <div class="comments__pepole-face">
-                                        <a href="#">
-                                            <img src="assets/images/pepole/people-01.png" alt="pepole" class="img-fluid">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-11 pl-0">
-                                    <h5 class="comments__time"><span class="comments__holder-name">Daniel Johns</span> said <span class="comments__time-day">8 Days</span> ago:</h5>
-                                    <p class="comments__reply-text">
-                                        This emphasises the urgent need to take action that incorporates awareness, improved education, transformation, inclusivity and enablement for females.
-                                    </p>
-                                </div>
-                            </div>
+		<!-- footer section start -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6">
+						<div class="footer__col">
+							<h5 class="footer__title">Resources</h5>
+							<ul class="footer__col-item">
+								<li><a href="#">GDU</a></li>
+								<li><a href="#">SB App store</a></li>
+								<li><a href="#">The Knowledge Center</a></li>
+								<li><a href="#">0365 Learning Portal</a></li>
+								<li><a href="#">Stationery</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-6 ml-40">
+						<div class="footer__col">
+							<h5 class="footer__title">The Group</h5>
+							<ul class="footer__col-item">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Strategy</a></li>
+								<li><a href="#">Footprint</a></li>
+								<li><a href="#">Values and ethics</a></li>
+								<li><a href="#">Board of directors</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="footer__col">
+							<h5 class="footer__title">Commonly used links</h5>
+							<ul class="footer__col-item">
+								<li><a href="#">Self Service</a></li>
+								<li><a href="#">IT Service Desk</a></li>
+								<li><a href="#">Fraudstop</a></li>
+								<li><a href="#">Whistleblowing</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="footer__col">
+							<h5 class="footer__title">Contact SB Hub</h5>
+							<div class="footer__col-item">
+								<div class="email">
+									<a href="#">Email: SBUB@standardbank.com</a>
+								</div>
+								<form class="footer__input-wrapper">
+									<label for="s_field">Yammer #SBHub</label>
+									<input
+										type="text"
+										id="s_field"
+										class="footer__col-input"
+										placeholder="Search"
+									/>
+									<button class="footer__search">
+										<i class="fas fa-search" style="color: #fff"></i>
+									</button>
+								</form>
+								<ul class="footer__social-icon">
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/facebook-sm.png"
+												alt="facebook"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/linked.png"
+												alt="linkedIn"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/youtube-sm.png"
+												alt="youtube"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/twitter-sm.png"
+												alt="twitter"
+										/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer section end -->
 
-                            <div class="comments__interactivity">
-                                <ul class="d-flex justify-content-end">
-                                    <li>
-                                        <a href="#">
-                                            <span>
-                                                <i class="fas fa-reply"></i>
-                                            </span>
-                                            Reply
-                                        </a>
-                                    </li>
-                                    <li >
-                                        <a href="#">
-                                            <span>
-                                                <img src="assets/images/activity/love.png" alt="love">
-                                            </span>
-                                            Like
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-1"></div>
-                            <div class="col-sm-11">
-                                <div class="comments__reply-third card-box shadow">
-                                    <div class="comments__previous">
-                                        <h5 class="comments__time"><span class="comments__holder-name">Daniel Johns</span> said <span class="comments__time-day">8 Days</span> ago:</h5>
-                                        <p class="comments__reply-text">
-                                            This emphasises the urgent need to take action that incorporates awareness, improved education, transformation, inclusivity and enablement for females.
-                                        </p>
-                                    </div>
-                                    <div class="comments__reply-box">
-                                        <div class="row">
-                                            <div class="col-md-1 px-0">
-                                                <div class="comments__pepole-face">
-                                                    <a href="#">
-                                                        <img src="assets/images/pepole/people-02.png" alt="pepole" class="img-fluid">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-11 pl-0">
-                                                <h5 class="comments__time"><span class="comments__holder-name">Daniel Johns</span> said <span class="comments__time-day">8 Days</span> ago:</h5>
-                                                <p class="comments__reply-text">
-                                                    This emphasises the urgent need to take action that incorporates awareness, improved education, transformation, inclusivity and enablement for females.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="comments__interactivity">
-                                            <ul class="d-flex justify-content-end">
-                                                <li>
-                                                    <a href="#">
-                                                        <span>
-                                                            <i class="fas fa-reply"></i>
-                                                        </span>
-                                                        Reply
-                                                    </a>
-                                                </li>
-                                                <li >
-                                                    <a href="#">
-                                                        <span>
-                                                            <img src="assets/images/activity/love.png" alt="love">
-                                                        </span>
-                                                        Like
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- footer section start -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-6">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                Resources
-                            </h5>
-                            <ul class="footer__col-item">
-                                <li><a href="#">GDU</a></li>
-                                <li><a href="#">SB App store</a></li>
-                                <li><a href="#">The Knowledge Center</a></li>
-                                <li><a href="#">0365 Learning Portal</a></li>
-                                <li><a href="#">Stationery</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6 ml-40">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                The Group
-                            </h5>
-                            <ul class="footer__col-item">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Strategy</a></li>
-                                <li><a href="#">Footprint</a></li>
-                                <li><a href="#">Values and ethics</a></li>
-                                <li><a href="#">Board of directors</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                Commonly used links
-                            </h5>
-                            <ul class="footer__col-item">
-                                <li><a href="#">Self Service</a></li>
-                                <li><a href="#">IT Service Desk</a></li>
-                                <li><a href="#">Fraudstop</a></li>
-                                <li><a href="#">Whistleblowing</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                Contact SB Hub
-                            </h5>
-                            <div class="footer__col-item">
-                                <div class="email">
-                                    <a href="#">Email: SBUB@standardbank.com</a>
-                                </div>
-                                <form class="footer__input-wrapper">
-                                    <label for="s_field">Yammer #SBHub</label>
-                                    <input type="text" id="s_field" class="footer__col-input" placeholder="Search" />
-                                    <button class="footer__search"><i class="fas fa-search" style="color: #fff;"></i></button>
-                                </form>
-                                <ul class="footer__social-icon">
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/facebook-sm.png" alt="facebook" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/linked.png" alt="linkedIn" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/youtube-sm.png" alt="youtube" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/twitter-sm.png" alt="twitter" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer section end -->
-
-        <!-- All js Goes here -->
-        <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery-listnav.js"></script>
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/venobox.min.js"></script>
-        <script src="assets/js/app.js"></script>
-    </body>
+		<!-- All js Goes here -->
+		<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery-listnav.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/venobox.min.js"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
 </html>
