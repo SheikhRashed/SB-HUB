@@ -1,0 +1,49 @@
+.bv_atual {
+	color: #4f637c;
+	padding: 12px;
+	font-size: 14px;
+	line-height: auto;
+	font-family: Bbook;
+	text-transform: capitalize;
+	border: 1px solid #c8c7c7;
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	&::after {
+		content: '';
+		right: 0px;
+		top: 0;
+		width: 40px;
+		height: 100%;
+		position: absolute;
+		background-color: #0089ff;
+	}
+	.arrow {
+		position: relative;
+		z-index: 1;
+		margin-right: 2px;
+		border-width: 0 1px 1px 0;
+		padding: 4px;
+		border-color: white;
+		transition: all 0.3s linear;
+	}
+}
+
+.bv_ul_inner {
+	li {
+		font-size: 14px;
+		line-height: 38px;
+		font-family: Bbook;
+		color: #0089ff;
+		padding: 0px 12px;
+		text-transform: capitalize;
+
+		&.bv_separator {
+			display: none;
+		}
+
+		&:hover {
+			background-color: #f2f3f4;
+		}
+	}
+}
