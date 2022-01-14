@@ -482,6 +482,116 @@ main {
   text-transform: capitalize;
 }
 
+.categories-card {
+  background-color: #e8e8e8;
+}
+
+.categories-card__head-top {
+  display: flex;
+  align-items: flex-end;
+  padding: 12px 24px;
+  justify-content: space-between;
+}
+
+.categories-card__head-top .article-content {
+  display: flex;
+  align-items: center;
+}
+
+.categories-card__head-top .article-content > div:first-child {
+  margin-right: 12px;
+}
+
+.categories-card__head-top .article-content > div h2 {
+  margin: 0px;
+  color: #4f637c;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.categories-card__head-top .article-content > div a {
+  color: #0089ff;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+}
+
+.categories-card__head-top .subscribe a {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #0089ff;
+}
+
+.categories-card__accordion {
+  margin: 0px;
+}
+
+.categories-card__accordion button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 21px;
+  color: #fff;
+  height: 40px;
+  padding: 0px 24px;
+  text-transform: capitalize;
+  background-color: #7d8b9c;
+}
+
+.categories-card__accordion button.collapsed .icon i {
+  transform: rotate(0deg);
+}
+
+.categories-card__accordion button .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  transform: rotate(0deg) skew(-20deg);
+  background: #0033a1;
+  background: linear-gradient(240deg, #0033a1 0%, #0075c7 30%, #00a1e0 100%);
+}
+
+.categories-card__accordion button .icon i {
+  color: #fff;
+  transform: skew(0deg) rotate(180deg);
+  transition: all 0.4s linear;
+}
+
+.categories-card__accordion-body {
+  position: relative;
+  padding: 12px 24px;
+}
+
+.categories-card__accordion-body::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  height: 4px;
+  width: 100%;
+  background-color: #7d8b9c;
+}
+
+.categories-card__accordion-body ul {
+  list-style: disc;
+  color: #979797;
+  margin-left: 12px;
+}
+
+.categories-card__accordion-body ul li span {
+  font-size: 12px;
+  line-height: 24px;
+  color: #4f637c;
+  text-transform: capitalize;
+}
+
 .modal__sucess .modal-header {
   padding-bottom: 0px;
 }
@@ -3203,6 +3313,16 @@ body {
     margin-left: 0px;
     margin-bottom: 15px;
   }
+}
+
+.categories {
+  margin-top: 24px;
+  padding: 60px 0px;
+  background-color: #fff;
+}
+
+.categories .categories-card {
+  margin-bottom: 24px;
 }
 
 .contributors-content {
