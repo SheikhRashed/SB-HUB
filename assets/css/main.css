@@ -413,6 +413,8 @@ main {
 }
 
 .c-card {
+  width: 100%;
+  display: inline-block;
   padding: 24px;
   position: relative;
   overflow: hidden;
@@ -449,7 +451,8 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
-.c-card__text-content a {
+.c-card__text-content a,
+.c-card__text-content h2 {
   margin: 0;
   color: #0089ff;
   font-size: 21px;
@@ -459,7 +462,8 @@ main {
   display: inline-block;
 }
 
-.c-card__text-content a .label {
+.c-card__text-content a .label,
+.c-card__text-content h2 .label {
   display: block;
   width: 35%;
   margin: 0px auto;
@@ -468,7 +472,8 @@ main {
   transition: all 0.2s linear;
 }
 
-.c-card__text-content a .label--red {
+.c-card__text-content a .label--red,
+.c-card__text-content h2 .label--red {
   background-color: #ff681d;
 }
 
