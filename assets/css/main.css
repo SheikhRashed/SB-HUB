@@ -3504,6 +3504,38 @@ body {
   }
 }
 
+.border-heading {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.border-heading h2 {
+  color: #0a2240;
+  font-size: 24px;
+  line-height: 38px;
+  padding-top: 30px;
+  padding-left: 120px;
+  margin-bottom: 16px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+  .border-heading h2 {
+    padding-left: 60px;
+  }
+}
+
+.border-heading img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
 .categories {
   margin-top: 24px;
   padding: 60px 0px;
