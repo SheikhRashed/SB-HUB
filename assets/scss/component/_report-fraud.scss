@@ -1,0 +1,38 @@
+.report-fraud {
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	&__content {
+		padding-left: 60px;
+		padding-bottom: 120px;
+		margin-top: 30px;
+		z-index: 3;
+		h2 {
+			color: #4f637c;
+			font-size: 14px;
+			line-height: 24px;
+		}
+		ul {
+			li {
+				a {
+					color: #0089ff;
+					font-size: 14px;
+					line-height: 24px;
+					font-family: BRegular;
+					cursor: pointer;
+					z-index: 2;
+				}
+			}
+		}
+	}
+}
