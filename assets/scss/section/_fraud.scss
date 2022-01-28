@@ -1,7 +1,7 @@
 .fraud {
 	position: relative;
 	overflow: hidden;
-	padding: 60px 0px;
+	padding: 40px 0px;
 
 	&__header {
 	}
@@ -64,6 +64,39 @@
 				left: 40px;
 				position: absolute;
 				transform: translateY(-50%);
+				h2 {
+					@include max(767px) {
+						font-size: 16px;
+					}
+				}
+				a {
+					margin-top: 24px;
+					font-size: 18px;
+					line-height: 28px;
+					color: #fff;
+					padding: 12px 24px;
+					display: inline-block;
+					transform: skew(20deg);
+					white-space: nowrap;
+					@include max(767px) {
+						font-size: 14px;
+					}
+					background: transparent
+						linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0% no-repeat
+						padding-box;
+					span {
+						transform: skew(-20deg);
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+
+	&-two {
+		.border-heading {
+			margin-bottom: 0px;
+			@include max(480px) {
 			}
 		}
 	}
@@ -117,6 +150,40 @@
 						color: #4f637c;
 					}
 				}
+			}
+		}
+	}
+}
+
+.fraud-modal {
+	.modal-header {
+		padding-bottom: 0px;
+		.title {
+			p {
+				color: #000;
+				font-size: 16px;
+				line-height: 26px;
+				text-transform: capitalize;
+			}
+		}
+	}
+	.modal-body {
+		p {
+			color: #3c4b6c;
+			font-size: 14px;
+			line-height: 20px;
+			margin-bottom: 16px;
+			a {
+				color: #0089ff;
+			}
+		}
+
+		ul {
+			margin-left: 20px;
+			color: #979797;
+			list-style-type: disc;
+			li {
+				margin-bottom: 4px;
 			}
 		}
 	}

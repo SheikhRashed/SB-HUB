@@ -1078,13 +1078,15 @@ main {
   background-color: #f2f3f4;
 }
 
-.report-fraud {
+.report-fraud,
+.fraud-type {
   z-index: 1;
   overflow: hidden;
   position: relative;
 }
 
-.report-fraud img {
+.report-fraud img,
+.fraud-type img {
   position: absolute;
   top: 0;
   left: 0;
@@ -1113,6 +1115,134 @@ main {
   font-family: BRegular;
   cursor: pointer;
   z-index: 2;
+}
+
+.fraud-type img {
+  height: 380px;
+  object-fit: contain;
+}
+
+.fraud-type__text-content {
+  padding: 180px 30px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+.fraud-type__text-content h2,
+.fraud-type__text-content p {
+  position: absolute;
+}
+
+.fraud-type__text-content h2 {
+  top: 92px;
+  left: 70px;
+  color: #0a2240;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  font-family: BMedium;
+  margin: 0;
+  display: inline-block;
+}
+
+@media (max-width: 1199px) {
+  .fraud-type__text-content h2 {
+    top: 50px;
+    left: 124px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fraud-type__text-content h2 {
+    top: 75px;
+    left: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fraud-type__text-content h2 {
+    top: 44px;
+    left: 160px;
+  }
+}
+
+@media (max-width: 380px) {
+  .fraud-type__text-content h2 {
+    top: 70px;
+    left: 96px;
+  }
+}
+
+.fraud-type__text-content p {
+  color: #4f637c;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 0px;
+  top: 130px;
+  left: 70px;
+  max-width: 180px;
+}
+
+@media (max-width: 1199px) {
+  .fraud-type__text-content p {
+    top: 110px;
+    left: 116px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fraud-type__text-content p {
+    top: 120px;
+    left: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fraud-type__text-content p {
+    top: 110px;
+    left: 140px;
+  }
+}
+
+@media (max-width: 380px) {
+  .fraud-type__text-content p {
+    top: 115px;
+    left: 90px;
+  }
+}
+
+.fraud-type__text-content a {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 30px;
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+  .fraud-type__text-content a {
+    margin-left: 115px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fraud-type__text-content a {
+    margin-left: 55px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fraud-type__text-content a {
+    margin-left: 108px;
+  }
+}
+
+@media (max-width: 380px) {
+  .fraud-type__text-content a {
+    margin-left: 56px;
+  }
 }
 
 .quickView .card-box {
@@ -3912,10 +4042,16 @@ body {
 .content-navigation {
   position: relative;
   overflow: hidden;
-  padding: 24px 0px;
+  padding: 16px 0px;
   background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0% no-repeat padding-box;
   transition: all 0.3s linear;
   z-index: 999;
+}
+
+@media (max-width: 767px) {
+  .content-navigation {
+    padding: 12px 0px;
+  }
 }
 
 .content-navigation.fixed {
@@ -3981,7 +4117,7 @@ body {
 .fraud {
   position: relative;
   overflow: hidden;
-  padding: 60px 0px;
+  padding: 40px 0px;
 }
 
 .fraud-two .container, .fraud-three .container, .fraud-four .container {
@@ -4050,6 +4186,39 @@ body {
   transform: translateY(-50%);
 }
 
+@media (max-width: 767px) {
+  .fraud-one .img-content__text h2 {
+    font-size: 16px;
+  }
+}
+
+.fraud-one .img-content__text a {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  padding: 12px 24px;
+  display: inline-block;
+  transform: skew(20deg);
+  white-space: nowrap;
+  background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0% no-repeat padding-box;
+}
+
+@media (max-width: 767px) {
+  .fraud-one .img-content__text a {
+    font-size: 14px;
+  }
+}
+
+.fraud-one .img-content__text a span {
+  transform: skew(-20deg);
+  display: inline-block;
+}
+
+.fraud-two .border-heading {
+  margin-bottom: 0px;
+}
+
 .fraud-three .container {
   padding: 0 !important;
 }
@@ -4102,5 +4271,37 @@ body {
 
 .fraud-four__rules ul li p {
   color: #4f637c;
+}
+
+.fraud-modal .modal-header {
+  padding-bottom: 0px;
+}
+
+.fraud-modal .modal-header .title p {
+  color: #000;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.fraud-modal .modal-body p {
+  color: #3c4b6c;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.fraud-modal .modal-body p a {
+  color: #0089ff;
+}
+
+.fraud-modal .modal-body ul {
+  margin-left: 20px;
+  color: #979797;
+  list-style-type: disc;
+}
+
+.fraud-modal .modal-body ul li {
+  margin-bottom: 4px;
 }
 /*# sourceMappingURL=main.css.map */

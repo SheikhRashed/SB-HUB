@@ -1,11 +1,14 @@
 .content-navigation {
 	position: relative;
 	overflow: hidden;
-	padding: 24px 0px;
+	padding: 16px 0px;
 	background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0%
 		no-repeat padding-box;
 	transition: all 0.3s linear;
 	z-index: 999;
+	@include max(767px) {
+		padding: 12px 0px;
+	}
 	&.fixed {
 		top: 0;
 		position: fixed;
