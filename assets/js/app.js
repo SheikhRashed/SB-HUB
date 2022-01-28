@@ -115,21 +115,60 @@ if (venobox) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-	let sortSelect = new BVSelect({
-		selector: '#sortSelect',
-		searchbox: false,
-		offset: true,
-		search_autofocus: false,
-		placeholder: 'Sort by topic',
-		breakpoint: 0,
-	})
+	if (document.getElementById('shortSelect')) {
+		let sortSelect = new BVSelect({
+			selector: '#sortSelect',
+			searchbox: false,
+			offset: true,
+			search_autofocus: false,
+			placeholder: 'Sort by topic',
+			breakpoint: 0,
+		})
+	}
+	if (document.getElementById('latestSelect')) {
+		let latestSelect = new BVSelect({
+			selector: '#latestSelect',
+			searchbox: false,
+			offset: true,
+			search_autofocus: false,
+			placeholder: 'latest',
+			breakpoint: 0,
+		})
+	}
+})
 
-	let latestSelect = new BVSelect({
-		selector: '#latestSelect',
-		searchbox: false,
-		offset: true,
-		search_autofocus: false,
-		placeholder: 'latest',
-		breakpoint: 0,
+// smoot scrolling
+const links = document.querySelectorAll('.content-navigation ul a')
+
+for (const link of links) {
+	link.addEventListener('click', smootScroll)
+	link.addEventListener('click', () => {
+		removeActiveClass()
+		link.classList.add('active')
 	})
+}
+
+function removeActiveClass() {
+	links.forEach((link) => {
+		link.classList.remove('active')
+	})
+}
+
+function smootScroll(e) {
+	e.preventDefault()
+	const href = this.getAttribute('href')
+	const offsetTop = document.querySelector(href).offsetTop
+	console.log(this)
+	scroll({
+		top: offsetTop,
+		behavior: 'smooth',
+	})
+}
+
+$(window).scroll(function () {
+	var stickyNav = $('.content-navigation'),
+		scroll = $(window).scrollTop()
+
+	if (scroll >= 600) stickyNav.addClass('fixed')
+	else stickyNav.removeClass('fixed')
 })

@@ -1,138 +1,123 @@
 header {
-  background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0%
-    no-repeat padding-box;
+	background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0%
+		no-repeat padding-box;
+	box-shadow: 0px 4px 30px #00000033;
+	padding: 30px 0px;
+	position: relative;
+	.navbar {
+		&-collapse {
+			.form-inline {
+				position: relative;
+				margin-right: -150px;
 
-  box-shadow: 0px 4px 30px #00000033;
-  padding: 30px 0px;
-  position: relative;
-  // &::after {
-  //   content: url('../images/bg/bg-07.png');
-  //   position: absolute;
-  //   top: 20px;
-  //   left: 150px;
-  // }
-  // &::before {
-  //   content: url('../images/bg/btimap-2.png');
-  //   position: absolute;
-  //   top: 20px;
-  //   right: 0px;
-  // }
-  .navbar {
-    &-collapse {
-      // flex-direction: column;
+				input {
+					width: 620px;
+					height: 40px;
+					border-radius: 0px;
+					position: relative;
 
-      .form-inline {
-        position: relative;
-        margin-right: -150px;
+					&:hover,
+					&:focus {
+						position: relative !important;
+						color: #000;
+					}
+					&[placeholder] {
+						font-size: 12px;
+						line-height: 20px;
+					}
+				}
+				button.btn {
+					position: absolute;
+					right: 0px;
+					height: 40px;
+					background-color: #0089ff;
+					border-radius: 0px;
+					color: #fff;
+				}
+			}
+		}
+		&-nav {
+			// margin-bottom: 30px;
+			li {
+				margin-right: 50px;
+				position: relative;
+				&.active {
+					&::after {
+						height: 2px;
+					}
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					width: 90%;
+					height: 0px;
+					left: 50%;
+					transform: translate(-50%);
 
-        input {
-          width: 620px;
-          height: 40px;
-          border-radius: 0px;
-          position: relative;
+					background: #fff;
+				}
+				&:hover {
+					&::after {
+						height: 2px;
+					}
+				}
+				a {
+					color: #fff !important;
+					font-size: 14px;
+					line-height: 20px;
+				}
+			}
+		}
+		.form-inline {
+			margin-top: -75px;
+			.login__name {
+				font-size: 13px;
+				line-height: 20px;
+			}
+		}
+	}
 
-          &:hover,
-          &:focus {
-            position: relative !important;
-            color: #000;
-          }
-          &[placeholder] {
-            font-size: 12px;
-            line-height: 20px;
-          }
-        }
-        button.btn {
-          position: absolute;
-          right: 0px;
-          height: 40px;
-          background-color: #0089ff;
-          border-radius: 0px;
-          color: #fff;
-        }
-      }
-    }
-    &-nav {
-      // margin-bottom: 30px;
-      li {
-        margin-right: 50px;
-        position: relative;
-        &.active {
-          &::after {
-            height: 2px;
-          }
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          width: 90%;
-          height: 0px;
-          left: 50%;
-          transform: translate(-50%);
-
-          background: #fff;
-        }
-        &:hover {
-          &::after {
-            height: 2px;
-          }
-        }
-        a {
-          color: #fff !important;
-          font-size: 14px;
-          line-height: 20px;
-        }
-      }
-    }
-    .form-inline {
-      margin-top: -75px;
-      .login__name {
-        font-size: 13px;
-        line-height: 20px;
-      }
-    }
-  }
-
-  &.header {
-    &--two {
-      &::after,
-      &::before {
-        display: none;
-      }
-    }
-  }
+	&.header {
+		&--two {
+			&::after,
+			&::before {
+				display: none;
+			}
+		}
+	}
 }
 
 // Responsive
 @media (max-width: 1200px) {
-  header {
-    .navbar-nav {
-      li {
-        margin: 0;
-        margin-bottom: 30px;
-      }
-    }
-  }
+	header {
+		.navbar-nav {
+			li {
+				margin: 0;
+				margin-bottom: 30px;
+			}
+		}
+	}
 }
 
 @media (max-width: 1199px) {
-  header {
-    .navbar-collapse {
-      .form-inline {
-        margin-right: 0px;
-        input {
-          width: 100%;
-        }
-      }
-    }
-    .navbar-nav {
-      li {
-        &::after {
-          width: 100%;
-        }
-      }
-    }
-  }
+	header {
+		.navbar-collapse {
+			.form-inline {
+				margin-right: 0px;
+				input {
+					width: 100%;
+				}
+			}
+		}
+		.navbar-nav {
+			li {
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -146,11 +131,11 @@ header {
 @media (min-width: 576px) and (max-width: 767px) {
 }
 @media (max-width: 575px) {
-  header {
-    &::after {
-      left: 0px;
-    }
-  }
+	header {
+		&::after {
+			left: 0px;
+		}
+	}
 }
 @media (min-width: 420px) and (max-width: 575px) {
 }

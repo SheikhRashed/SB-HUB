@@ -3871,4 +3871,73 @@ body {
 .contributor-articles .article-card {
   margin-bottom: 16px;
 }
+
+.content-navigation {
+  position: relative;
+  overflow: hidden;
+  padding: 24px 0px;
+  background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0% no-repeat padding-box;
+  transition: all 0.3s linear;
+  z-index: 999;
+}
+
+.content-navigation.fixed {
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.content-navigation ul {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .content-navigation ul {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+}
+
+.content-navigation ul li {
+  padding-right: 40px;
+  position: relative;
+}
+
+.content-navigation ul li:nth-last-child(1) {
+  padding-right: 0px;
+}
+
+.content-navigation ul li:nth-last-child(1)::after {
+  display: none;
+}
+
+.content-navigation ul li::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 1px;
+  height: 60%;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.content-navigation ul li a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: BMedium;
+  padding: 8px 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.content-navigation ul li a.active {
+  background-color: rgba(255, 255, 255, 0.129);
+}
 /*# sourceMappingURL=main.css.map */

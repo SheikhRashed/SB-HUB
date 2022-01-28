@@ -1,0 +1,59 @@
+.content-navigation {
+	position: relative;
+	overflow: hidden;
+	padding: 24px 0px;
+	background: transparent linear-gradient(276deg, #00a1e0 0%, #0033a1 100%) 0% 0%
+		no-repeat padding-box;
+	transition: all 0.3s linear;
+	z-index: 999;
+	&.fixed {
+		top: 0;
+		position: fixed;
+		width: 100%;
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+		max-width: 100%;
+		@include max(991px) {
+			overflow: hidden;
+			overflow-x: scroll;
+		}
+		li {
+			padding-right: 40px;
+			position: relative;
+			&:nth-last-child(1) {
+				padding-right: 0px;
+				&::after {
+					display: none;
+				}
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				width: 1px;
+				height: 60%;
+				background-color: #fff;
+				transform: translateY(-50%);
+			}
+			a {
+				color: #fff;
+				font-size: 18px;
+				line-height: 28px;
+				font-family: BMedium;
+				padding: 8px 24px;
+				border-radius: 8px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				display: inline-block;
+				&.active {
+					background-color: rgba(255, 255, 255, 0.129);
+				}
+			}
+		}
+	}
+}
