@@ -1,145 +1,180 @@
 // Responsive
 .banner {
-  position: relative;
-  background: url('../images/bg/bannger-lg.png') top center/cover no-repeat;
-  height: 310px;
-  z-index: 1;
-  &::after {
-    content: '';
-    background: transparent linear-gradient(180deg, #009fdf03 0%, #0a2240 100%) 0% 0%
-      no-repeat padding-box;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  .container {
-    max-width: 1340px;
-  }
+	position: relative;
+	background: url('../images/bg/bannger-lg.png') top center/cover no-repeat;
+	height: 310px;
+	z-index: 1;
+	&::after {
+		content: '';
+		background: transparent linear-gradient(180deg, #009fdf03 0%, #0a2240 100%) 0% 0%
+			no-repeat padding-box;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+	.container {
+		max-width: 1340px;
+	}
 
-  &__title {
-    width: 150px;
-    height: 20px;
-    background: #0033a1;
-    color: #fff;
-    margin-top: 25px;
-    display: inline-block;
-    h5 {
-      font-size: 12px;
-      line-height: 20px;
-      margin-left: 15px;
-    }
-  }
-  &__article-info {
-    margin-top: 130px;
-    padding-bottom: 30px;
-    display: block;
-  }
+	&__title {
+		width: 150px;
+		height: 20px;
+		background: #0033a1;
+		color: #fff;
+		margin-top: 25px;
+		display: inline-block;
+		h5 {
+			font-size: 12px;
+			line-height: 20px;
+			margin-left: 15px;
+		}
+	}
+	&__article-info {
+		margin-top: 130px;
+		padding-bottom: 30px;
+		display: block;
+	}
 
-  &__article-title {
-    font-size: 36px;
-    line-height: 48px;
-    color: #fff;
-    font-family: Bbook;
-  }
-  &__times {
-    font-size: 22px;
-    line-height: 30px;
-    color: #fff;
-    font-family: Bbook;
-  }
-  &__read-time {
-    font-size: 18px;
-    line-height: 24px;
-    color: #fff;
-    font-family: Bbook;
-  }
+	&__article-title {
+		font-size: 36px;
+		line-height: 48px;
+		color: #fff;
+		font-family: Bbook;
+	}
+	&__times {
+		font-size: 22px;
+		line-height: 30px;
+		color: #fff;
+		font-family: Bbook;
+	}
+	&__read-time {
+		font-size: 18px;
+		line-height: 24px;
+		color: #fff;
+		font-family: Bbook;
+	}
 
-  // Banner 03
-  &--three {
-    z-index: 1;
-    overflow: hidden;
-    padding: 60px 0px;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(10, 34, 64, 0.7);
-    }
-    h2,
-    p {
-      color: #fff;
-    }
+	// Banner 03
+	&--three {
+		z-index: 1;
+		overflow: hidden;
+		padding: 60px 0px;
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(10, 34, 64, 0.7);
+		}
+		h2,
+		p {
+			color: #fff;
+		}
 
-    h2 {
-      font-size: 24px;
-      line-height: 30px;
-      margin-bottom: 18px;
-      font-family: BMedium;
-      text-transform: capitalize;
-    }
-    p {
-      font-size: 14px;
-      line-height: 20px;
-      margin: 0;
-      margin-bottom: 25px;
-      font-family: BRegular;
+		h2 {
+			font-size: 24px;
+			line-height: 30px;
+			margin-bottom: 18px;
+			font-family: BMedium;
+			text-transform: capitalize;
+		}
+		p {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0;
+			margin-bottom: 25px;
+			font-family: BRegular;
 
-      &:nth-last-child(1) {
-        margin: 0;
-      }
-    }
-  }
+			&:nth-last-child(1) {
+				margin: 0;
+			}
+		}
+	}
 }
 
 // banner-02
 .bannermwb {
-  .bannermwb__item {
-    img {
-      margin-top: 15px;
-    }
-  }
-  .slick-dots {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    li {
-      margin-right: 10px;
-      button {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        font-size: 0px;
-        border: 1px solid #0a2240;
-        transition: all 0.3s linear;
-      }
-      &.slick-active {
-        button {
-          background-color: #0a2240;
-        }
-      }
-    }
-  }
+	.bannermwb__item {
+		img {
+			margin-top: 15px;
+		}
+	}
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		li {
+			margin-right: 10px;
+			button {
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				font-size: 0px;
+				border: 1px solid #0a2240;
+				transition: all 0.3s linear;
+			}
+			&.slick-active {
+				button {
+					background-color: #0a2240;
+				}
+			}
+		}
+	}
+}
+
+// fraud banner
+.banner-fraud {
+	z-index: 1;
+	position: relative;
+	overflow: hidden;
+	height: 310px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background-color: #0a2240a5;
+	}
+	.textcontent {
+		h2 {
+			color: #fff;
+			font-size: 24px;
+			line-height: 30px;
+			margin-bottom: 24px;
+			text-transform: capitalize;
+			font-family: BMedium;
+		}
+		p {
+			color: #fff;
+			font-size: 14px;
+			line-height: 20px;
+			font-family: BRegular;
+		}
+	}
 }
 
 @media (max-width: 991px) {
-  .banner {
-    height: 375px;
-  }
+	.banner {
+		height: 375px;
+	}
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
-  .banner {
-    height: 435px;
-  }
+	.banner {
+		height: 435px;
+	}
 }
