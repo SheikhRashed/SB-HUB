@@ -1,543 +1,909 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SB-intranet || remote-two</title>
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="assets/css/all.min.css" />
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <!-- Slick slider -->
-        <link rel="stylesheet" href="assets/css/slick.css" />
-        <!-- Main css -->
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SB-intranet || remote-two</title>
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="assets/css/all.min.css" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<!-- Slick slider -->
+		<link rel="stylesheet" href="assets/css/slick.css" />
+		<!-- Main css -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
 
-    <body>
-        <!-- Header section start -->
-        <header>
-            <nav class="navbar navbar-expand-xl navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/images/badge.png" alt="" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+	<body>
+		<!-- Header section start -->
+		<header>
+			<nav class="navbar navbar-expand-xl navbar-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img src="assets/images/badge.png" alt="" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto">
-                            <a href="#" class="d-block d-xl-none">
-                                <form class="form-inline mt-0 justify-content-end pl-3">
-                                    <div class="login__Img mr-3">
-                                        <img src="assets/images/pepole/pepole-03.png" alt="pepole-03" />
-                                    </div>
-                                    <div class="login__name">
-                                        <span class="text-white">Wilson,Bongs N</span>
-                                    </div>
-                                </form>
-                            </a>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">My Workbench </a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">My Business tools</a>
-                            </li>
-                            <li class="nav-ite m">
-                                <a class="nav-link" href="#">More for me</a>
-                            </li>
-                        </ul>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mx-auto">
+							<a href="#" class="d-block d-xl-none">
+								<form class="form-inline mt-0 justify-content-end pl-3">
+									<div class="login__Img mr-3">
+										<img
+											src="assets/images/pepole/pepole-03.png"
+											alt="pepole-03"
+										/>
+									</div>
+									<div class="login__name">
+										<span class="text-white">Wilson,Bongs N</span>
+									</div>
+								</form>
+							</a>
+							<li class="nav-item">
+								<a class="nav-link" href="#">My Workbench </a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="#">My Business tools</a>
+							</li>
+							<li class="nav-ite m">
+								<a class="nav-link" href="#">More for me</a>
+							</li>
+						</ul>
 
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search for files, pepole or pages" aria-label="Search" />
-                            <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
+						<form class="form-inline my-2 my-lg-0">
+							<input
+								class="form-control mr-sm-2"
+								type="search"
+								placeholder="Search for files, pepole or pages"
+								aria-label="Search"
+							/>
+							<button class="btn my-2 my-sm-0" type="submit">
+								<i class="fas fa-search"></i>
+							</button>
+						</form>
+					</div>
 
-                    <a href="#" class="d-none d-xl-block">
-                        <form class="form-inline">
-                            <div class="login__Img mr-3">
-                                <img src="assets/images/pepole/pepole-03.png" alt="pepole" />
-                            </div>
-                            <div class="login__name">
-                                <span class="text-white">Wilson,Bongs N</span>
-                            </div>
-                        </form>
-                    </a>
-                </div>
-            </nav>
-        </header>
-        <!-- Header section end -->
-        
-        <main class="position-relative">
-            <!-- STicky sidebar  -->
-            <ul class="sticky__sidebar">
-                <li class="sticky__item sticky__item-01 dropright">
-                    <a class="dropdown-toggle d-flex" href="#" id="dropright_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/icn_people-1.png" alt="img" />
-                        </div>
-                        <span>
-                            Employee <br />
-                            services
-                        </span>
-                    </a>
+					<a href="#" class="d-none d-xl-block">
+						<form class="form-inline">
+							<div class="login__Img mr-3">
+								<img
+									src="assets/images/pepole/pepole-03.png"
+									alt="pepole"
+								/>
+							</div>
+							<div class="login__name">
+								<span class="text-white">Wilson,Bongs N</span>
+							</div>
+						</form>
+					</a>
+				</div>
+			</nav>
+		</header>
+		<!-- Header section end -->
 
-                    <div class="dropdown-menu" aria-labelledby="dropright_1">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+		<main class="position-relative">
+			<!-- STicky sidebar  -->
+			<ul class="sticky__sidebar">
+				<li class="sticky__item sticky__item-01 dropright">
+					<a
+						class="dropdown-toggle"
+						href="#"
+						id="dropright_1"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/bell.svg" alt="img" />
+							<span class="count">2</span>
+						</div>
+						<span>
+							My <br />
+							Notifications
+						</span>
+					</a>
 
-                <li class="sticky__item sticky__item-02 dropright">
-                    <a class="dropdown-toggle d-flex" href="#" id="dropright_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/color.png" alt="img" />
-                        </div>
-                        <span>
-                            Employee <br />
-                            support
-                        </span>
-                    </a>
+					<div class="dropdown-menu" aria-labelledby="dropright_1">
+						<div class="dropdown-heading">
+							<button>Mark all as Read</button>
+						</div>
+						<div class="notification-content">
+							<!-- Empty Notification -->
+							<!-- <div class="notification-content__empty">
+								<h2>No New Notifications</h2>
+								<div class="icon">
+									<img src="assets/images/sticky/bell.svg" alt="" />
+									<span class="count">0</span>
+								</div>
+							</div> -->
 
-                    <div class="dropdown-menu" aria-labelledby="dropright_2">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+							<div class="notification-content__item unread">
+								<div class="icon">
+									<img src="assets/images/sticky/outline.svg" alt="" />
+								</div>
+								<div class="info">
+									<a href="#"
+										>Alert Notification title will be displayed
+										here</a
+									>
 
-                <li class="sticky__item sticky__item-03">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/internet.png" alt="img" />
-                        </div>
-                        <span>
-                            Internet <br />
-                            banking
-                        </span>
-                    </a>
-                </li>
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										5 min ago
+									</p>
+								</div>
+							</div>
+							<div class="notification-content__item unread">
+								<div class="icon">
+									<img src="assets/images/sticky/clock.svg" alt="" />
+								</div>
+								<div class="info">
+									<a href="#">
+										Reminder Notification title will be displayed here
+									</a>
 
-                <li class="toggle">
-                    <i class="fas fa-cog"></i>
-                </li>
-            </ul>
-            <ul class="sticky__sidebar social">
-                <li class="sticky__item sticky__item-01">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/icn_share-android.png" alt="img" />
-                        </div>
-                    </a>
-                </li>
-                <li class="sticky__item sticky__item-02">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/female.png" alt="img" />
-                        </div>
-                    </a>
-                </li>
-                <li class="sticky__item sticky__item-03">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/bell.png" alt="img" />
-                        </div>
-                    </a>
-                </li>
-                <li class="toggle toggle2">
-                    <i class="fas fa-cog"></i>
-                </li>
-            </ul>
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										6 hours ago
+									</p>
+								</div>
+							</div>
+							<div class="notification-content__item">
+								<div class="icon">
+									<img
+										src="assets/images/sticky/icn_megaphone.svg"
+										alt=""
+									/>
+								</div>
+								<div class="info">
+									<a href="#">
+										Announcement notification title will be displayed
+										here
+									</a>
 
-            <!-- banner 03  start -->
-            <div class="banner--three" style="background-image: url('assets/images/bg/bg-10.png');" >
-                <div class="container">
-                  <h2>Working remotely in South Africa</h2>
-                  <p>
-                    As a South African employee, working within the borders of South Africa, you have a host of services, processes and guidelines as well as information available to help you get set up in a home office and ensure your ability to keep delivering work at a high standard, when working remotely.
-                  </p>
-                </div>
-            </div>
-            <!-- banner 03 end  -->
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										2 days ago
+									</p>
+								</div>
+							</div>
+							<div class="notification-content__item">
+								<div class="icon">
+									<img src="assets/images/sticky/settings.svg" alt="" />
+								</div>
+								<div class="info">
+									<a href="#">
+										Operation notification title will be displayed
+										here.
+									</a>
 
-            <!-- secondary-navigation start -->
-            <div class="secondary-navigation navbar navbar-expand-md">
-                <div class="container">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link active">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Getting Started</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Home office hints and tips</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- secondary-navigation end -->
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										3 days ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown-footer">
+							<button>View All notification</button>
+						</div>
+					</div>
+				</li>
+				<li class="sticky__item sticky__item-02 dropright">
+					<a
+						class="dropdown-toggle"
+						href="#"
+						id="dropright_2"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/1.svg" alt="img" />
+						</div>
+						<span>
+							My <br />
+							Worklife
+						</span>
+					</a>
+				</li>
 
+				<li class="sticky__item sticky__item-03 dropright">
+					<a
+						class="dropdown-toggle"
+						href="#"
+						id="dropright_3"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/icn_chat.svg" alt="img" />
+						</div>
+						<span>
+							My Support <br />
+							Services</span
+						>
+					</a>
+				</li>
 
-            <!-- Features Card start  -->
-            <section class="features">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <div class="features__content">
-                                <div class="features__content-item">
-                                    <div class="features-card media">
-                                        <img src="assets/images/icons/add_user_color.png" alt="icon" class="img-fluid mr-2 icon">
-                                        <div>
-                                            <h6>New Employees</h6>
-                                            <p>
-                                                Start your technology onboarding process here to help you enable your logon credentials for your Windows and email accounts, get set up on Citrix, and also, includes processes on how to order and setup hardware devices where relevant.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="features__content-item">
-                                    <div class="features-card media">
-                                        <img src="assets/images/icons/system_access.png" alt="icon" class="img-fluid mr-2 icon">
-                                        <div>
-                                            <h6>Citrix and system access</h6>
-                                            <p>
-                                                Let us guide you on how to obtain access to Citrix that will enable you to have remote access to platforms and systems on the bank’s network, as well as how to access it for the first time on your devices.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="features__content-item">
-                                    <div class="features-card media">
-                                        <img src="assets/images/icons/shild_color.png" alt="icon" class="img-fluid mr-2 icon">
-                                        <div>
-                                            <h6>Password reset</h6>
-                                            <p>
-                                                Locked out of the network? Access the Windows O365 Self Service Password Reset that enables you to reset or unlock your own password without needing to contact the Technology Service Desk.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="features__content-item">
-                                    <div class="features-card media">
-                                        <img src="assets/images/icons/call_support_color.png" alt="icon" class="img-fluid mr-2 icon">
-                                        <div>
-                                            <h6>Technology support</h6>
-                                            <p>
-                                                Have any other technology requests or issues, contact the Technology Service Desk from here, and log a service request
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="features__guideline media">
-                                <img src="assets/images/icons/brifcase_color.png" alt="icon" class="img-fluid mr-2 icon">
-                                <div>
-                                    <h2>other resources and guidelines</h2>
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"></span>
-                                                Remedy
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"></span>
-                                                Team Track
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"></span>
-                                                email 365
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="icon"></span>
-                                                Coupa
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="article-main__sidebar">
-                                <h2 class="article-main__sidebar-title">Helpful tips</h2>
-                                <div class="related-article">
-                                    <div class="related-article__item">
-                                         <div class="img">
-                                             <img src="assets/images/bg/article-01.png" alt="article-img" class="img-fluid">
-                                         </div>
-                                         <div class="info">
-                                             <span class="info-category">Teams</span>
-                                             <h2 class="info-title">How to get the most out of Teams</h2>
-                                             <a href="article.html">read article &gt;</a>
-                                         </div>
-                                    </div>
-                                    <div class="related-article__item">
-                                         <div class="img">
-                                             <img src="assets/images/bg/article-02.png" alt="article-img" class="img-fluid">
-                                         </div>
-                                         <div class="info">
-                                             <span class="info-category">remedy</span>
-                                             <h2 class="info-title">How to log a Remedy ticket</h2>
-                                             <a href="article.html">read article &gt;</a>
-                                         </div>
-                                    </div>
-                                    <div class="related-article__item">
-                                         <div class="img">
-                                             <img src="assets/images/bg/article-01.png" alt="article-img" class="img-fluid">
-                                         </div>
-                                         <div class="info">
-                                             <span class="info-category">email</span>
-                                             <h2 class="info-title">Setting up your email signature</h2>
-                                             <a href="article.html">watch video &gt;</a>
-                                         </div>
-                                    </div>
-                                    <div class="related-article__item">
-                                         <div class="img">
-                                             <img src="assets/images/bg/article-01.png" alt="article-img" class="img-fluid">
-                                         </div>
-                                         <div class="info">
-                                             <span class="info-category">TEAMS</span>
-                                             <h2 class="info-title">Setting up break out rooms in a meeting</h2>
-                                             <a href="article.html">watch video &gt;</a>
-                                         </div>
-                                    </div>
-                                </div>
+				<li class="sticky__item sticky__item-04">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/icn_wallet.svg" alt="img" />
+						</div>
+						<span>
+							Internet <br />
+							banking
+						</span>
+					</a>
+				</li>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Features Card end  --> 
+				<li class="sticky__item sticky__item-05">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/heartbeat.svg" alt="img" />
+						</div>
+						<span> COVIDE-19 </span>
+					</a>
+				</li>
 
+				<!-- <li class="toggle">
+					<i class="fas fa-cog"></i>
+				</li> -->
+			</ul>
+			<ul class="sticky__sidebar social">
+				<li class="sticky__item sticky__item-01">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img
+								src="assets/images/sticky/icn_share-android.png"
+								alt="img"
+							/>
+						</div>
+					</a>
+				</li>
+				<li class="sticky__item sticky__item-02">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/female.png" alt="img" />
+						</div>
+					</a>
+				</li>
+				<li class="sticky__item sticky__item-03">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/bell.png" alt="img" />
+						</div>
+					</a>
+				</li>
+				<li class="toggle toggle2">
+					<i class="fas fa-cog"></i>
+				</li>
+			</ul>
 
-            <!-- banner 03  start -->
-            <div class="banner--three" style="background-image: url('assets/images/bg/bg-11.png');" >
-                <div class="container">
-                    <h2>Setting up a home office</h2>
-                    <p>As an approved remote working employee you have access to services to help you set up your remote working environment. 
-                    </p>
-                    <p>
-                        You can purchase or have office and technical equipment relocated. 
-                    </p>
-                    <p>
-                        Browse the interactive guide below to view all the processes and information to help you make decisions on setting up your home office.  
-                    </p>
-                </div>
-            </div>
-            <!-- banner 03 end  -->
+			<!-- banner 03  start -->
+			<div
+				class="banner--three"
+				style="background-image: url('assets/images/bg/bg-10.png')"
+			>
+				<div class="container">
+					<h2>Working remotely in South Africa</h2>
+					<p>
+						As a South African employee, working within the borders of South
+						Africa, you have a host of services, processes and guidelines as
+						well as information available to help you get set up in a home
+						office and ensure your ability to keep delivering work at a high
+						standard, when working remotely.
+					</p>
+				</div>
+			</div>
+			<!-- banner 03 end  -->
 
+			<!-- secondary-navigation start -->
+			<div class="secondary-navigation navbar navbar-expand-md">
+				<div class="container">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link active">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Getting Started</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home office hints and tips</a>
+						</li>
+						<li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- secondary-navigation end -->
 
-        <!-- Support start  -->
-        <div class="support">
-            <div class="container">
-                <div class="support-content">
-                    <!-- Image Map Generated by http://www.image-map.net/ -->
-                    <img src="assets/images/bg/bg-14.png" usemap="#image-map" class="img-fluid" alt="diagram">
+			<!-- Features Card start  -->
+			<section class="features">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9">
+							<div class="features__content">
+								<div class="features__content-item">
+									<div class="features-card media">
+										<img
+											src="assets/images/icons/add_user_color.png"
+											alt="icon"
+											class="img-fluid mr-2 icon"
+										/>
+										<div>
+											<h6>New Employees</h6>
+											<p>
+												Start your technology onboarding process
+												here to help you enable your logon
+												credentials for your Windows and email
+												accounts, get set up on Citrix, and also,
+												includes processes on how to order and
+												setup hardware devices where relevant.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="features__content-item">
+									<div class="features-card media">
+										<img
+											src="assets/images/icons/system_access.png"
+											alt="icon"
+											class="img-fluid mr-2 icon"
+										/>
+										<div>
+											<h6>Citrix and system access</h6>
+											<p>
+												Let us guide you on how to obtain access
+												to Citrix that will enable you to have
+												remote access to platforms and systems on
+												the bank’s network, as well as how to
+												access it for the first time on your
+												devices.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="features__content-item">
+									<div class="features-card media">
+										<img
+											src="assets/images/icons/shild_color.png"
+											alt="icon"
+											class="img-fluid mr-2 icon"
+										/>
+										<div>
+											<h6>Password reset</h6>
+											<p>
+												Locked out of the network? Access the
+												Windows O365 Self Service Password Reset
+												that enables you to reset or unlock your
+												own password without needing to contact
+												the Technology Service Desk.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="features__content-item">
+									<div class="features-card media">
+										<img
+											src="assets/images/icons/call_support_color.png"
+											alt="icon"
+											class="img-fluid mr-2 icon"
+										/>
+										<div>
+											<h6>Technology support</h6>
+											<p>
+												Have any other technology requests or
+												issues, contact the Technology Service
+												Desk from here, and log a service request
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="features__guideline media">
+								<img
+									src="assets/images/icons/brifcase_color.png"
+									alt="icon"
+									class="img-fluid mr-2 icon"
+								/>
+								<div>
+									<h2>other resources and guidelines</h2>
+									<ul>
+										<li>
+											<a href="#">
+												<span class="icon"></span>
+												Remedy
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="icon"></span>
+												Team Track
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="icon"></span>
+												email 365
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="icon"></span>
+												Coupa
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="article-main__sidebar">
+								<h2 class="article-main__sidebar-title">Helpful tips</h2>
+								<div class="related-article">
+									<div class="related-article__item">
+										<div class="img">
+											<img
+												src="assets/images/bg/article-01.png"
+												alt="article-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="info">
+											<span class="info-category">Teams</span>
+											<h2 class="info-title">
+												How to get the most out of Teams
+											</h2>
+											<a href="article.html">read article &gt;</a>
+										</div>
+									</div>
+									<div class="related-article__item">
+										<div class="img">
+											<img
+												src="assets/images/bg/article-02.png"
+												alt="article-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="info">
+											<span class="info-category">remedy</span>
+											<h2 class="info-title">
+												How to log a Remedy ticket
+											</h2>
+											<a href="article.html">read article &gt;</a>
+										</div>
+									</div>
+									<div class="related-article__item">
+										<div class="img">
+											<img
+												src="assets/images/bg/article-01.png"
+												alt="article-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="info">
+											<span class="info-category">email</span>
+											<h2 class="info-title">
+												Setting up your email signature
+											</h2>
+											<a href="article.html">watch video &gt;</a>
+										</div>
+									</div>
+									<div class="related-article__item">
+										<div class="img">
+											<img
+												src="assets/images/bg/article-01.png"
+												alt="article-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="info">
+											<span class="info-category">TEAMS</span>
+											<h2 class="info-title">
+												Setting up break out rooms in a meeting
+											</h2>
+											<a href="article.html">watch video &gt;</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Features Card end  -->
 
-                    <map name="image-map">
-                        <area alt="Relocate office equipment" title="Relocate office equipment" href="#" coords="499,122,300,33" shape="rect">
-                        <area alt="Other tech equipment" title="Other tech equipment" href="#" coords="244,134,437,223" shape="rect">
-                        <area alt="Screens" title="Screens" href="#" coords="201,237,401,325" shape="rect">
-                        <area alt="PCs &amp; Laptops" title="PCs &amp; Laptops" href="#" coords="207,346,394,441" shape="rect">
-                        <area alt="Snacks &amp; beverages" title="Snacks &amp; beverages" href="#" coords="225,465,420,547" shape="rect">
-                        <area alt="UPS/invertors" title="UPS/invertors" href="#" coords="338,564,533,649" shape="rect">
-                        <area alt="Office furniture" title="Office furniture" href="#" coords="950,43,1146,125" shape="rect">
-                        <area alt="White Board" title="White Board" href="#" coords="1257,144,1068,225" shape="rect">
-                        <area alt="Printer &amp; Scanner" title="Printer &amp; Scanner" href="#" coords="1073,247,1263,327" shape="rect">
-                        <area alt="Connectivity" title="Connectivity" href="#" coords="1070,349,1258,442" shape="rect">
-                        <area alt="stationery" title="stationery" href="#" coords="1044,462,1230,542" shape="rect">
-                        <area alt="Phones" title="Phones" href="#" coords="924,562,1103,647" shape="rect">
-                    </map>
-                </div>
-            </div>
-        </div>
-        <!-- Support end  -->
+			<!-- banner 03  start -->
+			<div
+				class="banner--three"
+				style="background-image: url('assets/images/bg/bg-11.png')"
+			>
+				<div class="container">
+					<h2>Setting up a home office</h2>
+					<p>
+						As an approved remote working employee you have access to services
+						to help you set up your remote working environment.
+					</p>
+					<p>
+						You can purchase or have office and technical equipment relocated.
+					</p>
+					<p>
+						Browse the interactive guide below to view all the processes and
+						information to help you make decisions on setting up your home
+						office.
+					</p>
+				</div>
+			</div>
+			<!-- banner 03 end  -->
 
+			<!-- Support start  -->
+			<div class="support">
+				<div class="container">
+					<div class="support-content">
+						<!-- Image Map Generated by http://www.image-map.net/ -->
+						<img
+							src="assets/images/bg/bg-14.png"
+							usemap="#image-map"
+							class="img-fluid"
+							alt="diagram"
+						/>
 
-        <!--Faq Banner start  -->
-        <div class="banner--three" style="background-image: url('assets/images/bg/bg-12.png');" >
-            <div class="container">
-                <h2>FAQs</h2>
-                <p>
-                    Have more questions? Have a look at some of the frequently asked questions and their answers.
-                </p>
-            </div>
-        </div>
-        <!-- Faq banner end  -->
+						<map name="image-map">
+							<area
+								alt="Relocate office equipment"
+								title="Relocate office equipment"
+								href="#"
+								coords="499,122,300,33"
+								shape="rect"
+							/>
+							<area
+								alt="Other tech equipment"
+								title="Other tech equipment"
+								href="#"
+								coords="244,134,437,223"
+								shape="rect"
+							/>
+							<area
+								alt="Screens"
+								title="Screens"
+								href="#"
+								coords="201,237,401,325"
+								shape="rect"
+							/>
+							<area
+								alt="PCs &amp; Laptops"
+								title="PCs &amp; Laptops"
+								href="#"
+								coords="207,346,394,441"
+								shape="rect"
+							/>
+							<area
+								alt="Snacks &amp; beverages"
+								title="Snacks &amp; beverages"
+								href="#"
+								coords="225,465,420,547"
+								shape="rect"
+							/>
+							<area
+								alt="UPS/invertors"
+								title="UPS/invertors"
+								href="#"
+								coords="338,564,533,649"
+								shape="rect"
+							/>
+							<area
+								alt="Office furniture"
+								title="Office furniture"
+								href="#"
+								coords="950,43,1146,125"
+								shape="rect"
+							/>
+							<area
+								alt="White Board"
+								title="White Board"
+								href="#"
+								coords="1257,144,1068,225"
+								shape="rect"
+							/>
+							<area
+								alt="Printer &amp; Scanner"
+								title="Printer &amp; Scanner"
+								href="#"
+								coords="1073,247,1263,327"
+								shape="rect"
+							/>
+							<area
+								alt="Connectivity"
+								title="Connectivity"
+								href="#"
+								coords="1070,349,1258,442"
+								shape="rect"
+							/>
+							<area
+								alt="stationery"
+								title="stationery"
+								href="#"
+								coords="1044,462,1230,542"
+								shape="rect"
+							/>
+							<area
+								alt="Phones"
+								title="Phones"
+								href="#"
+								coords="924,562,1103,647"
+								shape="rect"
+							/>
+						</map>
+					</div>
+				</div>
+			</div>
+			<!-- Support end  -->
 
+			<!--Faq Banner start  -->
+			<div
+				class="banner--three"
+				style="background-image: url('assets/images/bg/bg-12.png')"
+			>
+				<div class="container">
+					<h2>FAQs</h2>
+					<p>
+						Have more questions? Have a look at some of the frequently asked
+						questions and their answers.
+					</p>
+				</div>
+			</div>
+			<!-- Faq banner end  -->
 
-        <!-- Faqs start  star -->
-        <section class="faqs">
-            <div class="container">
-                <div class="accordion faq-accordion " id="faqsCurrent">
-                    <div class="accordion-item faq-item">
-                      <h2 class="accordion-header faq-header" id="faqOne">
-                        <button class="accordion-button faq-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                         Heading goes here too
-                         <span class="icon">
-                            <i class="fas fa-chevron-down"></i>
-                          </span>
-                        </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne">
-                        <div class="accordion-body faq-body">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam, commodi animi, voluptatibus dignissimos fugit delectus debitis fuga error accusamus autem distinctio, minima odit tempore? Praesentium nemo libero iusto consectetur.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item faq-item">
-                      <h2 class="accordion-header faq-header" id="faqTwo">
-                        <button class="accordion-button faq-button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                         Heading goes here
-                         <span class="icon">
-                            <i class="fas fa-chevron-down"></i>
-                          </span>
-                        </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo">
-                        <div class="accordion-body faq-body">
-                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptas ipsa ea dolor quos eum, quaerat amet ex? Vitae nisi quis dolorum itaque provident natus explicabo, similique doloribus molestiae perspiciatis!</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item faq-item">
-                      <h2 class="accordion-header faq-header" id="faqThree">
-                        <button class="accordion-button faq-button collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                          Heading goes here 
+			<!-- Faqs start  star -->
+			<section class="faqs">
+				<div class="container">
+					<div class="accordion faq-accordion" id="faqsCurrent">
+						<div class="accordion-item faq-item">
+							<h2 class="accordion-header faq-header" id="faqOne">
+								<button
+									class="accordion-button faq-button"
+									type="button"
+									data-toggle="collapse"
+									data-target="#collapseOne"
+									aria-expanded="true"
+									aria-controls="collapseOne"
+								>
+									Heading goes here too
+									<span class="icon">
+										<i class="fas fa-chevron-down"></i>
+									</span>
+								</button>
+							</h2>
+							<div
+								id="collapseOne"
+								class="accordion-collapse collapse show"
+								aria-labelledby="faqOne"
+							>
+								<div class="accordion-body faq-body">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing
+										elit. Placeat ipsam, commodi animi, voluptatibus
+										dignissimos fugit delectus debitis fuga error
+										accusamus autem distinctio, minima odit tempore?
+										Praesentium nemo libero iusto consectetur.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item faq-item">
+							<h2 class="accordion-header faq-header" id="faqTwo">
+								<button
+									class="accordion-button faq-button collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#collapseTwo"
+									aria-expanded="false"
+									aria-controls="collapseTwo"
+								>
+									Heading goes here
+									<span class="icon">
+										<i class="fas fa-chevron-down"></i>
+									</span>
+								</button>
+							</h2>
+							<div
+								id="collapseTwo"
+								class="accordion-collapse collapse"
+								aria-labelledby="faqTwo"
+							>
+								<div class="accordion-body faq-body">
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Reiciendis voluptas ipsa ea
+										dolor quos eum, quaerat amet ex? Vitae nisi quis
+										dolorum itaque provident natus explicabo,
+										similique doloribus molestiae perspiciatis!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item faq-item">
+							<h2 class="accordion-header faq-header" id="faqThree">
+								<button
+									class="accordion-button faq-button collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#collapseThree"
+									aria-expanded="false"
+									aria-controls="collapseThree"
+								>
+									Heading goes here
 
-                          <span class="icon">
-                            <i class="fas fa-chevron-down"></i>
-                          </span>
-                        </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree">
-                        <div class="accordion-body faq-body">
-                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ut assumenda ducimus, eius modi, omnis vitae dolore labore hic, ex maiores tenetur illo. Totam facilis ea ratione autem. Voluptatum, quis?</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </section>
-        <!-- Faqs start end  -->
+									<span class="icon">
+										<i class="fas fa-chevron-down"></i>
+									</span>
+								</button>
+							</h2>
+							<div
+								id="collapseThree"
+								class="accordion-collapse collapse"
+								aria-labelledby="faqThree"
+							>
+								<div class="accordion-body faq-body">
+									<p>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Culpa ut assumenda ducimus, eius
+										modi, omnis vitae dolore labore hic, ex maiores
+										tenetur illo. Totam facilis ea ratione autem.
+										Voluptatum, quis?
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Faqs start end  -->
+		</main>
 
+		<!-- footer section start -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6">
+						<div class="footer__col">
+							<h5 class="footer__title">Resources</h5>
+							<ul class="footer__col-item">
+								<li><a href="#">GDU</a></li>
+								<li><a href="#">SB App store</a></li>
+								<li><a href="#">The Knowledge Center</a></li>
+								<li><a href="#">0365 Learning Portal</a></li>
+								<li><a href="#">Stationery</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-6 ml-40">
+						<div class="footer__col">
+							<h5 class="footer__title">The Group</h5>
+							<ul class="footer__col-item">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Strategy</a></li>
+								<li><a href="#">Footprint</a></li>
+								<li><a href="#">Values and ethics</a></li>
+								<li><a href="#">Board of directors</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="footer__col">
+							<h5 class="footer__title">Commonly used links</h5>
+							<ul class="footer__col-item">
+								<li><a href="#">Self Service</a></li>
+								<li><a href="#">IT Service Desk</a></li>
+								<li><a href="#">Fraudstop</a></li>
+								<li><a href="#">Whistleblowing</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="footer__col">
+							<h5 class="footer__title">Contact SB Hub</h5>
+							<div class="footer__col-item">
+								<div class="email">
+									<a href="#">Email: SBUB@standardbank.com</a>
+								</div>
+								<form class="footer__input-wrapper">
+									<label for="s_field">Yammer #SBHub</label>
+									<input
+										type="text"
+										id="s_field"
+										class="footer__col-input"
+										placeholder="Search"
+									/>
+									<button class="footer__search">
+										<i class="fas fa-search" style="color: #fff"></i>
+									</button>
+								</form>
+								<ul class="footer__social-icon">
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/facebook-sm.png"
+												alt="facebook"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/linked.png"
+												alt="linkedIn"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/youtube-sm.png"
+												alt="youtube"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/twitter-sm.png"
+												alt="twitter"
+										/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer section end -->
 
-        </main>
-
-        <!-- footer section start -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-6">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                Resources
-                            </h5>
-                            <ul class="footer__col-item">
-                                <li><a href="#">GDU</a></li>
-                                <li><a href="#">SB App store</a></li>
-                                <li><a href="#">The Knowledge Center</a></li>
-                                <li><a href="#">0365 Learning Portal</a></li>
-                                <li><a href="#">Stationery</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6 ml-40">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                The Group
-                            </h5>
-                            <ul class="footer__col-item">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Strategy</a></li>
-                                <li><a href="#">Footprint</a></li>
-                                <li><a href="#">Values and ethics</a></li>
-                                <li><a href="#">Board of directors</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                Commonly used links
-                            </h5>
-                            <ul class="footer__col-item">
-                                <li><a href="#">Self Service</a></li>
-                                <li><a href="#">IT Service Desk</a></li>
-                                <li><a href="#">Fraudstop</a></li>
-                                <li><a href="#">Whistleblowing</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                Contact SB Hub
-                            </h5>
-                            <div class="footer__col-item">
-                                <div class="email">
-                                    <a href="#">Email: SBUB@standardbank.com</a>
-                                </div>
-                                <form class="footer__input-wrapper">
-                                    <label for="s_field">Yammer #SBHub</label>
-                                    <input type="text" id="s_field" class="footer__col-input" placeholder="Search" />
-                                    <button class="footer__search"><i class="fas fa-search" style="color: #fff;"></i></button>
-                                </form>
-                                <ul class="footer__social-icon">
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/facebook-sm.png" alt="facebook" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/linked.png" alt="linkedIn" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/youtube-sm.png" alt="youtube" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/twitter-sm.png" alt="twitter" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> 
-        <!-- footer section end -->
-
-
-        <!-- All js Goes here -->
-        <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery-listnav.js"></script>
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/jquery.rwdImageMaps.min.js"></script>
-        <script src="assets/js/app.js"></script>
-        <script>
-            $(document).ready(function(e) {
-                $('img[usemap]').rwdImageMaps();
-            });
-        </script>
-    </body>
+		<!-- All js Goes here -->
+		<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery-listnav.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.rwdImageMaps.min.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script>
+			$(document).ready(function (e) {
+				$("img[usemap]").rwdImageMaps()
+			})
+		</script>
+	</body>
 </html>

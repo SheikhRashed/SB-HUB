@@ -1,0 +1,16 @@
+<svg id="outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,1a9,9,0,1,0,9,9A9.01,9.01,0,0,0,10,1Zm.012,14a1,1,0,1,1,1-1A1,1,0,0,1,10.012,15ZM11,11H9V5h2v6Z" transform="translate(2 2)" fill="#767676"/>
+    </clipPath>
+  </defs>
+  <rect id="bounding_box" width="24" height="24" fill="none"/>
+  <g id="Group_6" data-name="Group 6">
+    <path id="Mask-2" data-name="Mask" d="M10,20A10,10,0,1,1,20,10,10.011,10.011,0,0,1,10,20ZM10,1a9,9,0,1,0,9,9A9.01,9.01,0,0,0,10,1Zm.012,14a1,1,0,1,1,1-1A1,1,0,0,1,10.012,15ZM11,11H9V5h2v6Z" transform="translate(2 2)" fill="#767676"/>
+    <g id="Mask_Group_6" data-name="Mask Group 6" clip-path="url(#clip-path)">
+      <g id="primary">
+        <rect id="Rectangle" width="24" height="24" fill="#03a"/>
+      </g>
+    </g>
+  </g>
+</svg>

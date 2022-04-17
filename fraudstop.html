@@ -98,7 +98,7 @@
 			<ul class="sticky__sidebar">
 				<li class="sticky__item sticky__item-01 dropright">
 					<a
-						class="dropdown-toggle d-flex"
+						class="dropdown-toggle"
 						href="#"
 						id="dropright_1"
 						role="button"
@@ -107,34 +107,124 @@
 						aria-expanded="false"
 					>
 						<div class="sticky__img-wrapper">
-							<img src="assets/images/sticky/icn_people-1.png" alt="img" />
+							<img src="assets/images/sticky/bell.svg" alt="img" />
+							<span class="count">2</span>
 						</div>
 						<span>
-							Employee <br />
-							services
+							My <br />
+							Notifications
 						</span>
 					</a>
 
 					<div class="dropdown-menu" aria-labelledby="dropright_1">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
+						<div class="dropdown-heading">
+							<button>Mark all as Read</button>
+						</div>
+						<div class="notification-content">
+							<!-- Empty Notification -->
+							<!-- <div class="notification-content__empty">
+								<h2>No New Notifications</h2>
+								<div class="icon">
+									<img src="assets/images/sticky/bell.svg" alt="" />
+									<span class="count">0</span>
+								</div>
+							</div> -->
+
+							<div class="notification-content__item unread">
+								<div class="icon">
+									<img src="assets/images/sticky/outline.svg" alt="" />
+								</div>
+								<div class="info">
+									<a href="#"
+										>Alert Notification title will be displayed
+										here</a
+									>
+
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										5 min ago
+									</p>
+								</div>
+							</div>
+							<div class="notification-content__item unread">
+								<div class="icon">
+									<img src="assets/images/sticky/clock.svg" alt="" />
+								</div>
+								<div class="info">
+									<a href="#">
+										Reminder Notification title will be displayed here
+									</a>
+
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										6 hours ago
+									</p>
+								</div>
+							</div>
+							<div class="notification-content__item">
+								<div class="icon">
+									<img
+										src="assets/images/sticky/icn_megaphone.svg"
+										alt=""
+									/>
+								</div>
+								<div class="info">
+									<a href="#">
+										Announcement notification title will be displayed
+										here
+									</a>
+
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										2 days ago
+									</p>
+								</div>
+							</div>
+							<div class="notification-content__item">
+								<div class="icon">
+									<img src="assets/images/sticky/settings.svg" alt="" />
+								</div>
+								<div class="info">
+									<a href="#">
+										Operation notification title will be displayed
+										here.
+									</a>
+
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										3 days ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown-footer">
+							<button>View All notification</button>
+						</div>
 					</div>
 				</li>
-
 				<li class="sticky__item sticky__item-02 dropright">
 					<a
-						class="dropdown-toggle d-flex"
+						class="dropdown-toggle"
 						href="#"
 						id="dropright_2"
 						role="button"
@@ -143,30 +233,39 @@
 						aria-expanded="false"
 					>
 						<div class="sticky__img-wrapper">
-							<img src="assets/images/sticky/color.png" alt="img" />
+							<img src="assets/images/sticky/1.svg" alt="img" />
 						</div>
 						<span>
-							Employee <br />
-							support
+							My <br />
+							Worklife
 						</span>
 					</a>
-
-					<div class="dropdown-menu" aria-labelledby="dropright_2">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-					</div>
 				</li>
 
-				<li class="sticky__item sticky__item-03">
+				<li class="sticky__item sticky__item-03 dropright">
+					<a
+						class="dropdown-toggle"
+						href="#"
+						id="dropright_3"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/icn_chat.svg" alt="img" />
+						</div>
+						<span>
+							My Support <br />
+							Services</span
+						>
+					</a>
+				</li>
+
+				<li class="sticky__item sticky__item-04">
 					<a href="#" class="d-flex">
 						<div class="sticky__img-wrapper">
-							<img src="assets/images/sticky/internet.png" alt="img" />
+							<img src="assets/images/sticky/icn_wallet.svg" alt="img" />
 						</div>
 						<span>
 							Internet <br />
@@ -175,9 +274,18 @@
 					</a>
 				</li>
 
-				<li class="toggle">
-					<i class="fas fa-cog"></i>
+				<li class="sticky__item sticky__item-05">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/heartbeat.svg" alt="img" />
+						</div>
+						<span> COVIDE-19 </span>
+					</a>
 				</li>
+
+				<!-- <li class="toggle">
+					<i class="fas fa-cog"></i>
+				</li> -->
 			</ul>
 			<ul class="sticky__sidebar social">
 				<li class="sticky__item sticky__item-01">
@@ -229,7 +337,6 @@
 					</div>
 				</div>
 			</section>
-
 
 			<!-- Content Navigation  -->
 			<section class="content-navigation">

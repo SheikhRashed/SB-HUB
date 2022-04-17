@@ -1,944 +1,1552 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SB-intranet || remote-one</title>
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="assets/css/all.min.css" />
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <!-- Slick slider -->
-        <link rel="stylesheet" href="assets/css/slick.css" />
-        <!-- Venobox -->
-        <link rel="stylesheet" href="assets/css/venobox.min.css" />
-        <!-- Main css -->
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SB-intranet || remote-one</title>
+		<!-- Fontawesome -->
+		<link rel="stylesheet" href="assets/css/all.min.css" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<!-- Slick slider -->
+		<link rel="stylesheet" href="assets/css/slick.css" />
+		<!-- Venobox -->
+		<link rel="stylesheet" href="assets/css/venobox.min.css" />
+		<!-- Main css -->
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
 
-    <body>
-        <!-- Header section start -->
-        <header class="header--two">
-            <nav class="navbar navbar-expand-xl navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/images/badge.png" alt="" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+	<body>
+		<!-- Header section start -->
+		<header class="header--two">
+			<nav class="navbar navbar-expand-xl navbar-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img src="assets/images/badge.png" alt="" />
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="d-block d-xl-none">
-                                <form class="form-inline mt-0 justify-content-end pl-3">
-                                    <div class="login__Img mr-3">
-                                        <img src="assets/images/pepole/pepole-03.png" alt="pepole-03" />
-                                    </div>
-                                    <div class="login__name">
-                                        <span class="text-white">Wilson,Bongs N</span>
-                                    </div>
-                                </form>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">My Workbench </a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">My Business tools</a>
-                            </li>
-                            <li class="nav-ite m">
-                                <a class="nav-link" href="#">More for me</a>
-                            </li>
-                        </ul>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mx-auto">
+							<li class="d-block d-xl-none">
+								<form class="form-inline mt-0 justify-content-end pl-3">
+									<div class="login__Img mr-3">
+										<img
+											src="assets/images/pepole/pepole-03.png"
+											alt="pepole-03"
+										/>
+									</div>
+									<div class="login__name">
+										<span class="text-white">Wilson,Bongs N</span>
+									</div>
+								</form>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">My Workbench </a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="#">My Business tools</a>
+							</li>
+							<li class="nav-ite m">
+								<a class="nav-link" href="#">More for me</a>
+							</li>
+						</ul>
 
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search for files, pepole or pages" aria-label="Search" />
-                            <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                        </form>
-                    </div>
+						<form class="form-inline my-2 my-lg-0">
+							<input
+								class="form-control mr-sm-2"
+								type="search"
+								placeholder="Search for files, pepole or pages"
+								aria-label="Search"
+							/>
+							<button class="btn my-2 my-sm-0" type="submit">
+								<i class="fas fa-search"></i>
+							</button>
+						</form>
+					</div>
 
-                    <a href="#" class="d-none d-xl-block">
-                        <form class="form-inline">
-                            <div class="login__Img mr-3">
-                                <img src="assets/images/pepole/pepole-03.png" alt="pepole" />
-                            </div>
-                            <div class="login__name">
-                                <span class="text-white">Wilson,Bongs N</span>
-                            </div>
-                        </form>
-                    </a>
-                </div>
-            </nav>
-        </header>
-        <!-- Header section end -->
+					<a href="#" class="d-none d-xl-block">
+						<form class="form-inline">
+							<div class="login__Img mr-3">
+								<img
+									src="assets/images/pepole/pepole-03.png"
+									alt="pepole"
+								/>
+							</div>
+							<div class="login__name">
+								<span class="text-white">Wilson,Bongs N</span>
+							</div>
+						</form>
+					</a>
+				</div>
+			</nav>
+		</header>
+		<!-- Header section end -->
 
-        <main class="position-relative">
-            <!-- STicky sidebar  -->
-            <ul class="sticky__sidebar">
-                <li class="sticky__item sticky__item-01 dropright">
-                    <a class="dropdown-toggle d-flex" href="#" id="dropright_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/icn_people-1.png" alt="img" />
-                        </div>
-                        <span>
-                            Employee <br />
-                            services
-                        </span>
-                    </a>
+		<main class="position-relative">
+			<!-- STicky sidebar  -->
+			<ul class="sticky__sidebar">
+				<li class="sticky__item sticky__item-01 dropright">
+					<a
+						class="dropdown-toggle"
+						href="#"
+						id="dropright_1"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/bell.svg" alt="img" />
+							<span class="count">2</span>
+						</div>
+						<span>
+							My <br />
+							Notifications
+						</span>
+					</a>
 
-                    <div class="dropdown-menu" aria-labelledby="dropright_1">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+					<div class="dropdown-menu" aria-labelledby="dropright_1">
+						<div class="dropdown-heading">
+							<button>Mark all as Read</button>
+						</div>
+						<div class="notification-content">
+							<!-- Empty Notification -->
+							<!-- <div class="notification-content__empty">
+								<h2>No New Notifications</h2>
+								<div class="icon">
+									<img src="assets/images/sticky/bell.svg" alt="" />
+									<span class="count">0</span>
+								</div>
+							</div> -->
 
-                <li class="sticky__item sticky__item-02 dropright">
-                    <a class="dropdown-toggle d-flex" href="#" id="dropright_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/color.png" alt="img" />
-                        </div>
-                        <span>
-                            Employee <br />
-                            support
-                        </span>
-                    </a>
+							<div class="notification-content__item unread">
+								<div class="icon">
+									<img src="assets/images/sticky/outline.svg" alt="" />
+								</div>
+								<div class="info">
+									<a href="#"
+										>Alert Notification title will be displayed
+										here</a
+									>
 
-                    <div class="dropdown-menu" aria-labelledby="dropright_2">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                    </div>
-                </li>
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										5 min ago
+									</p>
+								</div>
+							</div>
+							<div class="notification-content__item unread">
+								<div class="icon">
+									<img src="assets/images/sticky/clock.svg" alt="" />
+								</div>
+								<div class="info">
+									<a href="#">
+										Reminder Notification title will be displayed here
+									</a>
 
-                <li class="sticky__item sticky__item-03">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/internet.png" alt="img" />
-                        </div>
-                        <span>
-                            Internet <br />
-                            banking
-                        </span>
-                    </a>
-                </li>
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										6 hours ago
+									</p>
+								</div>
+							</div>
+							<div class="notification-content__item">
+								<div class="icon">
+									<img
+										src="assets/images/sticky/icn_megaphone.svg"
+										alt=""
+									/>
+								</div>
+								<div class="info">
+									<a href="#">
+										Announcement notification title will be displayed
+										here
+									</a>
 
-                <li class="toggle">
-                    <i class="fas fa-cog"></i>
-                </li>
-            </ul>
-            <ul class="sticky__sidebar social">
-                <li class="sticky__item sticky__item-01">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/icn_share-android.png" alt="img" />
-                        </div>
-                    </a>
-                </li>
-                <li class="sticky__item sticky__item-02">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/female.png" alt="img" />
-                        </div>
-                    </a>
-                </li>
-                <li class="sticky__item sticky__item-03">
-                    <a href="#" class="d-flex">
-                        <div class="sticky__img-wrapper">
-                            <img src="assets/images/sticky/bell.png" alt="img" />
-                        </div>
-                    </a>
-                </li>
-                <li class="toggle toggle2">
-                    <i class="fas fa-cog"></i>
-                </li>
-            </ul>
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										2 days ago
+									</p>
+								</div>
+							</div>
+							<div class="notification-content__item">
+								<div class="icon">
+									<img src="assets/images/sticky/settings.svg" alt="" />
+								</div>
+								<div class="info">
+									<a href="#">
+										Operation notification title will be displayed
+										here.
+									</a>
 
-            <!-- banner 03  start -->
-            <div class="banner--three" style="background-image: url('assets/images/bg/bg-07.png');">
-                <div class="container">
-                    <h2>Working Remotely</h2>
-                    <p>
-                        The world has become increasingly global and connected through technology.
-                    </p>
-                    <p>
-                        Employees can now work from various locations, while still adding value and connecting with each other, our clients and stakeholders.
-                    </p>
-                    <p>
-                        This site aims to provide you with all the information, tools and tips to decide whether you would like to work remotely, and how to get set up when you are approved to do so.
-                    </p>
-                </div>
-            </div>
-            <!-- banner 03 end  -->
+									<p>
+										<span>
+											<img
+												src="assets/images/sticky/past.svg"
+												alt=""
+											/>
+										</span>
+										3 days ago
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown-footer">
+							<button>View All notification</button>
+						</div>
+					</div>
+				</li>
+				<li class="sticky__item sticky__item-02 dropright">
+					<a
+						class="dropdown-toggle"
+						href="#"
+						id="dropright_2"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/1.svg" alt="img" />
+						</div>
+						<span>
+							My <br />
+							Worklife
+						</span>
+					</a>
+				</li>
 
-            <!-- secondary-navigation start -->
-            <div class="secondary-navigation navbar navbar-expand-md">
-                <div class="container">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link active">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Getting Started</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Home office hints and tips</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- secondary-navigation end -->
+				<li class="sticky__item sticky__item-03 dropright">
+					<a
+						class="dropdown-toggle"
+						href="#"
+						id="dropright_3"
+						role="button"
+						data-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false"
+					>
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/icn_chat.svg" alt="img" />
+						</div>
+						<span>
+							My Support <br />
+							Services</span
+						>
+					</a>
+				</li>
 
-            <!-- Features Card start  -->
-            <section class="features">
-                <div class="container">
-                    <div class="features__content">
-                        <div class="features__content-item">
-                            <div class="features-card media">
-                                <img src="assets/images/icons/book_color.png" alt="icon" class="img-fluid mr-2 icon">
-                                <div>
-                                    <h6>What is this ?</h6>
-                                    <p>
-                                        The remote working framework is aimed at providing flexible opportunities, where operationally possible, for employees to fulfil both their work and career aspirations, blending their responsibilities in
-                                        a manner that suits their unique needs.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="features__content-item">
-                            <div class="features-card media">
-                                <img src="assets/images/icons/query_color.png" alt="icon" class="img-fluid mr-2 icon">
-                                <div>
-                                    <h6>What is the bank doing this ?</h6>
-                                    <p>
-                                        The bank seeks to embrace workplace agility, while ensuring a balance between client, internal work operational requirements and employee enabling requirements.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="features__content-item">
-                            <div class="features-card media">
-                                <img src="assets/images/icons/light_color.png" alt="icon" class="img-fluid mr-2 icon">
-                                <div>
-                                    <h6>How does it work?</h6>
-                                    <p>
-                                        For the purposes of this framework, remote working refers to an employee of the bank performing work during ordinary business hours, from a primary location which is not designated as a bank premises. For
-                                        more detailed info, familiarise yourself with the relevant policy for working remotely:
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            <span></span>
-                                            <a href="#">Group</a>
-                                        </li>
-                                        <li>
-                                            <span></span>
-                                            <a href="#">South Africa</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="features__content-item">
-                            <div class="features-card media">
-                                <img src="assets/images/icons/users_color.png" alt="icon" class="img-fluid mr-2 icon">
-                                <div>
-                                    <h6>Who is eligible?</h6>
-                                    <p>
-                                        As a leading financial institution, it is important that we maintain our clients’ confidence in our drive, passion and expertise. Consequently, it will not be feasible to provide remote working
-                                        opportunities for every employee and every job. <a href="#">Click through to read more</a> on the factors that determine whether your role is eligible for a remote working opportunity.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Features Card end  -->
+				<li class="sticky__item sticky__item-04">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/icn_wallet.svg" alt="img" />
+						</div>
+						<span>
+							Internet <br />
+							banking
+						</span>
+					</a>
+				</li>
 
-            <!-- Getting Started start  -->
-            <section class="g-started">
-                <div class="container">
-                    <h2 class="g-started__title">Getting Started</h2>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="g-card">
-                                <div class="g-card__image">
-                                    <img src="assets/images/flgas/global.png" alt="global-flags" />
-                                </div>
-                                <div class="g-card__info">
-                                    <h6>Group</h6>
-                                    <ul>
-                                        <li>
-                                            <span class="icon"></span>
-                                            <p>To access all services, processes and guidelines, please contact your local People & Culture business partner and in-country Technology Service Desk.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="g-card">
-                                <div class="g-card__image">
-                                    <img src="assets/images/flgas/africa.png" alt="national-flags" />
-                                </div>
-                                <div class="g-card__info">
-                                    <h6>South Africa</h6>
-                                    <ul>
-                                        <li>
-                                            <span class="icon"></span>
-                                            <p>Visit the <a href="#">Working remotely in South Africa</a> page to access services, processes and guidelines as well as order or relocate office equipment.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Getting Started end  -->
+				<li class="sticky__item sticky__item-05">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/heartbeat.svg" alt="img" />
+						</div>
+						<span> COVIDE-19 </span>
+					</a>
+				</li>
 
-            <!-- banner 03  start -->
-            <div class="banner--three" style="background-image: url('assets/images/bg/bg-10.png');">
-                <div class="container">
-                    <h2>Home office hints and tips</h2>
-                    <p>
-                        Being sufficiently set up in a remote working environment is very important to help you deliver work in the same way you would have, if working at a bank premises.
-                    </p>
-                    <p>
-                        Get the most out of your working remotely by browsing through the below topics and clicking on the view icons on the image below.
-                    </p>
-                </div>
-            </div>
-            <!-- banner 03 end  -->
+				<!-- <li class="toggle">
+					<i class="fas fa-cog"></i>
+				</li> -->
+			</ul>
+			<ul class="sticky__sidebar social">
+				<li class="sticky__item sticky__item-01">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img
+								src="assets/images/sticky/icn_share-android.png"
+								alt="img"
+							/>
+						</div>
+					</a>
+				</li>
+				<li class="sticky__item sticky__item-02">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/female.png" alt="img" />
+						</div>
+					</a>
+				</li>
+				<li class="sticky__item sticky__item-03">
+					<a href="#" class="d-flex">
+						<div class="sticky__img-wrapper">
+							<img src="assets/images/sticky/bell.png" alt="img" />
+						</div>
+					</a>
+				</li>
+				<li class="toggle toggle2">
+					<i class="fas fa-cog"></i>
+				</li>
+			</ul>
 
-            <!-- Information start  -->
-            <section class="information">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 pr-lg-0">
-                            <ul class="information-data">
-                                <li>
-                                    <a href="#">Set rules for others at home </a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Choose seclusion over convenience </a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Add a personal touch</a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Clutter free your work space</a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Protect sensitive and important documents</a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Take regular breaks and find time to go outside</a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Keep healthy habits </a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Keep regular hours</a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Connect with your colleagues</a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Don’t be consumed by social media</a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">Do something to mark the end of the day</a>
-                                    <div class="information-data--dropdown">
-                                        Avoid using the kitchen or living room as an office. These rooms are likely to be used directly after work (making the separation of work and home far more challenging) and as communal areas, they are
-                                        often filled with distractions, especially in shared households. Ideally, the home office should be in a secluded place that can be walked away from in order to leave professional stress within a
-                                        defined area of the house.
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-8 pl-lg-0">
-                            <div class="information-modals">
-                                <h2>click on the icons to view the hints and tips</h2>
-                                <!-- Image Map Generated by http://www.image-map.net/ -->
-                                <img src="assets/images/bg/bg-08.png" usemap="#image-map" class="information-modals__imgwrapper">
+			<!-- banner 03  start -->
+			<div
+				class="banner--three"
+				style="background-image: url('assets/images/bg/bg-07.png')"
+			>
+				<div class="container">
+					<h2>Working Remotely</h2>
+					<p>
+						The world has become increasingly global and connected through
+						technology.
+					</p>
+					<p>
+						Employees can now work from various locations, while still adding
+						value and connecting with each other, our clients and
+						stakeholders.
+					</p>
+					<p>
+						This site aims to provide you with all the information, tools and
+						tips to decide whether you would like to work remotely, and how to
+						get set up when you are approved to do so.
+					</p>
+				</div>
+			</div>
+			<!-- banner 03 end  -->
 
-                                <map name="image-map">
-                                    <area alt="Window" title="Window" href="#" coords="117,121,15" shape="circle" data-toggle="modal" data-target="#window">
-                                    <area alt="Lamp" title="Lamp" href="#" coords="283,268,15" shape="circle" data-toggle="modal" data-target="#lamp">
-                                    <area alt="Monitor" title="Monitor" href="#" coords="436,273,14" shape="circle" data-toggle="modal" data-target="#monitor">
-                                    <area alt="Chair" title="Chair" href="#" coords="183,453,15" shape="circle" data-toggle="modal" data-target="#chair">
-                                    <area alt="Desk" title="Desk" href="#" coords="362,400,14" shape="circle" data-toggle="modal" data-target="#desk">
-                                    <area alt="Wifi" title="Wifi" href="#" coords="523,362,14" shape="circle" data-toggle="modal" data-target="#wifi">
-                                    <area alt="Stationery" title="Stationery" href="#" coords="606,355,14" shape="circle" data-toggle="modal" data-target="#station">
-                                    <area alt="Printer" title="Printer" href="#" coords="758,322,14" shape="circle" data-toggle="modal" data-target="#printer">
-                                    <area alt="Cable" title="Cable" href="#" coords="753,464,15" shape="circle" data-toggle="modal" data-target="#cable">
-                                    <area alt="Plug" title="Plug" href="#" coords="739,562,14" shape="circle" data-toggle="modal" data-target="#plug">
-                                </map>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Information end  -->
+			<!-- secondary-navigation start -->
+			<div class="secondary-navigation navbar navbar-expand-md">
+				<div class="container">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link active">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Getting Started</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Home office hints and tips</a>
+						</li>
+						<li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- secondary-navigation end -->
 
-            <!--Faq Banner start  -->
-            <div class="banner--three" style="background-image: url('assets/images/bg/bg-09.png');">
-                <div class="container">
-                    <h2>FAQs</h2>
-                    <p>
-                        Have more questions? Have a look at some of the frequently asked questions and their answers.
-                    </p>
-                </div>
-            </div>
-            <!-- Faq banner end  -->
+			<!-- Features Card start  -->
+			<section class="features">
+				<div class="container">
+					<div class="features__content">
+						<div class="features__content-item">
+							<div class="features-card media">
+								<img
+									src="assets/images/icons/book_color.png"
+									alt="icon"
+									class="img-fluid mr-2 icon"
+								/>
+								<div>
+									<h6>What is this ?</h6>
+									<p>
+										The remote working framework is aimed at providing
+										flexible opportunities, where operationally
+										possible, for employees to fulfil both their work
+										and career aspirations, blending their
+										responsibilities in a manner that suits their
+										unique needs.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="features__content-item">
+							<div class="features-card media">
+								<img
+									src="assets/images/icons/query_color.png"
+									alt="icon"
+									class="img-fluid mr-2 icon"
+								/>
+								<div>
+									<h6>What is the bank doing this ?</h6>
+									<p>
+										The bank seeks to embrace workplace agility, while
+										ensuring a balance between client, internal work
+										operational requirements and employee enabling
+										requirements.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="features__content-item">
+							<div class="features-card media">
+								<img
+									src="assets/images/icons/light_color.png"
+									alt="icon"
+									class="img-fluid mr-2 icon"
+								/>
+								<div>
+									<h6>How does it work?</h6>
+									<p>
+										For the purposes of this framework, remote working
+										refers to an employee of the bank performing work
+										during ordinary business hours, from a primary
+										location which is not designated as a bank
+										premises. For more detailed info, familiarise
+										yourself with the relevant policy for working
+										remotely:
+									</p>
+									<ul>
+										<li>
+											<span></span>
+											<a href="#">Group</a>
+										</li>
+										<li>
+											<span></span>
+											<a href="#">South Africa</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="features__content-item">
+							<div class="features-card media">
+								<img
+									src="assets/images/icons/users_color.png"
+									alt="icon"
+									class="img-fluid mr-2 icon"
+								/>
+								<div>
+									<h6>Who is eligible?</h6>
+									<p>
+										As a leading financial institution, it is
+										important that we maintain our clients’ confidence
+										in our drive, passion and expertise. Consequently,
+										it will not be feasible to provide remote working
+										opportunities for every employee and every job.
+										<a href="#">Click through to read more</a> on the
+										factors that determine whether your role is
+										eligible for a remote working opportunity.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Features Card end  -->
 
-            <!-- Faqs start  star -->
-            <section class="faqs">
-                <div class="container">
-                    <div class="accordion faq-accordion" id="faqsCurrent">
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header faq-header" id="faqOne">
-                                <button class="accordion-button faq-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Heading goes here too
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-parent="#faqsCurrent">
-                                <div class="accordion-body faq-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam, commodi animi, voluptatibus dignissimos fugit delectus debitis fuga error accusamus autem distinctio, minima odit tempore?
-                                        Praesentium nemo libero iusto consectetur.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header faq-header" id="faqTwo">
-                                <button class="accordion-button faq-button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Heading goes here
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-parent="#faqsCurrent">
-                                <div class="accordion-body faq-body">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptas ipsa ea dolor quos eum, quaerat amet ex? Vitae nisi quis dolorum itaque provident natus explicabo, similique doloribus
-                                        molestiae perspiciatis!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item faq-item">
-                            <h2 class="accordion-header faq-header" id="faqThree">
-                                <button class="accordion-button faq-button collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Heading goes here
+			<!-- Getting Started start  -->
+			<section class="g-started">
+				<div class="container">
+					<h2 class="g-started__title">Getting Started</h2>
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="g-card">
+								<div class="g-card__image">
+									<img
+										src="assets/images/flgas/global.png"
+										alt="global-flags"
+									/>
+								</div>
+								<div class="g-card__info">
+									<h6>Group</h6>
+									<ul>
+										<li>
+											<span class="icon"></span>
+											<p>
+												To access all services, processes and
+												guidelines, please contact your local
+												People & Culture business partner and
+												in-country Technology Service Desk.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="g-card">
+								<div class="g-card__image">
+									<img
+										src="assets/images/flgas/africa.png"
+										alt="national-flags"
+									/>
+								</div>
+								<div class="g-card__info">
+									<h6>South Africa</h6>
+									<ul>
+										<li>
+											<span class="icon"></span>
+											<p>
+												Visit the
+												<a href="#"
+													>Working remotely in South Africa</a
+												>
+												page to access services, processes and
+												guidelines as well as order or relocate
+												office equipment.
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Getting Started end  -->
 
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-parent="#faqsCurrent">
-                                <div class="accordion-body faq-body">
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa ut assumenda ducimus, eius modi, omnis vitae dolore labore hic, ex maiores tenetur illo. Totam facilis ea ratione autem. Voluptatum,
-                                        quis?
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Faqs start end  -->
-        </main>
+			<!-- banner 03  start -->
+			<div
+				class="banner--three"
+				style="background-image: url('assets/images/bg/bg-10.png')"
+			>
+				<div class="container">
+					<h2>Home office hints and tips</h2>
+					<p>
+						Being sufficiently set up in a remote working environment is very
+						important to help you deliver work in the same way you would have,
+						if working at a bank premises.
+					</p>
+					<p>
+						Get the most out of your working remotely by browsing through the
+						below topics and clicking on the view icons on the image below.
+					</p>
+				</div>
+			</div>
+			<!-- banner 03 end  -->
 
-        <!-- footer section start -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-6">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                Resources
-                            </h5>
-                            <ul class="footer__col-item">
-                                <li><a href="#">GDU</a></li>
-                                <li><a href="#">SB App store</a></li>
-                                <li><a href="#">The Knowledge Center</a></li>
-                                <li><a href="#">0365 Learning Portal</a></li>
-                                <li><a href="#">Stationery</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-6 ml-40">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                The Group
-                            </h5>
-                            <ul class="footer__col-item">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Strategy</a></li>
-                                <li><a href="#">Footprint</a></li>
-                                <li><a href="#">Values and ethics</a></li>
-                                <li><a href="#">Board of directors</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                Commonly used links
-                            </h5>
-                            <ul class="footer__col-item">
-                                <li><a href="#">Self Service</a></li>
-                                <li><a href="#">IT Service Desk</a></li>
-                                <li><a href="#">Fraudstop</a></li>
-                                <li><a href="#">Whistleblowing</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-12">
-                        <div class="footer__col">
-                            <h5 class="footer__title">
-                                Contact SB Hub
-                            </h5>
-                            <div class="footer__col-item">
-                                <div class="email">
-                                    <a href="#">Email: SBUB@standardbank.com</a>
-                                </div>
-                                <form class="footer__input-wrapper">
-                                    <label for="s_field">Yammer #SBHub</label>
-                                    <input type="text" id="s_field" class="footer__col-input" placeholder="Search" />
-                                    <button class="footer__search"><i class="fas fa-search" style="color: #fff;"></i></button>
-                                </form>
-                                <ul class="footer__social-icon">
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/facebook-sm.png" alt="facebook" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/linked.png" alt="linkedIn" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/youtube-sm.png" alt="youtube" /></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><img src="assets/images/social-icons/twitter-sm.png" alt="twitter" /></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer section end -->
+			<!-- Information start  -->
+			<section class="information">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 pr-lg-0">
+							<ul class="information-data">
+								<li>
+									<a href="#">Set rules for others at home </a>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#">Choose seclusion over convenience </a>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#">Add a personal touch</a>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#">Clutter free your work space</a>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#"
+										>Protect sensitive and important documents</a
+									>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#"
+										>Take regular breaks and find time to go
+										outside</a
+									>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#">Keep healthy habits </a>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#">Keep regular hours</a>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#">Connect with your colleagues</a>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#">Don’t be consumed by social media</a>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+								<li>
+									<a href="#"
+										>Do something to mark the end of the day</a
+									>
+									<div class="information-data--dropdown">
+										Avoid using the kitchen or living room as an
+										office. These rooms are likely to be used directly
+										after work (making the separation of work and home
+										far more challenging) and as communal areas, they
+										are often filled with distractions, especially in
+										shared households. Ideally, the home office should
+										be in a secluded place that can be walked away
+										from in order to leave professional stress within
+										a defined area of the house.
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-8 pl-lg-0">
+							<div class="information-modals">
+								<h2>click on the icons to view the hints and tips</h2>
+								<!-- Image Map Generated by http://www.image-map.net/ -->
+								<img
+									src="assets/images/bg/bg-08.png"
+									usemap="#image-map"
+									class="information-modals__imgwrapper"
+								/>
 
-        <!-- Modals  -->
-        <!-- Button trigger modal -->
+								<map name="image-map">
+									<area
+										alt="Window"
+										title="Window"
+										href="#"
+										coords="117,121,15"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#window"
+									/>
+									<area
+										alt="Lamp"
+										title="Lamp"
+										href="#"
+										coords="283,268,15"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#lamp"
+									/>
+									<area
+										alt="Monitor"
+										title="Monitor"
+										href="#"
+										coords="436,273,14"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#monitor"
+									/>
+									<area
+										alt="Chair"
+										title="Chair"
+										href="#"
+										coords="183,453,15"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#chair"
+									/>
+									<area
+										alt="Desk"
+										title="Desk"
+										href="#"
+										coords="362,400,14"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#desk"
+									/>
+									<area
+										alt="Wifi"
+										title="Wifi"
+										href="#"
+										coords="523,362,14"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#wifi"
+									/>
+									<area
+										alt="Stationery"
+										title="Stationery"
+										href="#"
+										coords="606,355,14"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#station"
+									/>
+									<area
+										alt="Printer"
+										title="Printer"
+										href="#"
+										coords="758,322,14"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#printer"
+									/>
+									<area
+										alt="Cable"
+										title="Cable"
+										href="#"
+										coords="753,464,15"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#cable"
+									/>
+									<area
+										alt="Plug"
+										title="Plug"
+										href="#"
+										coords="739,562,14"
+										shape="circle"
+										data-toggle="modal"
+										data-target="#plug"
+									/>
+								</map>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Information end  -->
 
-  
-  <!-- Modal Chair-->
-  <div class="modal fade information-modal" id="chair"  data-keyboard="false" tabindex="-1" aria-labelledby="chairLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="chairLabel">Tips for sitting correctly</h5>
-          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="modal-body">
-             <div class="information-modal__img">
-                 <img src="assets/images/modal/modal-01.png" alt="modal-img" class="img-fluid">
-             </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Modal Window-->
-  <div class="modal fade information-modal  " id="window"  data-keyboard="false" tabindex="-1" aria-labelledby="windowLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="windowLabel">Natural lighting</h5>
-          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="modal-body">
-            <div class="information-modal__window row">
-                <div class="col-lg-6 order-2 order-lg-0">
-                    <p>
-                        Natural light improves focus and is a mood-boosting benefit. 
-                        However, it can cause problems with glare on your monitor. 
-                        To avoid this, position your desk to the side of the window.
-                    </p>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-0">
-                    <img src="assets/images/modal/modal-02.png" alt="modal-img" class="img-fluid">
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
+			<!--Faq Banner start  -->
+			<div
+				class="banner--three"
+				style="background-image: url('assets/images/bg/bg-09.png')"
+			>
+				<div class="container">
+					<h2>FAQs</h2>
+					<p>
+						Have more questions? Have a look at some of the frequently asked
+						questions and their answers.
+					</p>
+				</div>
+			</div>
+			<!-- Faq banner end  -->
 
-    <!-- Modal desk-->
-    <div class="modal fade information-modal  " id="desk"  data-keyboard="false" tabindex="-1" aria-labelledby="deskLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="deskLabel">Workstation guidelines</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-                 <div class="information-modal__img">
-                     <img src="assets/images/modal/modal-03.png" alt="modal-img" class="img-fluid">
-                 </div>
-            </div>
-          </div>
-        </div>
-      </div>
+			<!-- Faqs start  star -->
+			<section class="faqs">
+				<div class="container">
+					<div class="accordion faq-accordion" id="faqsCurrent">
+						<div class="accordion-item faq-item">
+							<h2 class="accordion-header faq-header" id="faqOne">
+								<button
+									class="accordion-button faq-button"
+									type="button"
+									data-toggle="collapse"
+									data-target="#collapseOne"
+									aria-expanded="true"
+									aria-controls="collapseOne"
+								>
+									Heading goes here too
+									<span class="icon">
+										<i class="fas fa-chevron-down"></i>
+									</span>
+								</button>
+							</h2>
+							<div
+								id="collapseOne"
+								class="accordion-collapse collapse show"
+								aria-labelledby="faqOne"
+								data-parent="#faqsCurrent"
+							>
+								<div class="accordion-body faq-body">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing
+										elit. Placeat ipsam, commodi animi, voluptatibus
+										dignissimos fugit delectus debitis fuga error
+										accusamus autem distinctio, minima odit tempore?
+										Praesentium nemo libero iusto consectetur.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item faq-item">
+							<h2 class="accordion-header faq-header" id="faqTwo">
+								<button
+									class="accordion-button faq-button collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#collapseTwo"
+									aria-expanded="false"
+									aria-controls="collapseTwo"
+								>
+									Heading goes here
+									<span class="icon">
+										<i class="fas fa-chevron-down"></i>
+									</span>
+								</button>
+							</h2>
+							<div
+								id="collapseTwo"
+								class="accordion-collapse collapse"
+								aria-labelledby="faqTwo"
+								data-parent="#faqsCurrent"
+							>
+								<div class="accordion-body faq-body">
+									<p>
+										Lorem ipsum dolor sit amet consectetur,
+										adipisicing elit. Reiciendis voluptas ipsa ea
+										dolor quos eum, quaerat amet ex? Vitae nisi quis
+										dolorum itaque provident natus explicabo,
+										similique doloribus molestiae perspiciatis!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item faq-item">
+							<h2 class="accordion-header faq-header" id="faqThree">
+								<button
+									class="accordion-button faq-button collapsed"
+									type="button"
+									data-toggle="collapse"
+									data-target="#collapseThree"
+									aria-expanded="false"
+									aria-controls="collapseThree"
+								>
+									Heading goes here
 
-    <!-- Modal monitor-->
-    <div class="modal fade information-modal " id="monitor"  data-keyboard="false" tabindex="-1" aria-labelledby="monitorLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="monitorLabel">Monitor/screen guidelines</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-                 <div class="information-modal__img">
-                     <img src="assets/images/modal/modal-04.png" alt="modal-img" class="img-fluid">
-                 </div>
-            </div>
-          </div>
-        </div>
-      </div>
+									<span class="icon">
+										<i class="fas fa-chevron-down"></i>
+									</span>
+								</button>
+							</h2>
+							<div
+								id="collapseThree"
+								class="accordion-collapse collapse"
+								aria-labelledby="faqThree"
+								data-parent="#faqsCurrent"
+							>
+								<div class="accordion-body faq-body">
+									<p>
+										Lorem ipsum dolor sit, amet consectetur
+										adipisicing elit. Culpa ut assumenda ducimus, eius
+										modi, omnis vitae dolore labore hic, ex maiores
+										tenetur illo. Totam facilis ea ratione autem.
+										Voluptatum, quis?
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Faqs start end  -->
+		</main>
 
-    <!-- Modal lamp-->
-    <div class="modal fade information-modal " id="lamp"  data-keyboard="false" tabindex="-1" aria-labelledby="lampLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="lampLabel">Lighting guidelines</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-                 <div class="information-modal__img">
-                     <img src="assets/images/modal/modal-05.png" alt="modal-img" class="img-fluid">
-                 </div>
-            </div>
-          </div>
-        </div>
-      </div>
+		<!-- footer section start -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6">
+						<div class="footer__col">
+							<h5 class="footer__title">Resources</h5>
+							<ul class="footer__col-item">
+								<li><a href="#">GDU</a></li>
+								<li><a href="#">SB App store</a></li>
+								<li><a href="#">The Knowledge Center</a></li>
+								<li><a href="#">0365 Learning Portal</a></li>
+								<li><a href="#">Stationery</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-6 ml-40">
+						<div class="footer__col">
+							<h5 class="footer__title">The Group</h5>
+							<ul class="footer__col-item">
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Strategy</a></li>
+								<li><a href="#">Footprint</a></li>
+								<li><a href="#">Values and ethics</a></li>
+								<li><a href="#">Board of directors</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="footer__col">
+							<h5 class="footer__title">Commonly used links</h5>
+							<ul class="footer__col-item">
+								<li><a href="#">Self Service</a></li>
+								<li><a href="#">IT Service Desk</a></li>
+								<li><a href="#">Fraudstop</a></li>
+								<li><a href="#">Whistleblowing</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-12">
+						<div class="footer__col">
+							<h5 class="footer__title">Contact SB Hub</h5>
+							<div class="footer__col-item">
+								<div class="email">
+									<a href="#">Email: SBUB@standardbank.com</a>
+								</div>
+								<form class="footer__input-wrapper">
+									<label for="s_field">Yammer #SBHub</label>
+									<input
+										type="text"
+										id="s_field"
+										class="footer__col-input"
+										placeholder="Search"
+									/>
+									<button class="footer__search">
+										<i class="fas fa-search" style="color: #fff"></i>
+									</button>
+								</form>
+								<ul class="footer__social-icon">
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/facebook-sm.png"
+												alt="facebook"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/linked.png"
+												alt="linkedIn"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/youtube-sm.png"
+												alt="youtube"
+										/></a>
+									</li>
+									<li>
+										<a href="#"
+											><img
+												src="assets/images/social-icons/twitter-sm.png"
+												alt="twitter"
+										/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer section end -->
 
-    <!-- Modal Printer-->
-    <div class="modal fade information-modal " id="printer"  data-keyboard="false" tabindex="-1" aria-labelledby="printerLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="printerLabel">Tips when using your printer</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div class="information-modal__print row">
-                    <div class="col-lg-6">
-                        <ul>
-                            <li>                                
-                                <p>
-                                    Avoid cold, hot and dusty locations
-                                </p>
-                            </li>
-                            <li>
+		<!-- Modals  -->
+		<!-- Button trigger modal -->
 
-                                <p>
-                                    Always use the correct ink or toner 
-                                    replacement
-                                </p>
-                            </li>
-                            <li>
-                                <p>                                
-                                    Never pull paper out of a printer 
-                                    in motion
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Do not turn off the printer while 
-                                    printing
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Always use the proper type of paper in your printer</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="information-modal__img">
-                            <img src="assets/images/modal/modal-06.png" alt="modal-img" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+		<!-- Modal Chair-->
+		<div
+			class="modal fade information-modal"
+			id="chair"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="chairLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="chairLabel">
+							Tips for sitting correctly
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__img">
+							<img
+								src="assets/images/modal/modal-01.png"
+								alt="modal-img"
+								class="img-fluid"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Modal Wifi-->
-    <div class="modal fade information-modal " id="wifi"  data-keyboard="false" tabindex="-1" aria-labelledby="wifiLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="wifiLabel">Wifi hints and tips</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div class="information-modal__print row">
-                    <div class="col-lg-6 order-2 order-lg-0">
-                        <p>If you think you’ll work on the couch or even outside some days, test your router to make sure the connection doesn’t just reach, but it’s also strong.
-                        </p>
-                        <p>
-                            You may need to invest in a Wi-Fi extender or even Wi-Fi mesh system to make sure you can work on the patio and stay connected.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-0">
-                        <div class="information-modal__img">
-                            <img src="assets/images/modal/modal-09.png" alt="modal-img" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
+		<!-- Modal Window-->
+		<div
+			class="modal fade information-modal"
+			id="window"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="windowLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="windowLabel">Natural lighting</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__window row">
+							<div class="col-lg-6 order-2 order-lg-0">
+								<p>
+									Natural light improves focus and is a mood-boosting
+									benefit. However, it can cause problems with glare on
+									your monitor. To avoid this, position your desk to the
+									side of the window.
+								</p>
+							</div>
+							<div class="col-lg-6 order-1 order-lg-0">
+								<img
+									src="assets/images/modal/modal-02.png"
+									alt="modal-img"
+									class="img-fluid"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!-- Modal desk-->
+		<div
+			class="modal fade information-modal"
+			id="desk"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="deskLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="deskLabel">Workstation guidelines</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__img">
+							<img
+								src="assets/images/modal/modal-03.png"
+								alt="modal-img"
+								class="img-fluid"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-          <!-- Modal Stationsary-->
-    <div class="modal fade information-modal " id="station"  data-keyboard="false" tabindex="-1" aria-labelledby="stationLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="stationLabel">Stationery checklist</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div class="information-modal__print row">
-                    <div class="col-lg-6 order-2 order-lg-0">
-                        <ul>
-                            <li>                                
-                                <p>
-                                    Printer paper
-                                </p>
-                            </li>
-                            <li>
+		<!-- Modal monitor-->
+		<div
+			class="modal fade information-modal"
+			id="monitor"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="monitorLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="monitorLabel">
+							Monitor/screen guidelines
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__img">
+							<img
+								src="assets/images/modal/modal-04.png"
+								alt="modal-img"
+								class="img-fluid"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                                <p>
-                                    Pens, pencils and highlighters
-                                </p>
-                            </li>
-                            <li>
-                                <p>                                
-                                    Notebooks and legal pads
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Sticky/post-it notes
-                                </p>
-                            </li>
-                            <li>
-                                <p>Stapler, staples and stapler remover</p>
-                            </li>
-                            <li>
-                                <p>Scissors</p>
-                            </li>
-                            <li>
-                                <p>Paperclips</p>
-                            </li>
-                            <li>
-                                <p>Document sorter/holder</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-0">
-                        <div class="information-modal__img">
-                            <img src="assets/images/modal/modal-10.png" alt="modal-img" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
+		<!-- Modal lamp-->
+		<div
+			class="modal fade information-modal"
+			id="lamp"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="lampLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="lampLabel">Lighting guidelines</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__img">
+							<img
+								src="assets/images/modal/modal-05.png"
+								alt="modal-img"
+								class="img-fluid"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<!-- Modal Printer-->
+		<div
+			class="modal fade information-modal"
+			id="printer"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="printerLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="printerLabel">
+							Tips when using your printer
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__print row">
+							<div class="col-lg-6">
+								<ul>
+									<li>
+										<p>Avoid cold, hot and dusty locations</p>
+									</li>
+									<li>
+										<p>
+											Always use the correct ink or toner
+											replacement
+										</p>
+									</li>
+									<li>
+										<p>Never pull paper out of a printer in motion</p>
+									</li>
+									<li>
+										<p>Do not turn off the printer while printing</p>
+									</li>
+									<li>
+										<p>
+											Always use the proper type of paper in your
+											printer
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<div class="information-modal__img">
+									<img
+										src="assets/images/modal/modal-06.png"
+										alt="modal-img"
+										class="img-fluid"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-          <!-- Modal cables-->
-    <div class="modal fade information-modal " id="cable"  data-keyboard="false" tabindex="-1" aria-labelledby="cableLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="cableLabel">Wifi hints and tips</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div class="information-modal__print row">
-                    <div class="col-lg-6 order-2 order-lg-0">
-                        <p>
-                            There are some clever solutions to hiding unsightly computer desk cords and cables to keep your workspace organized. There are cable management systems like under-desk racks that keep all of your computer cords from hanging, cable boxes to conceal your power strips, cable ties to bundle everything together and even stick-on clips to keep your chargers nearby.
-                        </p>
-                       
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-0">
-                        <div class="information-modal__img">
-                            <img src="assets/images/modal/modal-11.png" alt="modal-img" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+		<!-- Modal Wifi-->
+		<div
+			class="modal fade information-modal"
+			id="wifi"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="wifiLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="wifiLabel">Wifi hints and tips</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__print row">
+							<div class="col-lg-6 order-2 order-lg-0">
+								<p>
+									If you think you’ll work on the couch or even outside
+									some days, test your router to make sure the
+									connection doesn’t just reach, but it’s also strong.
+								</p>
+								<p>
+									You may need to invest in a Wi-Fi extender or even
+									Wi-Fi mesh system to make sure you can work on the
+									patio and stay connected.
+								</p>
+							</div>
+							<div class="col-lg-6 order-1 order-lg-0">
+								<div class="information-modal__img">
+									<img
+										src="assets/images/modal/modal-09.png"
+										alt="modal-img"
+										class="img-fluid"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-          <!-- Modal plug-->
-    <div class="modal fade information-modal " id="plug"  data-keyboard="false" tabindex="-1" aria-labelledby="plugLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="plugLabel">Invest in a surge protector</h5>
-              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div class="information-modal__print row">
-                    <div class="col-lg-6 order-2 order-lg-0">
-                        <p>
-                            If the power goes out, computer equipment is usually unharmed, but if you live in a stormy area, there's a chance you might get a power surge that could damage your computer equipment.
-                        </p>
-                        <p>
-                            A power strip with a built-in surge protector is an inexpensive insurance policy for that rare event.
-                        </p>
-                       
-                    </div>
-                    <div class="col-lg-6 order-1 order-lg-0">
-                        <div class="row">
-                            <div class="col-lg-12 col-12 ">
-                                <div class="information-modal__img">
-                                    <img src="assets/images/modal/modal-07.png" alt="modal-img" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-12 ">
-                                <div class="information-modal__img">
-                                    <img src="assets/images/modal/modal-08.png" alt="modal-img" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+		<!-- Modal Stationsary-->
+		<div
+			class="modal fade information-modal"
+			id="station"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="stationLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="stationLabel">
+							Stationery checklist
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__print row">
+							<div class="col-lg-6 order-2 order-lg-0">
+								<ul>
+									<li>
+										<p>Printer paper</p>
+									</li>
+									<li>
+										<p>Pens, pencils and highlighters</p>
+									</li>
+									<li>
+										<p>Notebooks and legal pads</p>
+									</li>
+									<li>
+										<p>Sticky/post-it notes</p>
+									</li>
+									<li>
+										<p>Stapler, staples and stapler remover</p>
+									</li>
+									<li>
+										<p>Scissors</p>
+									</li>
+									<li>
+										<p>Paperclips</p>
+									</li>
+									<li>
+										<p>Document sorter/holder</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6 order-1 order-lg-0">
+								<div class="information-modal__img">
+									<img
+										src="assets/images/modal/modal-10.png"
+										alt="modal-img"
+										class="img-fluid"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!-- All js Goes here -->
-        <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery-listnav.js"></script>
-        <script src="assets/js/slick.min.js"></script>
-        <script src="assets/js/jquery.rwdImageMaps.min.js"></script>
-        <script src="assets/js/app.js"></script>
-        <script>
-            $(document).ready(function(e) {
-                $('img[usemap]').rwdImageMaps();
-            });
-        </script>
-    </body>
+		<!-- Modal cables-->
+		<div
+			class="modal fade information-modal"
+			id="cable"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="cableLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="cableLabel">Wifi hints and tips</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__print row">
+							<div class="col-lg-6 order-2 order-lg-0">
+								<p>
+									There are some clever solutions to hiding unsightly
+									computer desk cords and cables to keep your workspace
+									organized. There are cable management systems like
+									under-desk racks that keep all of your computer cords
+									from hanging, cable boxes to conceal your power
+									strips, cable ties to bundle everything together and
+									even stick-on clips to keep your chargers nearby.
+								</p>
+							</div>
+							<div class="col-lg-6 order-1 order-lg-0">
+								<div class="information-modal__img">
+									<img
+										src="assets/images/modal/modal-11.png"
+										alt="modal-img"
+										class="img-fluid"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal plug-->
+		<div
+			class="modal fade information-modal"
+			id="plug"
+			data-keyboard="false"
+			tabindex="-1"
+			aria-labelledby="plugLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="plugLabel">
+							Invest in a surge protector
+						</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<i class="fas fa-times"></i>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="information-modal__print row">
+							<div class="col-lg-6 order-2 order-lg-0">
+								<p>
+									If the power goes out, computer equipment is usually
+									unharmed, but if you live in a stormy area, there's a
+									chance you might get a power surge that could damage
+									your computer equipment.
+								</p>
+								<p>
+									A power strip with a built-in surge protector is an
+									inexpensive insurance policy for that rare event.
+								</p>
+							</div>
+							<div class="col-lg-6 order-1 order-lg-0">
+								<div class="row">
+									<div class="col-lg-12 col-12">
+										<div class="information-modal__img">
+											<img
+												src="assets/images/modal/modal-07.png"
+												alt="modal-img"
+												class="img-fluid"
+											/>
+										</div>
+									</div>
+									<div class="col-lg-12 col-12">
+										<div class="information-modal__img">
+											<img
+												src="assets/images/modal/modal-08.png"
+												alt="modal-img"
+												class="img-fluid"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- All js Goes here -->
+		<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery-listnav.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.rwdImageMaps.min.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script>
+			$(document).ready(function (e) {
+				$("img[usemap]").rwdImageMaps()
+			})
+		</script>
+	</body>
 </html>
